@@ -125,6 +125,7 @@ def merge(existing,candidates,baseline,max_new=MAX_NEW):
         if len(matches)>1 and not pid:conflicts+=1;continue
         if pid in products:
             p=products[pid]
+            if size(p['package_size'])!=size(r['package_size']) or not ((norm(p['name']),norm(p['brand']))==(norm(r['name']),norm(r['brand'])) or (fingerprint(p) and fingerprint(p)==fingerprint(r))):conflicts+=1;continue
             # A SKU changing package/title is a review item, not a silent product replacement.
             old=next((x for x in p['observations'] if (x['retailer'],x['retailer_sku'])==k),None)
             if old and (norm(old['name']),size(old['package_size']))!=(norm(r['name']),size(r['package_size'])):conflicts+=1;continue
@@ -161,7 +162,7 @@ def main():
     confirmed={(r['retailer'],r['retailer_sku']) for r in candidates};failed={s['url'] for s in statuses if s['status']!='ok'}
     for p in products:
         for r in p['observations']:
-            if (r['retailer'],r['retailer_sku']) not in confirmed:r.update(last_attempt_at=started,check_status='source_unavailable' if r['listing_source_url'] in failed else 'needs_review')
+            if r.get('last_attempt_at','')<started:r.update(last_attempt_at=started,check_status='source_unavailable' if r['listing_source_url'] in failed else 'needs_review')
     status=dict(started_at=started,completed_at=now(),**summary,products=len(products),observations=sum(len(p['observations']) for p in products),validated_observations=len(confirmed),sources=statuses)
     path.write_text(json.dumps({'version':1,'cursor':cursor+1,'updated_at':status['completed_at'],'products':products},ensure_ascii=False,separators=(',',':')))
     (ROOT/'public/discovery-status.json').write_text(json.dumps(status,ensure_ascii=False,indent=2))

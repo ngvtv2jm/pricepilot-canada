@@ -4,3 +4,7 @@ export function routeFromHash(hash:string){
  if(/(^|&)(access_token|refresh_token|error_description|type)=/.test(value))return 'account';
  return value||'home';
 }
+
+export function productLookupState(found:boolean,loading:boolean,error:string){
+ return found?'ready':loading?'loading':error?'error':'missing';
+}
