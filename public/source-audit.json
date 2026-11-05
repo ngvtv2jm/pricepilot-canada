@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-11-05T18:26:48.062Z",
+  "results": [
+    {
+      "retailer": "FreshCo",
+      "url": "https://www.freshco.com/products/brand/FreshCo",
+      "title": "Access Denied",
+      "text": "Access Denied\nYou don't have permission to access \"http://www.freshco.com/products/brand/FreshCo\" on this server.\n\nReference #18.a59f4d68.1793903138.94d6c03\n\nhttps://errors.edgesuite.net/18.a59f4d68.1793903138.94d6c03",
+      "links": [],
+      "samples": []
+    },
+    {
+      "retailer": "Canadian Tire",
+      "error": "page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://www.canadiantire.ca/en/cat/home/snacks-beverages/pantry-DC0003120.html\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "retailer": "Walmart",
+      "url": "https://www.walmart.ca/en/cp/grocery/10019",
+      "title": "",
+      "text": "Forbidden 1793903195-29720461-9302504293-29720461",
+      "links": [],
+      "samples": []
+    }
+  ]
+}
