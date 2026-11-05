@@ -1,10 +1,10 @@
 {
-  "started_at": "2026-11-05T19:02:57.196980+00:00",
-  "completed_at": "2026-11-05T19:04:37.993249+00:00",
+  "started_at": "2026-11-05T21:37:13.987990+00:00",
+  "completed_at": "2026-11-05T21:38:57.889088+00:00",
   "total": 1800,
-  "verified": 1735,
-  "changed": 0,
-  "unverified": 65,
+  "verified": 1767,
+  "changed": 2,
+  "unverified": 33,
   "unverified_products": [
     {
       "name": "Instant Oatmeal 3-Flavour Variety Family Size, 18 packets",
@@ -35,6 +35,13 @@
       "check_status": "needs_review"
     },
     {
+      "name": "Margarine Quarters Value Size",
+      "retailer": "No Frills",
+      "retailer_sku": "20164195_EA",
+      "observed_at": "2026-11-05T19:03:11.374165+00:00",
+      "check_status": "needs_review"
+    },
+    {
       "name": "Naan Garlic",
       "retailer": "No Frills",
       "retailer_sku": "21671463_EA",
@@ -42,312 +49,74 @@
       "check_status": "needs_review"
     },
     {
-      "name": "Original Cheddar Cheese Slices",
+      "name": "Artificial Vanilla Extract",
       "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21252564_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
+      "retailer_sku": "20188513_EA",
+      "observed_at": "2026-11-05T19:03:17.836779+00:00",
+      "check_status": "needs_review"
     },
     {
-      "name": "Original Thick Cheddar Slices",
+      "name": "French Vanilla Ext Imitatn",
       "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21278710_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
+      "retailer_sku": "20811296001_EA",
+      "observed_at": "2026-11-05T19:03:17.836779+00:00",
+      "check_status": "needs_review"
     },
     {
-      "name": "Malai Paneer 20% M.F.",
+      "name": "Chipits White Creme Baking Chips",
       "retailer": "Real Canadian Superstore",
-      "retailer_sku": "20283164_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
+      "retailer_sku": "21429102_EA",
+      "observed_at": "2026-11-05T19:03:17.836779+00:00",
+      "check_status": "needs_review"
     },
     {
-      "name": "Marble Cheese Slices",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21290705_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
+      "name": "Artificial Vanilla Extract",
+      "retailer": "No Frills",
+      "retailer_sku": "20188513_EA",
+      "observed_at": "2026-11-05T19:03:20.616883+00:00",
+      "check_status": "needs_review"
     },
     {
-      "name": "Medium Cheddar Cheese Slices",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21290684_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
+      "name": "French Vanilla Ext Imitatn",
+      "retailer": "No Frills",
+      "retailer_sku": "20811296001_EA",
+      "observed_at": "2026-11-05T19:03:20.616883+00:00",
+      "check_status": "needs_review"
     },
     {
-      "name": "Tex Mex Shredded Cheese",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21290616_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
+      "name": "Chipits White Creme Baking Chips",
+      "retailer": "No Frills",
+      "retailer_sku": "21429102_EA",
+      "observed_at": "2026-11-05T19:03:20.616883+00:00",
+      "check_status": "needs_review"
     },
     {
-      "name": "Nordica Cottage Cheese, 2%",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "20319458001_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
+      "name": "Artificial Vanilla Extract",
+      "retailer": "Loblaws",
+      "retailer_sku": "20188513_EA",
+      "observed_at": "2026-11-05T19:03:21.297309+00:00",
+      "check_status": "needs_review"
     },
     {
-      "name": "Nordica Cottage Cheese, Creamed 4%",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "20319458002_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
+      "name": "French Vanilla Ext Imitatn",
+      "retailer": "Loblaws",
+      "retailer_sku": "20811296001_EA",
+      "observed_at": "2026-11-05T19:03:21.297309+00:00",
+      "check_status": "needs_review"
     },
     {
-      "name": "Grated Parmesan Cheese",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21528135_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
+      "name": "Chipits White Creme Baking Chips",
+      "retailer": "Loblaws",
+      "retailer_sku": "21429102_EA",
+      "observed_at": "2026-11-05T19:03:21.297309+00:00",
+      "check_status": "needs_review"
     },
     {
-      "name": "Original Slices",
+      "name": "SNAP’d Double Cheese Flavour Crackers",
       "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21188654_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Original Thick Slices",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21189807_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Paneer",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21286158_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "1% M.F. Light Cottage Cheese",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "20183991001_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "2% M.F. Cottage Cheese ",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "20823988_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Cottage Cheese",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "20183991002_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Cream Cheese Spread",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21036106_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Marble Cheddar Cheese Slices",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21614277_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Marble Farmer's Cheese",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21289745_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Marble Farmer's Cheese",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "20975773_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Nacho Shredded Cheese Blend",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21082795_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Old Cheddar Cheese",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21289751_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Old Cheddar Cheese",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "20975873_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Pasteurized Cream Cheese",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "20308105001_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Pasteurized Light Cream Cheese Spread",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "20308105002_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Pizza Mozzarella Cheese",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21289761_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Pizza Mozzarella Cheese",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "20975887_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Shredded Farmer's Marble Cheese",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21200684_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Shredded Mozzarella",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21082491_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Herb & Garlic Cream Cheese Product",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "20866924007_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Herb & Garlic Cream Cheese Product",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "20866929001_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Light Cream Cheese Product",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "20866924005_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Original Brick Cream Cheese",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "20641267_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Original Cream Cheese Product",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "20866924010_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Original Cream Cheese Product",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "20866929002_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Whipped Chives Cream Cheese Product",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "20866816001_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Whipped Original Cream Cheese Product",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "20866816002_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Extra Old White Cheddar",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21289689_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Lactose Free Marble Cheddar ",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21289664_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Parmesan Shredded Cheese",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21203933_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Pizza Mozzarella Shredded Cheese",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21060201_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Tex Mex Shredded Cheese Blend",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21060207_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Triple Cheddar Shredded Cheese Blend",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21060183_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Chef Collection Mozzarellissima Pizza Mozzarella Cheese",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21023058_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Mozzarellissima Pizza Mozzarella Cheese",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "20759241002_EA",
-      "observed_at": "2026-11-05T18:01:57.172181+00:00",
-      "check_status": "source_unavailable"
+      "retailer_sku": "21451181_EA",
+      "observed_at": "2026-11-05T19:03:39.115728+00:00",
+      "check_status": "needs_review"
     },
     {
       "name": "BISCUITS, Golden Cookies Filled with Rich Hazelnut Spread, Pack of 20 Cookies",
@@ -357,10 +126,24 @@
       "check_status": "needs_review"
     },
     {
+      "name": "SNAP’d Double Cheese Flavour Crackers",
+      "retailer": "No Frills",
+      "retailer_sku": "21451181_EA",
+      "observed_at": "2026-11-05T19:03:44.858118+00:00",
+      "check_status": "needs_review"
+    },
+    {
       "name": "BISCUITS, Golden Cookies Filled with Rich Hazelnut Spread, Pack of 20 Cookies",
       "retailer": "No Frills",
       "retailer_sku": "21571552_EA",
       "observed_at": "2026-11-05T15:44:54.825306+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "SNAP’d Double Cheese Flavour Crackers",
+      "retailer": "Loblaws",
+      "retailer_sku": "21451181_EA",
+      "observed_at": "2026-11-05T19:03:46.211579+00:00",
       "check_status": "needs_review"
     },
     {
@@ -452,13 +235,6 @@
       "retailer": "Loblaws",
       "retailer_sku": "21529907_EA",
       "observed_at": "2026-11-05T15:42:22.167348+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "2% Ultrafiltered Chocolate Partly Skimmed Milk",
-      "retailer": "Loblaws",
-      "retailer_sku": "21163395_EA",
-      "observed_at": "2026-11-05T18:02:38.649918+00:00",
       "check_status": "needs_review"
     }
   ]
