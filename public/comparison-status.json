@@ -6,7 +6,7 @@
   "new_matches": 3223,
   "conflicts_skipped": 98,
   "searches": 900,
-  "queued_searches": 406,
+  "queued_searches": 405,
   "successful_searches": 891,
   "checks": [
     {
@@ -341,7 +341,7 @@
     },
     {
       "retailer": "Loblaws",
-      "query": "Cineplex Big Screen Snax Cheese Sauce Jalapeño, 4-Pack, 94-ml",
+      "query": "Cineplex Big Screen Snax Cheese Sauce Jalape\u00f1o, 4-Pack, 94-ml",
       "status": "ok",
       "candidates": 48
     },
@@ -605,7 +605,7 @@
     },
     {
       "retailer": "Loblaws",
-      "query": "Dr. Oetker Crème Caramel Premium Dessert Mix with Caramel Sauce - 105g",
+      "query": "Dr. Oetker Cr\u00e8me Caramel Premium Dessert Mix with Caramel Sauce - 105g",
       "status": "ok",
       "candidates": 47
     },
@@ -695,7 +695,7 @@
     },
     {
       "retailer": "Loblaws",
-      "query": "Fruité Raspberry Lemonade Drink, 2-L",
+      "query": "Fruit\u00e9 Raspberry Lemonade Drink, 2-L",
       "status": "ok",
       "candidates": 54
     },
@@ -1085,7 +1085,7 @@
     },
     {
       "retailer": "Loblaws",
-      "query": "Häagen-Dazs Vanilla Almond Ice Cream Bars, 4-Pack, 55-ml",
+      "query": "H\u00e4agen-Dazs Vanilla Almond Ice Cream Bars, 4-Pack, 55-ml",
       "status": "ok",
       "candidates": 48
     },
@@ -1583,19 +1583,19 @@
     },
     {
       "retailer": "Loblaws",
-      "query": "Nestlé Aero Milk Chocolate Bar",
+      "query": "Nestl\u00e9 Aero Milk Chocolate Bar",
       "status": "ok",
       "candidates": 48
     },
     {
       "retailer": "Loblaws",
-      "query": "Nestlé Coffee Crisp Wafer Bar",
+      "query": "Nestl\u00e9 Coffee Crisp Wafer Bar",
       "status": "ok",
       "candidates": 52
     },
     {
       "retailer": "Loblaws",
-      "query": "Nestlé Kitkat 4-Finger Wafer Bar, Milk Chocolate",
+      "query": "Nestl\u00e9 Kitkat 4-Finger Wafer Bar, Milk Chocolate",
       "status": "ok",
       "candidates": 48
     },
@@ -2495,7 +2495,7 @@
     },
     {
       "retailer": "Loblaws",
-      "query": "Toujours Mikes Rosée Sauce, 435-ml",
+      "query": "Toujours Mikes Ros\u00e9e Sauce, 435-ml",
       "status": "ok",
       "candidates": 56
     },
@@ -3035,7 +3035,7 @@
     },
     {
       "retailer": "No Frills",
-      "query": "Cineplex Big Screen Snax Cheese Sauce Jalapeño, 4-Pack, 94-ml",
+      "query": "Cineplex Big Screen Snax Cheese Sauce Jalape\u00f1o, 4-Pack, 94-ml",
       "status": "ok",
       "candidates": 48
     },
@@ -3203,7 +3203,7 @@
     },
     {
       "retailer": "No Frills",
-      "query": "Dr. Oetker Crème Caramel Premium Dessert Mix with Caramel Sauce - 105g",
+      "query": "Dr. Oetker Cr\u00e8me Caramel Premium Dessert Mix with Caramel Sauce - 105g",
       "status": "ok",
       "candidates": 54
     },
@@ -3275,7 +3275,7 @@
     },
     {
       "retailer": "No Frills",
-      "query": "Fruité Raspberry Lemonade Drink, 2-L",
+      "query": "Fruit\u00e9 Raspberry Lemonade Drink, 2-L",
       "status": "ok",
       "candidates": 53
     },
@@ -3617,7 +3617,7 @@
     },
     {
       "retailer": "No Frills",
-      "query": "Häagen-Dazs Vanilla Almond Ice Cream Bars, 4-Pack, 55-ml",
+      "query": "H\u00e4agen-Dazs Vanilla Almond Ice Cream Bars, 4-Pack, 55-ml",
       "status": "ok",
       "candidates": 48
     },
@@ -4895,7 +4895,7 @@
     },
     {
       "retailer": "No Frills",
-      "query": "Toujours Mikes Rosée Sauce, 435-ml",
+      "query": "Toujours Mikes Ros\u00e9e Sauce, 435-ml",
       "status": "ok",
       "candidates": 53
     },
@@ -5408,6 +5408,18 @@
       "query": "Christie Golden Oreo Sandwich Cookies - 270g",
       "status": "ok",
       "candidates": 53
+    }
+  ],
+  "manual_verifications": [
+    {
+      "catalog_id": "discovered-e115260ed7a10db3e049a59b",
+      "retailer": "Loblaws",
+      "observed_at": "2026-11-05T19:11:57.965415+00:00"
+    },
+    {
+      "catalog_id": "discovered-e115260ed7a10db3e049a59b",
+      "retailer": "Real Canadian Superstore",
+      "observed_at": "2026-11-05T19:11:54.857196+00:00"
     }
   ]
 }
