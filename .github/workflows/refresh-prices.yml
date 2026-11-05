@@ -1,11 +1,6 @@
 name: Daily retailer price checks
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - scripts/refresh-prices.py
-      - .github/workflows/refresh-prices.yml
 permissions:
   contents: write
 concurrency:
@@ -17,6 +12,8 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - name: Validate price matching
         run: python3 scripts/test-refresh-prices.py
       - name: Check public retailer listings
