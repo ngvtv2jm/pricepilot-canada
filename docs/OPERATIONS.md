@@ -19,3 +19,17 @@
 
 ## Rollback
 Use Bolt version history or revert the application commit. Database migration adds columns/tables/policies; do not drop user records as a rollback. Review policy reversals separately.
+
+## November 5 account/operations extension
+Apply `20261105044243_account_operations.sql` (plus any recorded correction migration).
+It adds private account notifications, a support/privacy request queue, restricted audit records, labelled commercial links, atomic list duplication and service-role-only normalized offer ingestion. It assigns no administrators and activates no sources.
+
+Owner must be granted membership in private.admin_users only after confirming the exact existing auth account. No email-based client-side admin bypass exists.
+
+Account deletion requests: verify with the signed-in owner, revoke sessions and remove the account through the authentication administrator interface, then record resolution through the support process. Merely marking the request resolved is not deletion.
+
+Product snapshots use the public database client at build time; no service-role key is needed for SEO. Set VITE_SITE_URL if moving off the published Bolt hostname. Republish whenever catalog content changes. Do not place service credentials in any VITE variable.
+
+Import operator tool: `node scripts/import-offers.mjs batch.json` validates without a network call. `--apply` requires SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY in a server-side environment. Batch JSON has source_id and offers (external_id, store_id, regular_price/sale_price, currency=CAD, observed_at, optional valid_until/member_only). Products must already be matched. SQL enforces authorized redistribution, active retailer/store association, freshness, valid prices, transactional writes and idempotent history/notifications. Source adapters/scheduling are deliberately not configured.
+
+Run `npm test` and `npm run build` before deployment. CI repeats both for pushes/PRs. Email/push delivery, billing and external uptime monitoring remain inactive until their providers are configured.
