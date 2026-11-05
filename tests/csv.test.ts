@@ -1,0 +1,5 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {parseCSV,encodeCSV,readProducts,csvKey} from '../src/lib/csv.ts';
+test('CSV handles BOM, quotes, commas, multiline text and CRLF',()=>{assert.deepEqual(parseCSV('\uFEFFname,description\r\n"Milk, whole","line 1\n""line 2"""\r\n'),[['name','description'],['Milk, whole','line 1\n"line 2"']]);assert.throws(()=>parseCSV('name\n"unclosed'));});
+test('CSV validates required identity, URLs and quantity',()=>{assert.equal(readProducts('name,barcode,image_url\nMilk,001234567890,https://example.com/milk.jpg').errors.length,0);assert.ok(readProducts('name,image_url\nMilk,javascript:alert(1)').errors.length);assert.throws(()=>readProducts('name,name\na,b'));});
+test('CSV export escapes cells and protects spreadsheet formula execution',()=>{const s=encodeCSV([{name:'=SUM(1,2)',barcode:'001234567890'}],['name','barcode']);assert.equal(parseCSV(s)[1][0],"'=SUM(1,2)");assert.equal(parseCSV(s)[1][1],'001234567890');});
+test('duplicate identity canonicalizes fragments and trailing slash',()=>{assert.equal(csvKey({barcode:'',source_url:'https://example.com/p/#x'}),'url:https://example.com/p');});
