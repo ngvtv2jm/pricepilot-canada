@@ -1,4 +1,4 @@
-# PricePilot Canada
+# PricePine Canada
 
 Canadian shopping comparison platform built with React, TypeScript, Vite and Bolt Database.
 
@@ -18,3 +18,7 @@ npm run build
 Use VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY from the dedicated Bolt database. Never expose service-role credentials in frontend variables. Apply the platform_features migration. Owner admin access requires an explicit database assignment after registration.
 
 No Bolt AI tokens for app code, testing or deployment. No Bolt AI tokens for database creation, migrations, queries or configuration. All further database work is manual. No fabricated retailer offers or unauthorized sources.
+
+## Brand
+Public brand: PricePine Canada. Tagline: Find better prices. Shop smarter.
+The existing repository name, database IDs, hosting address and browser storage keys remain for continuity. Product images and account data retain their existing URLs and identifiers. Future fixes are authorized for publishing by the owner.
