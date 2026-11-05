@@ -79,7 +79,8 @@ def main():
     selected=sorted(tasks,key=lambda t:(tasks[t],t))[:LIMIT]
     with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:results=list(pool.map(search,selected))
     found=[r for group,status in results for r in group]
-    rows,new,review=attach(products,candidates+found,rows);added+=new;conflicts+=review
+    fresh_keys={(r['retailer'],r['retailer_sku']) for r in found}
+    rows,new,review=attach(products,[r for r in candidates if (r['retailer'],r['retailer_sku']) not in fresh_keys]+found,rows);added+=new;conflicts+=review
     queries=dict(old.get('queries',{}));checks=[s for _,s in results]
     for s in checks:queries[s['retailer']+'|'+s['query']]=started
     current={r['catalog_id']+'|'+r['retailer'] for r in rows if r.get('observed_at','')>=cutoff}

@@ -1,5 +1,5 @@
 import type {Row} from './domain';
-import {validDiscovery,discoveryRaw} from './discoveryFeed';
+import {validDiscovery,discoveryRaw} from './discoveryFeed.ts';
 export function mergeComparisonFeed(products:Row[],value:unknown):Row[]{
  const rows=value&&typeof value==='object'&&Array.isArray((value as Row).rows)?(value as Row).rows:[];
  const index=new Map<string,Row[]>();for(const r of rows){if(!r?.catalog_id)continue;index.set(r.catalog_id,[...(index.get(r.catalog_id)||[]),r])}
