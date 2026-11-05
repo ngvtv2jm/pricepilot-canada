@@ -1,24 +1,20 @@
 # PricePilot Canada
 
-Canadian grocery price comparison platform — early frontend prototype.
+Canadian shopping comparison platform built with React, TypeScript, Vite and Bolt Database.
 
-## Status
-Phase 0 inventory completed for an empty repository. Phase 1 frontend starter implemented. **Not production-ready**: no database, authentication, retailer feed, verified product prices, or live comparison calculations.
+Implemented: account screens, device and account shopping lists, exact-variant price comparison, basket optimization, price watches, restricted catalog administration, product images, and static information pages.
 
-## Launch in StackBlitz
-Open https://stackblitz.com/github/ngvtv2jm/pricepilot-canada and install dependencies. In Bolt, use its GitHub import workflow if available.
+Retailer sources are deliberately unconfigured. See docs/ROADMAP.md for remaining work and docs/OPERATIONS.md for setup and verification. This is a development release, not a completed production launch.
 
-## Local development
-```bash
-npm install
+## Development
+```
+npm ci
+npm test
 npm run dev
 npm run build
 ```
 
-## Guardrails
-- No Bolt AI tokens for frontend, backend, testing, or deployment.
-- Bolt tokens may be used **only to provision/configure the database**.
-- No fabricated live retailer offers.
-- Use only licensed, authorized or otherwise permitted data sources.
-- Secrets stay in server-side environment variables.
-- See docs/ROADMAP.md for Phase 0–11 work and completion gates.
+## Configuration
+Use VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY from the dedicated Bolt database. Never expose service-role credentials in frontend variables. Apply the platform_features migration. Owner admin access requires an explicit database assignment after registration.
+
+No Bolt AI tokens for app code, testing or deployment. Bolt tokens are permitted only for database configuration. No fabricated retailer offers or unauthorized sources.
