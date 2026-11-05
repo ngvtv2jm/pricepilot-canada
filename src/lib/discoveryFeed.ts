@@ -20,14 +20,23 @@ export function validDiscovery(value:unknown,now=Date.now()):Row[]{
 export function mergeDiscovered(catalog:Record<string,Row[]>,products:Row[]):Record<string,Row[]>{
  const out=Object.fromEntries(Object.entries(catalog).map(([k,v])=>[k,[...v]]));
  for(const key of ['products','product_variants','brands','categories','retail_price_observations'])out[key]??=[];
+ const bySource=new Map<string,Set<Row>>(),byFingerprint=new Map<string,Set<Row>>(),byId=new Map<string,Row>();
+ const variantIndex=new Map<string,Row[]>();
+ const brandNames=new Map(out.brands.map(b=>[b.id,b.name]));
+ const sourceKey=(url:string)=>{try{const u=new URL(url);const sku=u.pathname.match(/\/p\/([^/]+)$/)?.[1];return pcHosts.includes(u.hostname)&&sku?'pc:'+sku:u.origin+u.pathname.replace(/\/$/,'')}catch{return ''}};
+ const index=(map:Map<string,Set<Row>>,key:string,p:Row)=>{if(!key)return;const set=map.get(key)||new Set<Row>();set.add(p);map.set(key,set)};
+ for(const v of out.product_variants){const key=v.product_id+'|'+size(v.name);variantIndex.set(key,[...(variantIndex.get(key)||[]),v])}
+ function indexProduct(p:Row,pack:string){
+  byId.set(p.id,p);const source=sourceKey(p.source_url);if(source)index(bySource,[source,norm(p.name),size(pack)].join('|'),p);
+  index(byFingerprint,fingerprint(p.name,brandNames.get(p.brand_id)||'',pack),p);
+ }
+ for(const p of out.products)for(const v of out.product_variants.filter(v=>v.product_id===p.id))indexProduct(p,v.name);
+ const priceIndex=new Map(out.retail_price_observations.map((r,i)=>[r.variant_id+'|'+r.retailer,i]));
  for(const item of products){
-  const matching=out.products.filter(p=>{
-   const variants=out.product_variants.filter(v=>v.product_id===p.id&&size(v.name)===size(item.package_size));if(variants.length!==1)return false;
-   if(p.id===item.id)return true;
-   const source=item.observations.some((r:Row)=>{try{const a=new URL(p.source_url);const b=new URL(r.product_url);return a.href===b.href||(pcHosts.includes(a.hostname)&&pcHosts.includes(b.hostname)&&a.pathname.endsWith('/p/'+r.retailer_sku))}catch{return false}});
-   const brand=out.brands.find(b=>b.id===p.brand_id)?.name||'';
-   return (source&&norm(p.name)===norm(item.name))||!!fingerprint(p.name,brand,variants[0].name)&&fingerprint(p.name,brand,variants[0].name)===fingerprint(item.name,item.brand,item.package_size);
-  });
+  const candidates=new Set<Row>();const existing=byId.get(item.id);if(existing)candidates.add(existing);
+  for(const r of item.observations){const key=[sourceKey(r.product_url),norm(item.name),size(item.package_size)].join('|');for(const p of bySource.get(key)||[])candidates.add(p)}
+  for(const p of byFingerprint.get(fingerprint(item.name,item.brand,item.package_size))||[])candidates.add(p);
+  const matching=[...candidates].filter(p=>(variantIndex.get(p.id+'|'+size(item.package_size))||[]).length===1);
   if(matching.length>1)continue;
   let product=matching[0];
   if(!product){
@@ -37,15 +46,15 @@ export function mergeDiscovered(catalog:Record<string,Row[]>,products:Row[]):Rec
    if(!category){category={id:'discovery-groceries',name:'Groceries'};out.categories.push(category)}
    const image=typeof item.image_url==='string'&&/^https:\/\//.test(item.image_url)?item.image_url:'';
    product={id:item.id,name:item.name,brand_id:brand?.id,category_id:category.id,description:item.description,image_url:image,source_provider:item.observations[0].retailer,source_url:item.observations[0].product_url,source_license:'Public retailer listing',discovered:true};out.products.push(product);
-   out.product_variants.push({id:item.id+'-variant',product_id:product.id,name:item.package_size,attributes:{},discovered:true});
+   const newVariant={id:item.id+'-variant',product_id:product.id,name:item.package_size,attributes:{},discovered:true};out.product_variants.push(newVariant);variantIndex.set(product.id+'|'+size(item.package_size),[newVariant]);brandNames.set(brand?.id,brand?.name||'');indexProduct(product,item.package_size);
   }
-  const variant=out.product_variants.find(v=>v.product_id===product.id&&size(v.name)===size(item.package_size));if(!variant)continue;
+  const variant=variantIndex.get(product.id+'|'+size(item.package_size))?.[0];if(!variant)continue;
   for(const r of item.observations){
-   const index=out.retail_price_observations.findIndex(x=>x.variant_id===variant.id&&x.retailer===r.retailer);
+   const priceKey=variant.id+'|'+r.retailer;const index=priceIndex.get(priceKey)??-1;
    const previous=out.retail_price_observations[index];
    if(previous&&Date.parse(previous.observed_at)>Date.parse(r.observed_at))continue;
    const row={...r,id:'discovery-price:'+r.retailer+':'+r.retailer_sku,product_id:product.id,variant_id:variant.id,store_scope:previous?.store_scope||r.store_scope};
-   if(index>=0)out.retail_price_observations[index]=row;else out.retail_price_observations.push(row);
+   if(index>=0)out.retail_price_observations[index]=row;else {priceIndex.set(priceKey,out.retail_price_observations.length);out.retail_price_observations.push(row);}
   }
  }
  return out;
