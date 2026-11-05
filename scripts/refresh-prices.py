@@ -123,6 +123,7 @@ def main():
     changed = sum(r['check_status'] == 'verified' and any(r.get(k) != previous[r['retailer'], r['retailer_sku']].get(k) for k in ['price_cad', 'member_price_cad', 'promotion_text', 'member_promotion_text']) for r in result)
     feed.update(rows=result, last_run={'started_at': started, 'completed_at': datetime.datetime.now(datetime.timezone.utc).isoformat(), 'total': len(result), 'verified': verified, 'changed': changed, 'unverified': len(result)-verified})
     path.write_text(json.dumps(feed, ensure_ascii=False, separators=(',', ':')))
+    (ROOT / 'public/price-check-status.json').write_text(json.dumps({**feed['last_run'], 'unverified_products': [{k: r.get(k) for k in ['name','retailer','retailer_sku','observed_at','check_status']} for r in result if r['check_status'] != 'verified']}, ensure_ascii=False, indent=2))
     print(json.dumps(feed['last_run']))
     # The workflow saves failure status before surfacing a failed check.
     return 0 if verified == len(result) else 1
