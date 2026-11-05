@@ -1,2 +1,3 @@
 User-agent: *
-Disallow: /
+Allow: /
+Sitemap: https://pricepilot-canada-0s3l.bolt.host/sitemap.xml
