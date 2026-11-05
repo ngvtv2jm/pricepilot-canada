@@ -3,6 +3,7 @@ import concurrent.futures, copy, datetime, itertools, importlib.util, json, path
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 spec=importlib.util.spec_from_file_location('discovery',ROOT/'scripts/discover-products.py');d=importlib.util.module_from_spec(spec);spec.loader.exec_module(d)
 LIMIT=900
+DEADLINE=None
 locks={r:threading.Semaphore(2) for r in d.refresh.HOSTS}
 
 def full_tokens(row):
@@ -26,6 +27,7 @@ def exact_match(product,row):
 def search(task):
     retailer,query=task;url='https://'+d.HOSTS[retailer]+'/en/search?'+urllib.parse.urlencode({'search-bar':query})
     with locks[retailer]:
+        if DEADLINE is not None and time.monotonic()>=DEADLINE:return [],{'retailer':retailer,'query':query,'status':'deferred'}
         try:
             body=d.fetch(url);match=re.search(r'<script\b[^>]*\bid=["\']__NEXT_DATA__["\'][^>]*>(.*?)</script>',body,re.S)
             if not match:raise ValueError('No structured search results')
@@ -60,6 +62,8 @@ def attach(products,candidates,old_rows):
     return list(out.values()),matched,review
 
 def main():
+    global DEADLINE
+    DEADLINE=time.monotonic()+20*60
     started=d.now();feed=json.loads((ROOT/'public/discovered-catalog.json').read_text());products=feed['products']
     output=ROOT/'public/comparison-prices.json';old=json.loads(output.read_text()) if output.exists() else {'rows':[],'queries':{}}
     # Reuse the data already fetched by discovery, then search only missing retailer/product pairs.
@@ -84,7 +88,7 @@ def main():
     found=[r for group,status in results for r in group]
     fresh_keys={(r['retailer'],r['retailer_sku']) for r in found}
     rows,new,review=attach(products,[r for r in candidates if (r['retailer'],r['retailer_sku']) not in fresh_keys]+found,rows);added+=new;conflicts+=review
-    queries=dict(old.get('queries',{}));checks=[s for _,s in results]
+    queries=dict(old.get('queries',{}));checks=[s for _,s in results if s['status']!='deferred']
     for s in checks:queries[s['retailer']+'|'+s['query']]=started
     current={r['catalog_id']+'|'+r['retailer'] for r in rows if r.get('observed_at','')>=cutoff}
     for r in rows:
@@ -93,7 +97,7 @@ def main():
     output.write_text(json.dumps(out,ensure_ascii=False,separators=(',',':')))
     counts={p['id']:set(r['retailer'] for r in p['observations']) for p in products}
     for r in rows:counts.setdefault(r['catalog_id'],set()).add(r['retailer'])
-    status={'completed_at':d.now(),'products':len(products),'with_comparisons':sum(len(x)>=2 for x in counts.values()),'single_retailer':sum(len(x)==1 for x in counts.values()),'new_matches':added,'conflicts_skipped':conflicts,'searches':len(selected),'queued_searches':max(0,len(tasks)-len(selected)),'successful_searches':sum(s['status']=='ok' for s in checks),'checks':checks}
+    status={'completed_at':d.now(),'products':len(products),'with_comparisons':sum(len(x)>=2 for x in counts.values()),'single_retailer':sum(len(x)==1 for x in counts.values()),'new_matches':added,'conflicts_skipped':conflicts,'searches':len(checks),'queued_searches':max(0,len(tasks)-len(checks)),'successful_searches':sum(s['status']=='ok' for s in checks),'checks':checks}
     (ROOT/'public/comparison-status.json').write_text(json.dumps(status,ensure_ascii=False,indent=2));print(json.dumps({k:v for k,v in status.items() if k!='checks'}))
-    return 0 if not selected or any(s['status']=='ok' for s in checks) else 1
+    return 0 if not checks or any(s['status']=='ok' for s in checks) else 1
 if __name__=='__main__':raise SystemExit(main())

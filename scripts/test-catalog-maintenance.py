@@ -20,6 +20,12 @@ class Maintenance(unittest.TestCase):
   b=io.BytesIO();Image.new('RGB',(1200,1000),'red').save(b,'JPEG');converted=c.webp(b.getvalue());im=Image.open(io.BytesIO(converted));self.assertEqual(im.format,'WEBP');self.assertLessEqual(max(im.size),800)
  def test_invalid_image(self):
   with self.assertRaises(Exception):c.webp(b'<html>Access denied</html>')
+ def test_runtime_budget_defers_without_request(self):
+  original=m.DEADLINE
+  try:
+   m.DEADLINE=0
+   rows,status=m.search(('Loblaws','Unattempted product'));self.assertEqual(rows,[]);self.assertEqual(status['status'],'deferred')
+  finally:m.DEADLINE=original
  def test_hosts(self):
   self.assertTrue(c.valid_url('https://digital.loblaws.ca/PCX/image.png'));self.assertFalse(c.valid_url('http://127.0.0.1/a'));self.assertFalse(c.valid_url('https://digital.loblaws.ca.evil.test/a'))
 if __name__=='__main__':unittest.main()
