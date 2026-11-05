@@ -1,0 +1,42 @@
+name: Daily product discovery
+on:
+  schedule:
+    - cron: '17 7 * * *'
+      timezone: America/Toronto
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/discover-products.py
+      - scripts/test-discover-products.py
+      - .github/workflows/discover-products.yml
+permissions:
+  contents: write
+concurrency:
+  group: catalog-discovery
+  cancel-in-progress: false
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify importer safeguards
+        run: python3 scripts/test-discover-products.py
+      - name: Discover and refresh exact products
+        id: discover
+        continue-on-error: true
+        run: python3 scripts/discover-products.py
+      - name: Publish catalog and run report
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/discovered-catalog.json public/discovery-status.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Discover products and refresh source observations [skip ci]'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Report failed discovery
+        if: steps.discover.outcome == 'failure'
+        run: exit 1

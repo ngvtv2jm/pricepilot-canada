@@ -1,7 +1,7 @@
 import {chromium} from 'playwright';
 import fs from 'node:fs';
 const sources=[['FreshCo','https://www.freshco.com/products/brand/FreshCo'],['Canadian Tire','https://www.canadiantire.ca/en/cat/home/snacks-beverages/pantry-DC0003120.html'],['Walmart','https://www.walmart.ca/en/cp/grocery/10019']];
-const browser=await chromium.launch({headless:true});const results=[];
+const browser=await chromium.launch({headless:true,channel:'chrome'});const results=[];
 for(const [retailer,url] of sources){
  const page=await browser.newPage();const samples=[];const pending=[];
  page.on('response',response=>{if(!/algolia\.net|canadiantire\.ca/.test(new URL(response.url()).hostname)||!response.headers()['content-type']?.includes('json'))return;pending.push((async()=>{try{const d=await response.json();function walk(v){if(!v||typeof v!=='object')return;if(Array.isArray(v.hits)&&v.hits.length)samples.push({host:new URL(response.url()).hostname,hits:v.hits.slice(0,2)});if(Array.isArray(v.products)&&v.products.length)samples.push({host:new URL(response.url()).hostname,products:v.products.slice(0,2)});if(samples.length<8)for(const c of Object.values(v))if(c&&typeof c==='object')walk(c)}walk(d)}catch{}})());});
