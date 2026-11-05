@@ -39,7 +39,7 @@ def fetch(url):
     p=urllib.parse.urlsplit(url)
     if p.scheme!='https' or p.hostname not in HOSTS.values() or p.username or p.password:raise ValueError('Unsupported source URL')
     req=urllib.request.Request(url,headers={'User-Agent':'PricePine-CatalogCheck/1.0','Accept':'application/json,text/html'})
-    with urllib.request.urlopen(req,timeout=35) as res:
+    with urllib.request.urlopen(req,timeout=15) as res:
         if urllib.parse.urlsplit(res.url).hostname!=p.hostname:raise ValueError('Unexpected redirect')
         raw=res.read(18_000_001)
         if len(raw)>18_000_000:raise ValueError('Response too large')
@@ -158,6 +158,7 @@ def main():
     sources=sorted(sources)[:160];started=now()
     with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:results=list(pool.map(collect,sources))
     candidates=[r for rows,status in results for r in rows];statuses=[status for rows,status in results]
+    (ROOT/'public/discovery-candidates.json').write_text(json.dumps({'rows':candidates},ensure_ascii=False,separators=(',',':')))
     products,summary=merge(state['products'],candidates,baseline)
     confirmed={(r['retailer'],r['retailer_sku']) for r in candidates};failed={s['url'] for s in statuses if s['status']!='ok'}
     for p in products:

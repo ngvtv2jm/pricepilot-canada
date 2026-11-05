@@ -34,7 +34,7 @@ export function mergeDiscovered(catalog:Record<string,Row[]>,products:Row[]):Rec
  const priceIndex=new Map(out.retail_price_observations.map((r,i)=>[r.variant_id+'|'+r.retailer,i]));
  for(const item of products){
   const candidates=new Set<Row>();const existing=byId.get(item.id);if(existing)candidates.add(existing);
-  for(const r of item.observations){const key=[sourceKey(r.product_url),norm(item.name),size(item.package_size)].join('|');for(const p of bySource.get(key)||[])candidates.add(p)}
+  for(const r of item.observations){const key=[sourceKey(r.product_url),norm(r.name),size(item.package_size)].join('|');for(const p of bySource.get(key)||[])candidates.add(p)}
   for(const p of byFingerprint.get(fingerprint(item.name,item.brand,item.package_size))||[])candidates.add(p);
   const matching=[...candidates].filter(p=>(variantIndex.get(p.id+'|'+size(item.package_size))||[]).length===1);
   if(matching.length>1)continue;
@@ -48,6 +48,7 @@ export function mergeDiscovered(catalog:Record<string,Row[]>,products:Row[]):Rec
    product={id:item.id,name:item.name,brand_id:brand?.id,category_id:category.id,description:item.description,image_url:image,source_provider:item.observations[0].retailer,source_url:item.observations[0].product_url,source_license:'Public retailer listing',discovered:true};out.products.push(product);
    const newVariant={id:item.id+'-variant',product_id:product.id,name:item.package_size,attributes:{},discovered:true};out.product_variants.push(newVariant);variantIndex.set(product.id+'|'+size(item.package_size),[newVariant]);brandNames.set(brand?.id,brand?.name||'');indexProduct(product,item.package_size);
   }
+  if(!product.feed_id) {const index=out.products.findIndex(p=>p.id===product.id);product={...product,feed_id:item.id};out.products[index]=product;}
   const variant=variantIndex.get(product.id+'|'+size(item.package_size))?.[0];if(!variant)continue;
   for(const r of item.observations){
    const priceKey=variant.id+'|'+r.retailer;const index=priceIndex.get(priceKey)??-1;

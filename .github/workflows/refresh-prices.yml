@@ -1,8 +1,5 @@
 name: Daily retailer price checks
 on:
-  schedule:
-    - cron: '17 6 * * *'
-      timezone: America/Toronto
   workflow_dispatch:
   push:
     branches: [main]
@@ -12,7 +9,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: retailer-price-refresh
+  group: catalog-maintenance
   cancel-in-progress: false
 jobs:
   refresh:

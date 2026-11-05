@@ -1,4 +1,4 @@
-name: Daily product discovery
+name: Daily catalog and price maintenance
 on:
   schedule:
     - cron: '17 7 * * *'
@@ -8,35 +8,118 @@ on:
     branches: [main]
     paths:
       - scripts/discover-products.py
-      - scripts/test-discover-products.py
+      - scripts/find-store-prices.py
+      - scripts/cache-product-images.py
+      - scripts/test-catalog-maintenance.py
       - .github/workflows/discover-products.yml
 permissions:
-  contents: write
+  contents: read
 concurrency:
-  group: catalog-discovery
+  group: catalog-maintenance
   cancel-in-progress: false
 jobs:
   discover:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/test-discover-products.py
+      - run: python3 scripts/discover-products.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: discovery
+          path: |
+            public/discovered-catalog.json
+            public/discovery-status.json
+            public/discovery-candidates.json
+          retention-days: 2
+  refresh:
+    runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
-      - name: Verify importer safeguards
-        run: python3 scripts/test-discover-products.py
-      - name: Discover and refresh exact products
-        id: discover
+      - run: python3 scripts/test-refresh-prices.py
+      - run: rm -f public/price-check-status.json
+      - run: python3 scripts/refresh-prices.py
         continue-on-error: true
-        run: python3 scripts/discover-products.py
-      - name: Publish catalog and run report
+      - uses: actions/upload-artifact@v4
+        with:
+          name: prices
+          path: |
+            public/retailer-prices.json
+            public/price-check-status.json
+          retention-days: 2
+  comparisons:
+    needs: discover
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: discovery
+          path: public
+      - run: rm -f public/comparison-status.json
+      - run: python3 scripts/find-store-prices.py
+        continue-on-error: true
+      - uses: actions/upload-artifact@v4
+        with:
+          name: comparisons
+          path: |
+            public/comparison-prices.json
+            public/comparison-status.json
+          retention-days: 2
+  images:
+    needs: discover
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: discovery
+          path: public
+      - run: python3 -m pip install Pillow==13.0.0
+      - run: python3 scripts/test-catalog-maintenance.py
+      - run: rm -f public/image-cache-status.json
+      - run: python3 scripts/cache-product-images.py
+        continue-on-error: true
+      - uses: actions/upload-artifact@v4
+        with:
+          name: images
+          path: |
+            public/catalog-cache
+            public/image-cache.json
+            public/image-cache-status.json
+          retention-days: 2
+  publish:
+    needs: [discover, refresh, comparisons, images]
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: '*'
+          path: public
+          merge-multiple: true
+      - name: Check completed reports and publish together
         run: |
+          python3 - <<'PY'
+          import json,pathlib
+          for name in ['discovery-status','price-check-status','comparison-status','image-cache-status']:
+              data=json.loads(pathlib.Path('public/'+name+'.json').read_text())
+              assert data.get('completed_at'), name+' did not complete'
+          PY
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add public/discovered-catalog.json public/discovery-status.json
+          git add public/discovered-catalog.json public/discovery-status.json public/retailer-prices.json public/price-check-status.json public/comparison-prices.json public/comparison-status.json public/image-cache.json public/image-cache-status.json public/catalog-cache
           if ! git diff --cached --quiet; then
-            git commit -m 'Discover products and refresh source observations [skip ci]'
+            git commit -m 'Publish coordinated catalog, comparisons and validated image cache [skip ci]'
             git pull --rebase origin main
             git push origin HEAD:main
           fi
-      - name: Report failed discovery
-        if: steps.discover.outcome == 'failure'
-        run: exit 1
