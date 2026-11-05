@@ -1,0 +1,15 @@
+export type Row = Record<string, any>;
+export type Item = {id:string; label:string; quantity:number; variant_id:string|null; checked:boolean; list_id?:string};
+export type Offer = {id:string; store_id:string; variant_id:string; regular_price:number|null; sale_price:number|null; observed_at:string; valid_until:string|null; status:string; currency:string; member_only:boolean; store_name?:string};
+export function price(o:Offer):number|null {const p=o.sale_price??o.regular_price;return typeof p==='number'&&Number.isFinite(p)&&p>=0?p:null;}
+export function current(o:Offer,now=Date.now(),members=false) {const observed=Date.parse(o.observed_at);return o.status==='active'&&o.currency==='CAD'&&price(o)!==null&&Number.isFinite(observed)&&observed<=now&&observed>now-48*3600000&&(!o.valid_until||Date.parse(o.valid_until)>now)&&(!o.member_only||members);}
+export function unitPrice(amount:number,quantity:number,unit:string) {const units:Record<string,[number,string]>={g:[.001,'kg'],kg:[1,'kg'],ml:[.001,'L'],l:[1,'L'],each:[1,'each']};const conversion=units[unit.toLowerCase()];if(!conversion||!Number.isFinite(quantity)||quantity<=0||!Number.isFinite(amount)||amount<0)return null;return {value:amount/(quantity*conversion[0]),unit:conversion[1]};}
+export function optimize(items:Item[],offers:Offer[],members=false,now=Date.now()) {
+ const needed=items.filter(i=>!i.checked);const valid=offers.filter(o=>current(o,now,members));const stores=[...new Set(valid.map(o=>o.store_id))];
+ const evaluate=(subset:Offer[])=>{let total=0;const missing:Item[]=[];const lines:{item:Item;offer:Offer;subtotal:number}[]=[];for(const item of needed){const candidates=item.variant_id?subset.filter(o=>o.variant_id===item.variant_id).sort((a,b)=>price(a)!-price(b)!):[];if(!candidates.length){missing.push(item);continue;}const offer=candidates[0];const subtotal=Math.round(price(offer)!*100)*item.quantity;total+=subtotal;lines.push({item,offer,subtotal:subtotal/100});}return {total:total/100,missing,lines,complete:needed.length>0&&missing.length===0};};
+ return {single:stores.map(store=>({store,...evaluate(valid.filter(o=>o.store_id===store))})).sort((a,b)=>Number(b.complete)-Number(a.complete)||a.total-b.total),split:evaluate(valid),count:needed.length};
+}
+export function validPostal(value:string){return /^[ABCEGHJ-NPRSTVXY]\d[ABCEGHJ-NPRSTV-Z]\s?\d[ABCEGHJ-NPRSTV-Z]\d$/i.test(value.trim());}
+export function safeUrl(value:unknown){try{const u=new URL(String(value));return ['http:','https:'].includes(u.protocol)?u.href:'';}catch{return '';}}
+export function parseGuest(value:string|null):Item[]{try{const data=JSON.parse(value||'[]');return Array.isArray(data)?data.filter(x=>x&&typeof x.id==='string'&&typeof x.label==='string'&&x.label.length<=160&&Number.isInteger(x.quantity)&&x.quantity>0&&x.quantity<=999).slice(0,500).map(x=>({id:x.id,label:x.label,quantity:x.quantity,variant_id:typeof x.variant_id==='string'?x.variant_id:null,checked:!!x.checked})):[];}catch{return [];}}
+export const money=(n:number)=>new Intl.NumberFormat('en-CA',{style:'currency',currency:'CAD'}).format(n);
