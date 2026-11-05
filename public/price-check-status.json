@@ -1,10 +1,10 @@
 {
-  "started_at": "2026-11-05T18:01:31.204410+00:00",
-  "completed_at": "2026-11-05T18:03:16.985472+00:00",
+  "started_at": "2026-11-05T19:02:57.196980+00:00",
+  "completed_at": "2026-11-05T19:04:37.993249+00:00",
   "total": 1800,
-  "verified": 1737,
+  "verified": 1735,
   "changed": 0,
-  "unverified": 63,
+  "unverified": 65,
   "unverified_products": [
     {
       "name": "Instant Oatmeal 3-Flavour Variety Family Size, 18 packets",
@@ -40,6 +40,314 @@
       "retailer_sku": "21671463_EA",
       "observed_at": "2026-11-05T15:43:10.426939+00:00",
       "check_status": "needs_review"
+    },
+    {
+      "name": "Original Cheddar Cheese Slices",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21252564_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Original Thick Cheddar Slices",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21278710_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Malai Paneer 20% M.F.",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20283164_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Marble Cheese Slices",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21290705_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Medium Cheddar Cheese Slices",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21290684_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Tex Mex Shredded Cheese",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21290616_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Nordica Cottage Cheese, 2%",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20319458001_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Nordica Cottage Cheese, Creamed 4%",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20319458002_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Grated Parmesan Cheese",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21528135_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Original Slices",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21188654_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Original Thick Slices",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21189807_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Paneer",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21286158_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "1% M.F. Light Cottage Cheese",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20183991001_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "2% M.F. Cottage Cheese ",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20823988_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cottage Cheese",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20183991002_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cream Cheese Spread",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21036106_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Marble Cheddar Cheese Slices",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21614277_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Marble Farmer's Cheese",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21289745_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Marble Farmer's Cheese",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20975773_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Nacho Shredded Cheese Blend",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21082795_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Old Cheddar Cheese",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21289751_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Old Cheddar Cheese",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20975873_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Pasteurized Cream Cheese",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20308105001_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Pasteurized Light Cream Cheese Spread",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20308105002_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Pizza Mozzarella Cheese",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21289761_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Pizza Mozzarella Cheese",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20975887_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Shredded Farmer's Marble Cheese",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21200684_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Shredded Mozzarella",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21082491_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Herb & Garlic Cream Cheese Product",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20866924007_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Herb & Garlic Cream Cheese Product",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20866929001_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Light Cream Cheese Product",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20866924005_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Original Brick Cream Cheese",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20641267_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Original Cream Cheese Product",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20866924010_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Original Cream Cheese Product",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20866929002_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Whipped Chives Cream Cheese Product",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20866816001_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Whipped Original Cream Cheese Product",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20866816002_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Extra Old White Cheddar",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21289689_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Lactose Free Marble Cheddar ",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21289664_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Parmesan Shredded Cheese",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21203933_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Pizza Mozzarella Shredded Cheese",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21060201_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Tex Mex Shredded Cheese Blend",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21060207_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Triple Cheddar Shredded Cheese Blend",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21060183_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Chef Collection Mozzarellissima Pizza Mozzarella Cheese",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21023058_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Mozzarellissima Pizza Mozzarella Cheese",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20759241002_EA",
+      "observed_at": "2026-11-05T18:01:57.172181+00:00",
+      "check_status": "source_unavailable"
     },
     {
       "name": "BISCUITS, Golden Cookies Filled with Rich Hazelnut Spread, Pack of 20 Cookies",
@@ -119,333 +427,39 @@
       "check_status": "needs_review"
     },
     {
-      "name": "Lemon Lime Soft Drink",
-      "retailer": "Loblaws",
-      "retailer_sku": "20307968001_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Cranberry Cocktail",
-      "retailer": "Loblaws",
-      "retailer_sku": "21222633_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Fruit punch cocktail",
-      "retailer": "Loblaws",
-      "retailer_sku": "20307424002_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Lemonade",
-      "retailer": "Loblaws",
-      "retailer_sku": "21433566_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Peach Cocktail",
-      "retailer": "Loblaws",
-      "retailer_sku": "20307424003_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Pure Apple Juice Low Acid",
-      "retailer": "Loblaws",
-      "retailer_sku": "20307424001_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "100% Natural Raspberry Iced Tea",
-      "retailer": "Loblaws",
-      "retailer_sku": "21220750_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Low-Calorie Green Tea with Ginseng and Honey",
-      "retailer": "Loblaws",
-      "retailer_sku": "21220749_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Lemon Iced Tea",
-      "retailer": "Loblaws",
-      "retailer_sku": "20326699001_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Ginger Ale, Bottle",
-      "retailer": "Loblaws",
-      "retailer_sku": "20311362001_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Cola Bottle",
-      "retailer": "Loblaws",
-      "retailer_sku": "20299050_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Cola Bottle",
-      "retailer": "Loblaws",
-      "retailer_sku": "20316026002_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Cola Bottle",
-      "retailer": "Loblaws",
-      "retailer_sku": "20827293_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Cola Zero Sugar Bottle",
-      "retailer": "Loblaws",
-      "retailer_sku": "20316026005_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Cola Zero Sugar Bottle",
-      "retailer": "Loblaws",
-      "retailer_sku": "20827604_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Diet Cola Bottle",
-      "retailer": "Loblaws",
-      "retailer_sku": "20316026001_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Diet Cola Bottle",
-      "retailer": "Loblaws",
-      "retailer_sku": "20827666_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Guava Nectar",
-      "retailer": "Loblaws",
-      "retailer_sku": "20894117003_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Mango Nectar",
-      "retailer": "Loblaws",
-      "retailer_sku": "20894117004_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Morning Sunshine Juice Blend",
-      "retailer": "Loblaws",
-      "retailer_sku": "21595736_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Pineapple Nectar",
-      "retailer": "Loblaws",
-      "retailer_sku": "21009822_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
       "name": "Soda Orange Bottles",
       "retailer": "Loblaws",
       "retailer_sku": "21531921_EA",
       "observed_at": "2026-11-05T15:42:22.167348+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Punch Drink",
-      "retailer": "Loblaws",
-      "retailer_sku": "20109062_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Fruit Juice Strawberry Passion Awareness Gable top",
-      "retailer": "Loblaws",
-      "retailer_sku": "20347440001_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Tomato Juice",
-      "retailer": "Loblaws",
-      "retailer_sku": "20025557_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Zero Sugar Fruit Punch Bottle",
-      "retailer": "Loblaws",
-      "retailer_sku": "21434122_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Zero Sugar Lemonade Bottle",
-      "retailer": "Loblaws",
-      "retailer_sku": "21434119_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Zero Sugar Mango Passion Bottle",
-      "retailer": "Loblaws",
-      "retailer_sku": "21434100_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Zero Sugar Strawberry Lemonade Bottle",
-      "retailer": "Loblaws",
-      "retailer_sku": "21592037_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Clamato, Original",
-      "retailer": "Loblaws",
-      "retailer_sku": "20318955002_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Apple Beverage",
-      "retailer": "Loblaws",
-      "retailer_sku": "21622813_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Apple Beverage",
-      "retailer": "Loblaws",
-      "retailer_sku": "20320439006_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Peach Beverage",
-      "retailer": "Loblaws",
-      "retailer_sku": "20320439005_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Pulp Free 100% Orange Juice Blend",
-      "retailer": "Loblaws",
-      "retailer_sku": "21671461_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Apple Juice",
-      "retailer": "Loblaws",
-      "retailer_sku": "20336722001_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Exotic Mango Fruit Juice",
-      "retailer": "Loblaws",
-      "retailer_sku": "20336722010_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "HydraFruit Fruit Fusion Fruit Juice",
-      "retailer": "Loblaws",
-      "retailer_sku": "21004477_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Orange Pure Breakfast Juice",
-      "retailer": "Loblaws",
-      "retailer_sku": "20336722005_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Pineapple Juice",
-      "retailer": "Loblaws",
-      "retailer_sku": "20336722008_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
+      "check_status": "needs_review"
     },
     {
       "name": "Smoothie Green Activ",
       "retailer": "Loblaws",
       "retailer_sku": "21529938_EA",
       "observed_at": "2026-11-05T15:42:22.167348+00:00",
-      "check_status": "source_unavailable"
+      "check_status": "needs_review"
     },
     {
       "name": "Smoothie Strawberry Banana",
       "retailer": "Loblaws",
       "retailer_sku": "21529910_EA",
       "observed_at": "2026-11-05T15:42:22.167348+00:00",
-      "check_status": "source_unavailable"
+      "check_status": "needs_review"
     },
     {
       "name": "Smoothie Tropical Mango",
       "retailer": "Loblaws",
       "retailer_sku": "21529907_EA",
       "observed_at": "2026-11-05T15:42:22.167348+00:00",
-      "check_status": "source_unavailable"
+      "check_status": "needs_review"
     },
     {
-      "name": "Tropical Passion Fruit Juice",
+      "name": "2% Ultrafiltered Chocolate Partly Skimmed Milk",
       "retailer": "Loblaws",
-      "retailer_sku": "20336722014_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Cranberry Cocktail",
-      "retailer": "Loblaws",
-      "retailer_sku": "20300006008_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Diet Cranberry Juice",
-      "retailer": "Loblaws",
-      "retailer_sku": "20300006003_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Cola",
-      "retailer": "Loblaws",
-      "retailer_sku": "20040201001_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Cola",
-      "retailer": "Loblaws",
-      "retailer_sku": "20296926002_EA",
-      "observed_at": "2026-11-05T17:55:09.175016+00:00",
-      "check_status": "source_unavailable"
+      "retailer_sku": "21163395_EA",
+      "observed_at": "2026-11-05T18:02:38.649918+00:00",
+      "check_status": "needs_review"
     }
   ]
 }
