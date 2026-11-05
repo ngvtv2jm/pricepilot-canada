@@ -25,7 +25,7 @@ Scope: free Canadian grocery comparison and shopping-list service. This is an en
 | High / requires legal/operator review | Retention schedule, privacy jurisdiction, controller/processor identity, cross-border transfers, source scraping/image reuse permissions unresolved | Approve documented retention/deletion procedure and relevant provider/source agreements; public content availability does not grant reuse permission. |
 | Medium | Account deletion is an administrator-reviewed request | Verify requester; use privileged provider deletion; confirm cascades, storage, logs/backups and legal holds. Ticket status alone does not delete data. |
 | Medium | Browser-held bearer sessions are used, not HttpOnly cookies | Preserve SDK architecture; mitigate XSS with escaping and CSP. HttpOnly migration would require a server/session architecture and cannot be claimed as a frontend setting. |
-| Medium | Hash comparison routes cannot have distinct social crawler previews | Share standalone `/products/…html` links. Existing fragment links continue working. Static pages require republishing to include subsequently discovered products. |
+| Medium | Hash comparison routes cannot have distinct social crawler previews | Share standalone `/products/…html` links. Existing fragment links continue working. Static pages require republishing to include subsequently discovered products; the app keeps a working fragment link for products newer than its published snapshot. |
 | Medium | Admin policy editor produces repository drafts, not database CMS writes | Commit downloaded configuration and publish. A fully persistent CMS needs an appropriately protected schema/API and provider access. |
 | Medium / requires live verification | CSP/header support, real HTTP 404, HTTPS redirects, responsive/keyboard/screen-reader flows and real-user Core Web Vitals | Verify on the deployed host; no CWV or WCAG conformance claim from build/unit tests. |
 | Low | Inline styles are allowed by CSP and HTTPS image sources are broad for existing retailer fallbacks | Narrow only after inventory/testing; do not break product images or admin preview. |
@@ -36,6 +36,7 @@ Scope: free Canadian grocery comparison and shopping-list service. This is an en
 ## Verification
 
 - TypeScript and Vite production build passed.
+- Generated-file link check: 30,698 internal references checked, 0 missing targets.
 - 39 Node tests passed, including existing price eligibility, CSV, matching, routes, image cache, and new HTML escaping, JSON-LD injection, canonical/alias, sitemap completeness and policy metadata checks.
 - Generated 1,600 canonical product pages from the then-current feed and 600 saved database products, using exact application deduplication. Counts may increase as the daily job adds products.
 - `npm audit --json`: 0 known vulnerabilities (0 critical/high/moderate/low) for the lockfile at review time. This does not establish absence of security defects.

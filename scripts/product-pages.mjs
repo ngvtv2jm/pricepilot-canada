@@ -44,5 +44,6 @@ export async function buildProductPages(base){
   const body=`<h1>Product directory${i?' — page '+(i+1):''}</h1><p>Browse exact products and package sizes. Open a comparison for dated retailer prices.</p><ul>${merged.products.slice(i*count,(i+1)*count).map(p=>`<li><a href="/products/${p.id}.html">${escapeHtml(p.name)}</a></li>`).join('')}</ul><nav aria-label="Directory pages">${Array.from({length:pageCount},(_,n)=>`<a ${n===i?'aria-current="page"':''} href="/${n?'catalog-'+(n+1)+'.html':'catalog.html'}">Page ${n+1}</a>`).join(' · ')}</nav>`;
   fs.writeFileSync('public/'+path,renderPage({base,path,title:'Product directory — page '+(i+1),description:'Browse PricePine Canadian grocery products and package sizes, directory page '+(i+1)+'.',body}));
  }
+ fs.writeFileSync('public/product-page-ids.json',JSON.stringify(merged.products.map(p=>p.id)));
  console.log('Built '+merged.products.length+' canonical product pages.');return paths;
 }
