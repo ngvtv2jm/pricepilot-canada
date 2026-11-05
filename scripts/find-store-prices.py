@@ -1,5 +1,5 @@
 """Find missing exact-package retailer observations without manufacturing comparisons."""
-import concurrent.futures, copy, datetime, importlib.util, json, pathlib, re, threading, time, urllib.parse
+import concurrent.futures, copy, datetime, itertools, importlib.util, json, pathlib, re, threading, time, urllib.parse
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 spec=importlib.util.spec_from_file_location('discovery',ROOT/'scripts/discover-products.py');d=importlib.util.module_from_spec(spec);spec.loader.exec_module(d)
 LIMIT=900
@@ -77,6 +77,9 @@ def main():
             if (p['id'],retailer) not in present:tasks[(retailer,query)]=old.get('queries',{}).get(key,'')
     # Oldest-attempt-first prevents persistent unmatched products starving newly discovered ones.
     selected=sorted(tasks,key=lambda t:(tasks[t],t))[:LIMIT]
+    # Interleave retailer queues so waiting on one store never occupies every worker.
+    queues=[[t for t in selected if t[0]==retailer] for retailer in d.refresh.HOSTS]
+    selected=[t for group in itertools.zip_longest(*queues) for t in group if t is not None]
     with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:results=list(pool.map(search,selected))
     found=[r for group,status in results for r in group]
     fresh_keys={(r['retailer'],r['retailer_sku']) for r in found}
