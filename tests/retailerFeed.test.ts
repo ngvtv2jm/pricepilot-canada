@@ -1,0 +1,8 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {mergeRetailerPrices,validFeedRows} from '../src/lib/retailerFeed.ts';
+const source={name:'Milk',brand:'Brand',package_size:'1 l',retailer:'No Frills',retailer_sku:'123_EA',currency:'CAD',price_cad:3,observed_at:'2026-01-02T00:00:00Z',product_url:'https://www.nofrills.ca/en/milk/p/123_EA',store_scope:'Website default'};
+const catalog={products:[{id:'p',name:'Milk',brand_id:'b',source_url:'https://www.realcanadiansuperstore.ca/en/milk/p/123_EA'}],brands:[{id:'b',name:'Brand'}],product_variants:[{id:'v',product_id:'p',name:'1 l'}],retail_price_observations:[{...source,id:'db',product_id:'p',variant_id:'v',price_cad:4,observed_at:'2026-01-01T00:00:00Z'}]};
+test('adds missing source retailer and updates newest without dropping other stores',()=>{const out=mergeRetailerPrices(catalog,[source,{...source,retailer:'Real Canadian Superstore',price_cad:2}]);assert.equal(out.length,2);assert.equal(out.find(r=>r.retailer==='No Frills')?.price_cad,3)});
+test('older feed cannot overwrite newer database observation',()=>{assert.equal(mergeRetailerPrices(catalog,[{...source,observed_at:'2025-01-01T00:00:00Z'}])[0].price_cad,4)});
+test('mismatched packages and SKUs cannot create a store comparison',()=>{assert.equal(mergeRetailerPrices(catalog,[{...source,package_size:'2 l'},{...source,retailer_sku:'other'}]).length,1)});
+test('feed rejects invalid price, foreign host and future date',()=>{assert.equal(validFeedRows({rows:[source,{...source,price_cad:null},{...source,product_url:'https://evil.example/p/123_EA'},{...source,observed_at:'2099-01-01'}]},Date.parse('2026-01-03')).length,1)});

@@ -1,0 +1,43 @@
+name: Daily retailer price checks
+on:
+  schedule:
+    - cron: '17 6 * * *'
+      timezone: America/Toronto
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/refresh-prices.py
+      - .github/workflows/refresh-prices.yml
+permissions:
+  contents: write
+concurrency:
+  group: retailer-price-refresh
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate price matching
+        run: python3 scripts/test-refresh-prices.py
+      - name: Check public retailer listings
+        id: check
+        continue-on-error: true
+        run: python3 scripts/refresh-prices.py
+      - name: Publish observations and check status
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/retailer-prices.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update dated retailer price observations [skip ci]'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Report unverified prices
+        if: steps.check.outcome == 'failure'
+        run: |
+          echo 'Some prices could not be verified. Prior observations were retained with their original dates. See the feed last_run summary.'
+          exit 1
