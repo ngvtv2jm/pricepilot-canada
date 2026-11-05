@@ -1,0 +1,451 @@
+{
+  "started_at": "2026-11-05T18:01:31.204410+00:00",
+  "completed_at": "2026-11-05T18:03:16.985472+00:00",
+  "total": 1800,
+  "verified": 1737,
+  "changed": 0,
+  "unverified": 63,
+  "unverified_products": [
+    {
+      "name": "Instant Oatmeal 3-Flavour Variety Family Size, 18 packets",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21520660_EA",
+      "observed_at": "2026-11-05T14:08:10.293022+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Instant Oatmeal 3-Flavour Variety Family Size, 18 packets",
+      "retailer": "No Frills",
+      "retailer_sku": "21520660_EA",
+      "observed_at": "2026-11-05T14:08:10.223281+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Instant Oatmeal 3-Flavour Variety Family Size, 18 packets",
+      "retailer": "Loblaws",
+      "retailer_sku": "21520660_EA",
+      "observed_at": "2026-11-05T14:08:10.983816+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Margarine Vegan",
+      "retailer": "No Frills",
+      "retailer_sku": "21747712_EA",
+      "observed_at": "2026-11-05T14:12:33.618467+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Naan Garlic",
+      "retailer": "No Frills",
+      "retailer_sku": "21671463_EA",
+      "observed_at": "2026-11-05T15:43:10.426939+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "BISCUITS, Golden Cookies Filled with Rich Hazelnut Spread, Pack of 20 Cookies",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21571552_EA",
+      "observed_at": "2026-11-05T15:44:47.883440+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "BISCUITS, Golden Cookies Filled with Rich Hazelnut Spread, Pack of 20 Cookies",
+      "retailer": "No Frills",
+      "retailer_sku": "21571552_EA",
+      "observed_at": "2026-11-05T15:44:54.825306+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "BISCUITS, Golden Cookies Filled with Rich Hazelnut Spread, Pack of 20 Cookies",
+      "retailer": "Loblaws",
+      "retailer_sku": "21571552_EA",
+      "observed_at": "2026-11-05T15:44:59.827644+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Soda Orange Bottles",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21531921_EA",
+      "observed_at": "2026-11-05T15:42:08.710983+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Smoothie Green Activ",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21529938_EA",
+      "observed_at": "2026-11-05T15:42:08.710983+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Smoothie Strawberry Banana",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21529910_EA",
+      "observed_at": "2026-11-05T15:42:08.710983+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Smoothie Tropical Mango",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21529907_EA",
+      "observed_at": "2026-11-05T15:42:08.710983+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Soda Orange Bottles",
+      "retailer": "No Frills",
+      "retailer_sku": "21531921_EA",
+      "observed_at": "2026-11-05T15:42:15.306571+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Smoothie Green Activ",
+      "retailer": "No Frills",
+      "retailer_sku": "21529938_EA",
+      "observed_at": "2026-11-05T15:42:15.306571+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Smoothie Strawberry Banana",
+      "retailer": "No Frills",
+      "retailer_sku": "21529910_EA",
+      "observed_at": "2026-11-05T15:42:15.306571+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Smoothie Tropical Mango",
+      "retailer": "No Frills",
+      "retailer_sku": "21529907_EA",
+      "observed_at": "2026-11-05T15:42:15.306571+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Lemon Lime Soft Drink",
+      "retailer": "Loblaws",
+      "retailer_sku": "20307968001_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cranberry Cocktail",
+      "retailer": "Loblaws",
+      "retailer_sku": "21222633_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Fruit punch cocktail",
+      "retailer": "Loblaws",
+      "retailer_sku": "20307424002_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Lemonade",
+      "retailer": "Loblaws",
+      "retailer_sku": "21433566_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Peach Cocktail",
+      "retailer": "Loblaws",
+      "retailer_sku": "20307424003_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Pure Apple Juice Low Acid",
+      "retailer": "Loblaws",
+      "retailer_sku": "20307424001_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "100% Natural Raspberry Iced Tea",
+      "retailer": "Loblaws",
+      "retailer_sku": "21220750_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Low-Calorie Green Tea with Ginseng and Honey",
+      "retailer": "Loblaws",
+      "retailer_sku": "21220749_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Lemon Iced Tea",
+      "retailer": "Loblaws",
+      "retailer_sku": "20326699001_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Ginger Ale, Bottle",
+      "retailer": "Loblaws",
+      "retailer_sku": "20311362001_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cola Bottle",
+      "retailer": "Loblaws",
+      "retailer_sku": "20299050_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cola Bottle",
+      "retailer": "Loblaws",
+      "retailer_sku": "20316026002_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cola Bottle",
+      "retailer": "Loblaws",
+      "retailer_sku": "20827293_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cola Zero Sugar Bottle",
+      "retailer": "Loblaws",
+      "retailer_sku": "20316026005_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cola Zero Sugar Bottle",
+      "retailer": "Loblaws",
+      "retailer_sku": "20827604_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Diet Cola Bottle",
+      "retailer": "Loblaws",
+      "retailer_sku": "20316026001_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Diet Cola Bottle",
+      "retailer": "Loblaws",
+      "retailer_sku": "20827666_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Guava Nectar",
+      "retailer": "Loblaws",
+      "retailer_sku": "20894117003_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Mango Nectar",
+      "retailer": "Loblaws",
+      "retailer_sku": "20894117004_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Morning Sunshine Juice Blend",
+      "retailer": "Loblaws",
+      "retailer_sku": "21595736_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Pineapple Nectar",
+      "retailer": "Loblaws",
+      "retailer_sku": "21009822_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Soda Orange Bottles",
+      "retailer": "Loblaws",
+      "retailer_sku": "21531921_EA",
+      "observed_at": "2026-11-05T15:42:22.167348+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Punch Drink",
+      "retailer": "Loblaws",
+      "retailer_sku": "20109062_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Fruit Juice Strawberry Passion Awareness Gable top",
+      "retailer": "Loblaws",
+      "retailer_sku": "20347440001_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Tomato Juice",
+      "retailer": "Loblaws",
+      "retailer_sku": "20025557_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Zero Sugar Fruit Punch Bottle",
+      "retailer": "Loblaws",
+      "retailer_sku": "21434122_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Zero Sugar Lemonade Bottle",
+      "retailer": "Loblaws",
+      "retailer_sku": "21434119_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Zero Sugar Mango Passion Bottle",
+      "retailer": "Loblaws",
+      "retailer_sku": "21434100_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Zero Sugar Strawberry Lemonade Bottle",
+      "retailer": "Loblaws",
+      "retailer_sku": "21592037_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Clamato, Original",
+      "retailer": "Loblaws",
+      "retailer_sku": "20318955002_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Apple Beverage",
+      "retailer": "Loblaws",
+      "retailer_sku": "21622813_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Apple Beverage",
+      "retailer": "Loblaws",
+      "retailer_sku": "20320439006_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Peach Beverage",
+      "retailer": "Loblaws",
+      "retailer_sku": "20320439005_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Pulp Free 100% Orange Juice Blend",
+      "retailer": "Loblaws",
+      "retailer_sku": "21671461_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Apple Juice",
+      "retailer": "Loblaws",
+      "retailer_sku": "20336722001_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Exotic Mango Fruit Juice",
+      "retailer": "Loblaws",
+      "retailer_sku": "20336722010_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "HydraFruit Fruit Fusion Fruit Juice",
+      "retailer": "Loblaws",
+      "retailer_sku": "21004477_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Orange Pure Breakfast Juice",
+      "retailer": "Loblaws",
+      "retailer_sku": "20336722005_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Pineapple Juice",
+      "retailer": "Loblaws",
+      "retailer_sku": "20336722008_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Smoothie Green Activ",
+      "retailer": "Loblaws",
+      "retailer_sku": "21529938_EA",
+      "observed_at": "2026-11-05T15:42:22.167348+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Smoothie Strawberry Banana",
+      "retailer": "Loblaws",
+      "retailer_sku": "21529910_EA",
+      "observed_at": "2026-11-05T15:42:22.167348+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Smoothie Tropical Mango",
+      "retailer": "Loblaws",
+      "retailer_sku": "21529907_EA",
+      "observed_at": "2026-11-05T15:42:22.167348+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Tropical Passion Fruit Juice",
+      "retailer": "Loblaws",
+      "retailer_sku": "20336722014_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cranberry Cocktail",
+      "retailer": "Loblaws",
+      "retailer_sku": "20300006008_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Diet Cranberry Juice",
+      "retailer": "Loblaws",
+      "retailer_sku": "20300006003_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cola",
+      "retailer": "Loblaws",
+      "retailer_sku": "20040201001_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cola",
+      "retailer": "Loblaws",
+      "retailer_sku": "20296926002_EA",
+      "observed_at": "2026-11-05T17:55:09.175016+00:00",
+      "check_status": "source_unavailable"
+    }
+  ]
+}
