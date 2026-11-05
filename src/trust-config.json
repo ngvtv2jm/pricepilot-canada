@@ -1,0 +1,198 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-05",
+  "business": {
+    "tradingName": "PricePine Canada",
+    "legalName": "",
+    "supportEmail": "",
+    "privacyEmail": "",
+    "serviceArea": "Canada",
+    "businessLocation": "",
+    "registration": "",
+    "socialProfiles": []
+  },
+  "seo": {
+    "siteUrl": "https://pricepilot-canada-0s3l.bolt.host",
+    "title": "PricePine Canada \u2014 Compare Canadian grocery prices",
+    "description": "Compare exact grocery products and package sizes, check dated Canadian retailer prices and organize your shopping list with PricePine Canada.",
+    "socialImage": "/pricepine-social-card.png"
+  },
+  "pages": {
+    "about": {
+      "title": "How PricePine works",
+      "description": "Learn how PricePine compares exact grocery packages and helps Canadians plan their shopping.",
+      "version": 1,
+      "updatedAt": "2026-11-05",
+      "sections": [
+        {
+          "heading": "A clearer view of your weekly shop",
+          "text": "PricePine Canada is a free shopping-planning and price-comparison service for shoppers in Canada. Compare the same product and package size, then confirm the final price directly with the retailer. We do not sell groceries, process payments or fulfil orders."
+        },
+        {
+          "heading": "How comparisons work",
+          "text": "Dated website observations are separate from verified branch offers. Website prices do not confirm physical store stock or local pricing. Branch basket totals only include eligible CAD offers checked within 48 hours and not expired. Membership prices are optional. Taxes, deposits, shipping and travel costs are excluded."
+        },
+        {
+          "heading": "Your lists and watches",
+          "text": "Guest lists remain on your device. Accounts provide private shopping lists, supported product price watches and in-app notifications. Email and push price alerts are not enabled."
+        },
+        {
+          "heading": "Independence",
+          "text": "No retailer affiliation is implied. Affiliate and sponsored links, where configured, are labelled and do not change lowest-price rankings. We do not guarantee savings or complete market coverage."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact & support",
+      "description": "Get help with PricePine, report inaccurate prices and track privacy or account requests.",
+      "version": 1,
+      "updatedAt": "2026-11-05",
+      "sections": [
+        {
+          "heading": "Help, corrections and complaints",
+          "text": "Sign in to My account and use Your data & support to submit an account question, price correction, accessibility issue or complaint. Include the product link and what went wrong, but never include a password, payment information or identity documents. Your request receives a reference and can be tracked in your account."
+        },
+        {
+          "heading": "Privacy requests",
+          "text": "Choose Privacy access or correction, or Request account deletion. An administrator reviews requests and verifies account ownership before action. Status changes do not themselves erase data. A guaranteed response time has not yet been established; check the status in your account."
+        },
+        {
+          "heading": "Retail purchases",
+          "text": "For an order, refund, delivery or product safety concern, contact the retailer you purchased from. PricePine cannot change retailer transactions."
+        },
+        {
+          "heading": "Contact availability",
+          "text": "The account request form is the currently available contact channel. A public support email and verified legal operator details have not yet been published. If you cannot access your account, use the password reset option. An independent contact channel remains an operator setup item."
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Privacy notice",
+      "description": "Understand PricePine account data, browser storage, service providers and access or deletion requests.",
+      "version": 1,
+      "updatedAt": "2026-11-05",
+      "sections": [
+        {
+          "heading": "What we collect and why",
+          "text": "Account email and authentication information support sign-in and recovery. Shopping lists, price watches and in-app notifications support your chosen features. Support messages, request status and timestamps let administrators answer requests. Administrative changes create limited audit records. Do not send sensitive personal information in support messages."
+        },
+        {
+          "heading": "Device storage and location",
+          "text": "Guest lists and a postal code you choose to enter are stored in your browser. Authentication session tokens are also kept in browser storage by the authentication SDK. We do not request precise GPS location. Device data can remain until you remove it or clear browser storage. Device storage controls in the app let you remove guest lists and the saved postal code separately from your account."
+        },
+        {
+          "heading": "Service providers and external requests",
+          "text": "Bolt hosting and the project\u2019s database/authentication infrastructure process requests to operate the service. Public catalog feeds and some cached images are fetched from GitHub. Some product images may fall back to retailer or image-provider servers. These services can receive your IP address and request metadata. Retailer links open independent services with their own privacy practices. We do not send private shopping lists to the public catalog repository."
+        },
+        {
+          "heading": "Retention",
+          "text": "Account lists and watches remain until removed or the account is deleted. Support records remain for handling and follow-up; administrators must review necessity and applicable legal obligations before retention or deletion. Audit records and provider backups may have separate retention periods. A formal retention schedule and provider backup deletion periods have not yet been confirmed; this is not a promise of immediate or automatic erasure."
+        },
+        {
+          "heading": "Access, correction and deletion",
+          "text": "My account provides an export of your account records and a tracked request form for access, correction, privacy questions and deletion. The export does not include provider security logs or backups; request assistance for additional information. Deletion is reviewed by an administrator and requires privileged provider action. You can remove individual list items and watches immediately. Signing out ends your session but does not delete your account."
+        },
+        {
+          "heading": "International processing",
+          "text": "Service providers may process information outside your province or country. Hosting regions, processor terms and applicable transfer requirements must be confirmed by the operator. No claim is made that all data remains in Canada."
+        },
+        {
+          "heading": "Optional processing and your choices",
+          "text": "No marketing analytics, advertising trackers or marketing subscriptions are enabled in this release. No optional tracking consent is requested for features that do not exist. Any future optional tracking or marketing will need an appropriate notice and consent mechanism before activation. Account data is used to provide the features you request."
+        },
+        {
+          "heading": "Contact and changes",
+          "text": "Use the privacy request form in My account. The public privacy email and verified legal operator identity are pending publication. The version and update date below identify this notice. Applicable privacy obligations, retention periods and cross-border arrangements require operator and legal review."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Terms of use",
+      "description": "Read the conditions and limitations of the free PricePine comparison service.",
+      "version": 1,
+      "updatedAt": "2026-11-05",
+      "sections": [
+        {
+          "heading": "The service",
+          "text": "PricePine provides free shopping planning and price comparisons. It does not sell goods, accept payments or offer paid subscriptions. Retailers handle purchases, returns, warranties, cancellations and delivery under their own terms."
+        },
+        {
+          "heading": "Prices and availability",
+          "text": "Prices can change before checkout. Promotions, membership, package size and store restrictions may apply. Estimates exclude taxes, deposits, delivery and travel. Confirm final prices and availability with the retailer. No savings, stock levels or completeness of coverage are guaranteed."
+        },
+        {
+          "heading": "Account use",
+          "text": "Keep credentials private and provide accurate information. Do not attempt to access another account, abuse the service or upload content you lack permission to use. Only authorized administrators may manage catalog records."
+        },
+        {
+          "heading": "Availability and corrections",
+          "text": "The service is under development and may be unavailable or contain errors. Report incorrect information through Contact & support. Product information and policies are updated as the service changes. Nothing here limits rights that cannot lawfully be excluded."
+        },
+        {
+          "heading": "Ending use",
+          "text": "You can stop using the service, sign out, remove device data and request account deletion through My account. There is no PricePine subscription to cancel and no PricePine payment to refund."
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Cookies & device storage",
+      "description": "See what PricePine stores in your browser and how to remove it.",
+      "version": 1,
+      "updatedAt": "2026-11-05",
+      "sections": [
+        {
+          "heading": "Current storage",
+          "text": "PricePine uses local storage for your guest shopping list, voluntarily saved postal code and authentication session. Hosting or authentication providers may use necessary security mechanisms. This release does not install optional analytics or advertising trackers."
+        },
+        {
+          "heading": "Your controls",
+          "text": "Open Device storage controls to clear the guest list and postal code. Sign out to end your account session on this browser. Browser settings can remove all site storage, which may sign you out and remove unsaved device lists. This does not delete account records."
+        },
+        {
+          "heading": "Future optional tracking",
+          "text": "If optional analytics, advertising or marketing tools are introduced, the operator must assess consent requirements and provide appropriate controls before those tools run. Continued browsing is not treated as consent."
+        }
+      ]
+    },
+    "disclaimer": {
+      "title": "Price & affiliate disclosure",
+      "description": "Understand dated prices, retailer availability and labelled commercial links on PricePine.",
+      "version": 1,
+      "updatedAt": "2026-11-05",
+      "sections": [
+        {
+          "heading": "Dated observations",
+          "text": "Retailer website observations are evidence of a listed price at the displayed check time, not a promise of a price at your nearest branch. Match the exact package, retailer conditions and membership requirements. An unverified or stale observation must not be treated as a current verified branch offer."
+        },
+        {
+          "heading": "Commercial relationships",
+          "text": "Configured affiliate or sponsored links are labelled. PricePine may earn a commission through affiliate links. These relationships do not determine lowest-price rankings. Retailer names and product images identify products; their appearance is not an endorsement or partnership claim."
+        },
+        {
+          "heading": "Report a problem",
+          "text": "Use Contact & support to report an inaccurate price, broken image, mismatched package or rights concern. Include the product URL so the operator can investigate."
+        }
+      ]
+    },
+    "accessibility": {
+      "title": "Accessibility statement",
+      "description": "Learn about PricePine accessibility features and report barriers to using the site.",
+      "version": 1,
+      "updatedAt": "2026-11-05",
+      "sections": [
+        {
+          "heading": "Our approach",
+          "text": "PricePine aims to make shopping comparisons usable with a keyboard, assistive technology and small screens. Improvements include labelled inputs, visible keyboard focus, a skip link, responsive layouts, text alternatives and reduced-motion support."
+        },
+        {
+          "heading": "Known limits",
+          "text": "This statement is not a certification of WCAG conformance. Independent screen-reader, keyboard and device testing remains necessary. Wide comparison tables can scroll horizontally; product information may be incomplete. External retailer websites are outside our control."
+        },
+        {
+          "heading": "Report a barrier",
+          "text": "Use Contact & support to describe the page, device, assistive technology and issue. Avoid sharing sensitive information. The operator will review the request; no guaranteed response time has been established."
+        }
+      ]
+    }
+  }
+}

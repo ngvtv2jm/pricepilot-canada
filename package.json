@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "test": "node --experimental-strip-types --test tests/*.test.ts",
     "prebuild": "node scripts/build-pages.mjs",
-    "pretest": "node scripts/restore-catalog-images.mjs",
+    "pretest": "node scripts/build-pages.mjs",
     "predev": "node scripts/restore-catalog-images.mjs"
   },
   "dependencies": {

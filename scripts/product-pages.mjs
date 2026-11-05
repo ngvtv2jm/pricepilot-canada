@@ -1,18 +1,48 @@
 import fs from 'node:fs';
+import ts from 'typescript';
 import {createClient} from '@supabase/supabase-js';
 import {loadEnv} from 'vite';
-const cachedImages=JSON.parse(fs.readFileSync(new URL('../src/lib/catalogImages.json',import.meta.url),'utf8'));
-export const escapeHtml=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-export const jsonLd=v=>JSON.stringify(v).replace(/</g,'\\u003c');
+import {renderPage,escapeHtml,httpsUrl} from './trust-pages.mjs';
+export {escapeHtml,jsonLd} from './trust-pages.mjs';
+// Reuse the application's exact matching rules; no second fuzzy-matching implementation.
+const compiled=ts.transpileModule(fs.readFileSync('src/lib/discoveryFeed.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.ESNext,target:ts.ScriptTarget.ES2022}}).outputText;
+const {mergeDiscovered,validDiscovery}=await import('data:text/javascript;base64,'+Buffer.from(compiled).toString('base64'));
+const cachedImages=JSON.parse(fs.readFileSync('src/lib/catalogImages.json','utf8'));
 export async function buildProductPages(base){
  const env={...loadEnv('production',process.cwd(),'VITE_'),...process.env};
- if(!env.VITE_SUPABASE_URL||!env.VITE_SUPABASE_ANON_KEY){console.log('Product snapshots skipped: database environment unavailable.');return [];}
- const db=createClient(env.VITE_SUPABASE_URL,env.VITE_SUPABASE_ANON_KEY,{auth:{persistSession:false,autoRefreshToken:false}});
- async function read(table){const out=[];for(let offset=0;;offset+=500){const {data,error}=await db.from(table).select('*').order('id').range(offset,offset+499);if(error)throw Error('Product page build: '+table+': '+error.message);out.push(...data);if(data.length<500)return out;if(offset>50000)throw Error('Product snapshot exceeds build limit; use paginated rendering.');}}
- const [products,variants,images,brands]=await Promise.all(['products','product_variants','product_images','brands'].map(read));
- fs.mkdirSync('public/products',{recursive:true});for(const name of fs.readdirSync('public/products'))if(name.endsWith('.html'))fs.unlinkSync('public/products/'+name);
- for(const p of products){const url=base+'/products/'+p.id+'.html';const desc=(p.description||'Compare available prices, package options and specifications for '+p.name+' on PricePine Canada.').slice(0,300);const photo=images.filter(i=>i.product_id===p.id).sort((a,b)=>a.sort_order-b.sort_order)[0]?.url||p.image_url;const resolvedPhoto=cachedImages[photo]?base+cachedImages[photo]:photo;const image=/^https:\/\//.test(resolvedPhoto||'')?resolvedPhoto:base+'/pricepine-social-card.png';const brand=brands.find(b=>b.id===p.brand_id)?.name;const pv=variants.filter(v=>v.product_id===p.id);const schema={'@context':'https://schema.org','@type':'Product',name:p.name,description:desc,image,...(brand?{brand:{'@type':'Brand',name:brand}}:{}),url};
- fs.writeFileSync('public/products/'+p.id+'.html',`<!doctype html><html lang="en-CA"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escapeHtml(p.name)} | PricePine Canada</title><meta name="description" content="${escapeHtml(desc)}"><link rel="canonical" href="${url}"><meta property="og:type" content="product"><meta property="og:title" content="${escapeHtml(p.name)}"><meta property="og:description" content="${escapeHtml(desc)}"><meta property="og:url" content="${url}"><meta property="og:image" content="${escapeHtml(image)}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${escapeHtml(p.name)}"><meta name="twitter:description" content="${escapeHtml(desc)}"><meta name="twitter:image" content="${escapeHtml(image)}"><script type="application/ld+json">${jsonLd(schema)}</script><style>body{font-family:system-ui;color:#173e35;line-height:1.7;background:#f5faf7}main{max-width:850px;margin:3rem auto;padding:2rem;background:white;border-radius:20px}img{max-width:100%;max-height:360px}a{color:#087c60}td,th{text-align:left;padding:10px;border-bottom:1px solid #ddd}</style></head><body><main><a href="/">PricePine Canada</a><h1>${escapeHtml(p.name)}</h1>${photo?`<img src="${escapeHtml(image)}" alt="${escapeHtml(p.name)}">`:''}<p>${escapeHtml(desc)}</p>${p.source_provider?`<p>Product data: ${escapeHtml(p.source_provider)} · ${escapeHtml(p.source_license)}. <a href="${escapeHtml(/^https:\/\//.test(p.source_url||'')?p.source_url:'#')}">View original source</a>.</p>`:''}<h2>Package options & specifications</h2>${pv.map(v=>`<h3>${escapeHtml(v.name)}</h3><p>${escapeHtml([v.quantity,v.unit].filter(x=>x!=null).join(' '))}</p><table>${Object.entries(v.attributes||{}).filter(([,val])=>['string','number','boolean'].includes(typeof val)).map(([k,val])=>`<tr><th>${escapeHtml(k)}</th><td>${escapeHtml(val)}</td></tr>`).join('')}</table>`).join('')}<p><a href="/#product/${p.id}">Check current store prices and add to your shopping list →</a></p><p>Prices and availability change. Open the comparison to check current eligible offers. Product information updated when the site is published.</p><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></main></body></html>`);
+ let catalog=JSON.parse(fs.readFileSync('public/catalog-snapshot.json','utf8'));
+ if(env.VITE_SUPABASE_URL&&env.VITE_SUPABASE_ANON_KEY){
+  const db=createClient(env.VITE_SUPABASE_URL,env.VITE_SUPABASE_ANON_KEY,{auth:{persistSession:false,autoRefreshToken:false}});
+  async function read(table){const out=[];for(let offset=0;offset<50000;offset+=500){const {data,error}=await db.from(table).select('*').order('id').range(offset,offset+499);if(error)throw Error('Product page build: '+table+': '+error.message);out.push(...data);if(data.length<500)return out}throw Error('Product snapshot exceeds build limit')}
+  catalog=Object.fromEntries(await Promise.all(['products','product_variants','product_images','brands'].map(async t=>[t,await read(t)])));
+  // Only public catalog tables; never export account or operational records.
+  fs.writeFileSync('public/catalog-snapshot.json',JSON.stringify(catalog));
+ }else console.log('Product snapshots: using saved public catalog; database unavailable.');
+ const merged=mergeDiscovered(catalog,validDiscovery(JSON.parse(fs.readFileSync('public/discovered-catalog.json','utf8'))));
+ const imageCache=JSON.parse(fs.readFileSync('public/image-cache.json','utf8')).images||{};
+ fs.mkdirSync('public/products',{recursive:true});
+ const paths=[];const expected=new Set();
+ for(const p of merged.products){
+  if(!/^[a-zA-Z0-9-]+$/.test(p.id))throw Error('Invalid product identifier');
+  const path='products/'+p.id+'.html',url=base+'/'+path;
+  const desc=(p.description||'Compare available prices, package options and specifications for '+p.name+' on PricePine Canada.').slice(0,300);
+  const photo=merged.product_images?.filter(i=>i.product_id===p.id).sort((a,b)=>a.sort_order-b.sort_order)[0]?.url||p.image_url;
+  const cached=imageCache[p.feed_id||p.id]?.path;
+  const image=cached&&/^catalog-cache\/[a-f0-9]{64}\.webp$/.test(cached)?base+'/'+cached:cachedImages[photo]?base+cachedImages[photo]:httpsUrl(photo)||base+'/pricepine-social-card.png';
+  const brand=merged.brands.find(b=>b.id===p.brand_id)?.name;
+  const pv=merged.product_variants.filter(v=>v.product_id===p.id);
+  const schema={'@context':'https://schema.org','@type':'Product',name:p.name,description:desc,image,...(brand?{brand:{'@type':'Brand',name:brand}}:{}),url};
+  const body=`<h1>${escapeHtml(p.name)}</h1><img src="${escapeHtml(image)}" alt="${escapeHtml(p.name)}" width="800" height="800" referrerpolicy="no-referrer"><p>${escapeHtml(desc)}</p>${httpsUrl(p.source_url)?`<p>Product source: <a href="${escapeHtml(httpsUrl(p.source_url))}" rel="noopener noreferrer">${escapeHtml(p.source_provider||'Retailer')}</a>. ${escapeHtml(p.source_license||'')}</p>`:''}<h2>Package options & specifications</h2>${pv.map(v=>`<h3>${escapeHtml(v.name)}</h3><p>${escapeHtml([v.quantity,v.unit].filter(x=>x!=null).join(' '))}</p>${Object.keys(v.attributes||{}).length?`<table><caption>${escapeHtml(v.name)} specifications</caption><tbody>${Object.entries(v.attributes||{}).filter(([,val])=>['string','number','boolean'].includes(typeof val)).map(([k,val])=>`<tr><th scope="row">${escapeHtml(k)}</th><td>${escapeHtml(val)}</td></tr>`).join('')}</tbody></table>`:''}`).join('')}<p><a href="/#product/${p.id}">Check current store prices and add to your shopping list →</a></p><p>Prices and availability change. Open the comparison to check dated retailer observations and eligible branch offers. Product information on this page updates when the site is published.</p>`;
+  fs.writeFileSync('public/'+path,renderPage({base,path,title:p.name,description:desc,image,body,schema}));paths.push(path);expected.add(p.id+'.html');
+  // Preserve shared URLs for feed products merged into a database product, without indexing duplicates.
+  for(const alias of p.feed_aliases||[]){if(alias===p.id)continue;const name=alias+'.html';if(!/^discovered-[a-f0-9]{24}\.html$/.test(name))continue;fs.writeFileSync('public/products/'+name,renderPage({base,path,title:p.name,description:desc,image,body,noindex:true}));expected.add(name)}
  }
- return products.map(p=>'products/'+p.id+'.html');
+ for(const name of fs.readdirSync('public/products'))if(name.endsWith('.html')&&!expected.has(name))fs.unlinkSync('public/products/'+name);
+ const count=100, pageCount=Math.ceil(merged.products.length/count);
+ for(let i=0;i<pageCount;i++){
+  const path=i?'catalog-'+(i+1)+'.html':'catalog.html';paths.push(path);
+  const body=`<h1>Product directory${i?' — page '+(i+1):''}</h1><p>Browse exact products and package sizes. Open a comparison for dated retailer prices.</p><ul>${merged.products.slice(i*count,(i+1)*count).map(p=>`<li><a href="/products/${p.id}.html">${escapeHtml(p.name)}</a></li>`).join('')}</ul><nav aria-label="Directory pages">${Array.from({length:pageCount},(_,n)=>`<a ${n===i?'aria-current="page"':''} href="/${n?'catalog-'+(n+1)+'.html':'catalog.html'}">Page ${n+1}</a>`).join(' · ')}</nav>`;
+  fs.writeFileSync('public/'+path,renderPage({base,path,title:'Product directory — page '+(i+1),description:'Browse PricePine Canadian grocery products and package sizes, directory page '+(i+1)+'.',body}));
+ }
+ console.log('Built '+merged.products.length+' canonical product pages.');return paths;
 }
