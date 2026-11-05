@@ -5,7 +5,7 @@ export function applyImageCache(catalog:Record<string,Row[]>,value:unknown){
  return {...catalog,products:(catalog.products||[]).map(p=>{
   const item=images[p.id]||images[p.feed_id];
   if(!item||!/^catalog-cache\/[a-f0-9]{64}\.webp$/.test(item.path))return p;
-  return {...p,image_url:raw+item.path,image_fallbacks:['/'+item.path,p.image_url].filter(Boolean),cached_image:true};
+  return {...p,image_url:raw+item.path,image_fallbacks:[raw+item.path,'/'+item.path,p.image_url].filter(Boolean),cached_image:true};
  })};
 }
 export async function fetchImageCache(){
