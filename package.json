@@ -8,7 +8,9 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "test": "node --experimental-strip-types --test tests/*.test.ts",
-    "prebuild": "node scripts/build-pages.mjs"
+    "prebuild": "node scripts/build-pages.mjs",
+    "pretest": "node scripts/restore-catalog-images.mjs",
+    "predev": "node scripts/restore-catalog-images.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "2.119.0",
