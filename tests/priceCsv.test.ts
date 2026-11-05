@@ -6,3 +6,14 @@ const now=Date.parse('2026-11-05T15:00:00Z');
 test('prices retain retailer, member condition and unconfirmed location',()=>{const r=readPrices(header+row,now)[0];assert.equal(r.price_cad,'4');assert.equal(r.member_price_cad,'3.50');assert.equal(r.store_scope,'Website default')});
 test('prices reject currency, spoofed URLs, wrong SKU and future dates',()=>{for(const bad of [row.replace('CAD','USD'),row.replace('www.nofrills.ca','www.loblaws.ca'),row.replace('/123_EA','/999_EA'),row.replace('14:00:00','16:00:00'),row.replace(',3.50,',',NaN,')])assert.throws(()=>readPrices(header+bad,now))});
 test('all cached covers decode as WebP and cover all 600 catalog products',()=>{const map=JSON.parse(fs.readFileSync(new URL('../src/lib/catalogImages.json',import.meta.url),'utf8'));assert.equal(new Set(Object.values(map)).size,600);for(const path of Object.values(map)){const bytes=fs.readFileSync(new URL('../public'+path,import.meta.url));assert.equal(bytes.toString('ascii',0,4),'RIFF');assert.equal(bytes.toString('ascii',8,12),'WEBP')}});
+
+test('browser GMT dates and numeric offsets are normalized for PostgreSQL without changing the instant',()=>{
+ for(const value of ['Thu Nov 05 2026 09:00:00 GMT-0500 (Eastern Standard Time)','2026-11-05T09:00:00-05:00','2026-11-05T14:00:00+00:00']){
+  const result=readPrices(header+row.replace('2026-11-05T14:00:00Z',value),now)[0];
+  assert.equal(result.observed_at_utc,'2026-11-05T14:00:00.000Z');
+ }
+});
+test('invalid dates and oversized price files produce actionable errors before any import',()=>{
+ assert.throws(()=>readPrices(header+row.replace('2026-11-05T14:00:00Z','not a date'),now),/Row 2: invalid/);
+ assert.throws(()=>readPrices(header+Array(501).fill(row).join('\n'),now),/one retailer CSV/);
+});
