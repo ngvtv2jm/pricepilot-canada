@@ -15,7 +15,7 @@
 - Verify auth confirmation/reset redirect destinations on the published origin.
 - Privacy contact and account deletion handling must be configured.
 - Configure retailer sources LAST. Do not change authorization flags without a documented permitted source.
-- Keep robots/noindex in staging. Product social previews need server-rendered routes before indexing a large catalog.
+- Product snapshots are generated at publish time; verify their metadata and sitemap after catalog changes.
 
 ## Rollback
 Use Bolt version history or revert the application commit. Database migration adds columns/tables/policies; do not drop user records as a rollback. Review policy reversals separately.

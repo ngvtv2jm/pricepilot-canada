@@ -17,4 +17,4 @@ npm run build
 ## Configuration
 Use VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY from the dedicated Bolt database. Never expose service-role credentials in frontend variables. Apply the platform_features migration. Owner admin access requires an explicit database assignment after registration.
 
-No Bolt AI tokens for app code, testing or deployment. Bolt tokens are permitted only for database configuration. No fabricated retailer offers or unauthorized sources.
+No Bolt AI tokens for app code, testing or deployment. No Bolt AI tokens for database creation, migrations, queries or configuration. All further database work is manual. No fabricated retailer offers or unauthorized sources.

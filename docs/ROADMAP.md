@@ -15,7 +15,7 @@ Retailer source configuration is intentionally LAST. Updated November 5, 2026.
 | 8 SEO | Published host canonical, crawlable static product snapshots, per-product OG/Twitter/schema, sitemap and robots | Product snapshots generated on publish; verify with real catalog |
 | 9 Monetization | Free-plan page; admin-managed standard/affiliate/sponsored links with disclosure, no influence on rankings | Actual partner URLs/contracts; paid billing intentionally inactive |
 | 10 Categories | Variant specifications editor and three-product comparison board | Populate accurate category-specific product data |
-| 11 QA/release | Production build and eight automated tests; GitHub CI workflow | Connected database checks and published smoke tests; full launch depends on remaining gates above |
+| 11 QA/release | Production build and ten automated tests; GitHub CI workflow | Database migration has a recorded 24-check report; public published routes checked; full launch depends on remaining gates above |
 
 ## Limits and external configuration
 - No retailer sources or offers are fabricated. Source-specific adapters and schedules remain disabled.
@@ -25,3 +25,10 @@ Retailer source configuration is intentionally LAST. Updated November 5, 2026.
 - Account deletion is an administrator-reviewed request workflow, not immediate self-service deletion. Status changes alone do not delete data.
 - No distance claims or savings guarantees. Comparisons exclude taxes, deposits, fees and travel costs.
 - Passing local tests does not establish that every production feature is complete. Unverified gates remain explicit.
+
+## Latest verification
+- Reconnected Bolt without sending any AI prompt. Manual table inspection confirmed the account-operations tables and zero source/test records.
+- The earlier migration task completed before the no-token correction; its saved report records 24 checks passed. No new database AI actions were used.
+- Password-recovery callbacks now route to the account screen and current-offer eligibility refreshes every 30 seconds. Build and ten tests pass.
+- Owner account is registered and confirmed, but the private admin role still requires manual SQL access. `docs/owner-admin.sql` is prepared, not executed.
+- Bolt UI has no manual SQL editor, and project terminal has no database connection environment variables. Claim/connect the existing database through Supabase to run manual SQL; do not replace it with a blank database.
