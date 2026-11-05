@@ -1,0 +1,5 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {parseBarcodes,normalizeOFF,offURL} from '../src/lib/catalogImport.ts';
+test('barcode validation preserves leading zeros and deduplicates',()=>{assert.deepEqual(parseBarcodes('001234567890,001234567890'),['001234567890']);assert.throws(()=>parseBarcodes('https://evil.test'));assert.throws(()=>parseBarcodes(''));});
+test('normalization leaves unknown package quantity missing and rejects unsafe images',()=>{const p=normalizeOFF({product:{product_name:'Test',quantity:'6 x 200 g',image_front_url:'https://evil.test/a.jpg'}},'001234567890');assert.equal(p.quantity,null);assert.equal(p.unit,null);assert.equal(p.image_url,null);assert.throws(()=>normalizeOFF({status:0},'001234567890'));});
+test('normalization handles localized metric packages and fixed API host',()=>{const p=normalizeOFF({product:{product_name_fr:'Produit',quantity:'1,5 kg',countries_tags:['en:canada']}},'001234567890','fr');assert.equal(p.quantity,1.5);assert.equal(p.unit,'kg');assert.equal(new URL(offURL(p.code,'fr')).origin,'https://world.openfoodfacts.org');});
