@@ -1,3 +1,4 @@
+import './restore-catalog-images.mjs';
 import {buildProductPages} from './product-pages.mjs';
 import fs from 'node:fs';
 const base=(process.env.VITE_SITE_URL||'https://pricepilot-canada-0s3l.bolt.host').replace(/\/$/,'');
