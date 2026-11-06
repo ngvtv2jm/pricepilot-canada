@@ -1,10 +1,10 @@
 {
-  "started_at": "2026-11-05T21:37:13.987990+00:00",
-  "completed_at": "2026-11-05T21:38:57.889088+00:00",
+  "started_at": "2026-11-06T19:24:20.971861+00:00",
+  "completed_at": "2026-11-06T19:25:59.093469+00:00",
   "total": 1800,
-  "verified": 1767,
-  "changed": 2,
-  "unverified": 33,
+  "verified": 1747,
+  "changed": 4,
+  "unverified": 53,
   "unverified_products": [
     {
       "name": "Instant Oatmeal 3-Flavour Variety Family Size, 18 packets",
@@ -28,94 +28,10 @@
       "check_status": "needs_review"
     },
     {
-      "name": "Margarine Vegan",
+      "name": "Protein Tortillas",
       "retailer": "No Frills",
-      "retailer_sku": "21747712_EA",
-      "observed_at": "2026-11-05T14:12:33.618467+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "Margarine Quarters Value Size",
-      "retailer": "No Frills",
-      "retailer_sku": "20164195_EA",
-      "observed_at": "2026-11-05T19:03:11.374165+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "Naan Garlic",
-      "retailer": "No Frills",
-      "retailer_sku": "21671463_EA",
-      "observed_at": "2026-11-05T15:43:10.426939+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "Artificial Vanilla Extract",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "20188513_EA",
-      "observed_at": "2026-11-05T19:03:17.836779+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "French Vanilla Ext Imitatn",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "20811296001_EA",
-      "observed_at": "2026-11-05T19:03:17.836779+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "Chipits White Creme Baking Chips",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21429102_EA",
-      "observed_at": "2026-11-05T19:03:17.836779+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "Artificial Vanilla Extract",
-      "retailer": "No Frills",
-      "retailer_sku": "20188513_EA",
-      "observed_at": "2026-11-05T19:03:20.616883+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "French Vanilla Ext Imitatn",
-      "retailer": "No Frills",
-      "retailer_sku": "20811296001_EA",
-      "observed_at": "2026-11-05T19:03:20.616883+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "Chipits White Creme Baking Chips",
-      "retailer": "No Frills",
-      "retailer_sku": "21429102_EA",
-      "observed_at": "2026-11-05T19:03:20.616883+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "Artificial Vanilla Extract",
-      "retailer": "Loblaws",
-      "retailer_sku": "20188513_EA",
-      "observed_at": "2026-11-05T19:03:21.297309+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "French Vanilla Ext Imitatn",
-      "retailer": "Loblaws",
-      "retailer_sku": "20811296001_EA",
-      "observed_at": "2026-11-05T19:03:21.297309+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "Chipits White Creme Baking Chips",
-      "retailer": "Loblaws",
-      "retailer_sku": "21429102_EA",
-      "observed_at": "2026-11-05T19:03:21.297309+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "SNAP’d Double Cheese Flavour Crackers",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21451181_EA",
-      "observed_at": "2026-11-05T19:03:39.115728+00:00",
+      "retailer_sku": "21447518_EA",
+      "observed_at": "2026-11-05T21:37:27.874612+00:00",
       "check_status": "needs_review"
     },
     {
@@ -126,24 +42,10 @@
       "check_status": "needs_review"
     },
     {
-      "name": "SNAP’d Double Cheese Flavour Crackers",
-      "retailer": "No Frills",
-      "retailer_sku": "21451181_EA",
-      "observed_at": "2026-11-05T19:03:44.858118+00:00",
-      "check_status": "needs_review"
-    },
-    {
       "name": "BISCUITS, Golden Cookies Filled with Rich Hazelnut Spread, Pack of 20 Cookies",
       "retailer": "No Frills",
       "retailer_sku": "21571552_EA",
       "observed_at": "2026-11-05T15:44:54.825306+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "SNAP’d Double Cheese Flavour Crackers",
-      "retailer": "Loblaws",
-      "retailer_sku": "21451181_EA",
-      "observed_at": "2026-11-05T19:03:46.211579+00:00",
       "check_status": "needs_review"
     },
     {
@@ -236,6 +138,244 @@
       "retailer_sku": "21529907_EA",
       "observed_at": "2026-11-05T15:42:22.167348+00:00",
       "check_status": "needs_review"
+    },
+    {
+      "name": "Probiotic Yogurt, Blueberry",
+      "retailer": "No Frills",
+      "retailer_sku": "20302315001_EA",
+      "observed_at": "2026-11-05T21:38:39.424794+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Probiotic Yogurt, Cherry",
+      "retailer": "No Frills",
+      "retailer_sku": "20608416002_EA",
+      "observed_at": "2026-11-05T21:38:39.424794+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Probiotic Yogurt, Fibre, Peach/Blueberry/Vanilla/Strawberry-Kiwi",
+      "retailer": "No Frills",
+      "retailer_sku": "21588638_EA",
+      "observed_at": "2026-11-05T21:38:39.424794+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Probiotic Yogurt, Raspberry",
+      "retailer": "No Frills",
+      "retailer_sku": "20325132005_EA",
+      "observed_at": "2026-11-05T21:38:39.424794+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Probiotic Yogurt, Strawberry",
+      "retailer": "No Frills",
+      "retailer_sku": "20325132001_EA",
+      "observed_at": "2026-11-05T21:38:39.424794+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Probiotic Yogurt, Vanilla",
+      "retailer": "No Frills",
+      "retailer_sku": "20325132003_EA",
+      "observed_at": "2026-11-05T21:38:39.424794+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Original Balkan Style Plain Yogurt 2%",
+      "retailer": "No Frills",
+      "retailer_sku": "20170533001_EA",
+      "observed_at": "2026-11-05T21:38:39.424794+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Original Balkan Style Plain Yogurt 6%",
+      "retailer": "No Frills",
+      "retailer_sku": "20165226001_EA",
+      "observed_at": "2026-11-05T21:38:39.424794+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Greek 0% Yogurt, Plain, High Protein",
+      "retailer": "No Frills",
+      "retailer_sku": "20642273_EA",
+      "observed_at": "2026-11-05T21:38:39.424794+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Méditerranée 9% Yogurt, Black Cherry",
+      "retailer": "No Frills",
+      "retailer_sku": "20788062001_EA",
+      "observed_at": "2026-11-05T21:38:39.424794+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Extra Creamy Greek Yogurt, Strawberry Cheesecake, On the Bottom",
+      "retailer": "No Frills",
+      "retailer_sku": "21619725_EA",
+      "observed_at": "2026-11-05T21:38:39.424794+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Greek Yogurt, Plain, 0% M.F.",
+      "retailer": "No Frills",
+      "retailer_sku": "21006634_EA",
+      "observed_at": "2026-11-05T21:38:39.424794+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Greek Yogurt, Plain, 2% M.F.",
+      "retailer": "No Frills",
+      "retailer_sku": "21006885_EA",
+      "observed_at": "2026-11-05T21:38:39.424794+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Greek Yogurt, Plain, High Protein, 0% M.F.",
+      "retailer": "No Frills",
+      "retailer_sku": "21305945_EA",
+      "observed_at": "2026-11-05T21:38:39.424794+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Greek Yogurt, Vanilla, High Protein, Blended, 0% M.F.",
+      "retailer": "No Frills",
+      "retailer_sku": "21305946_EA",
+      "observed_at": "2026-11-05T21:38:39.424794+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Pro High Protein Greek Yogurt, Plain, 13g protein",
+      "retailer": "No Frills",
+      "retailer_sku": "21651917_EA",
+      "observed_at": "2026-11-05T21:38:39.424794+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Pro High Protein Yogurt, Strawberry, 13g protein",
+      "retailer": "No Frills",
+      "retailer_sku": "21651943_EA",
+      "observed_at": "2026-11-05T21:38:39.424794+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Pro High Protein Yogurt, Vanilla, 13g Protein",
+      "retailer": "No Frills",
+      "retailer_sku": "21652073_EA",
+      "observed_at": "2026-11-05T21:38:39.424794+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "0% M.F. Plain Greek Yogurt",
+      "retailer": "No Frills",
+      "retailer_sku": "21518484_EA",
+      "observed_at": "2026-11-05T21:38:39.424794+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "2% M.F. Plain Greek Yogurt Club Size",
+      "retailer": "No Frills",
+      "retailer_sku": "21520199_EA",
+      "observed_at": "2026-11-05T21:38:39.424794+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Plain Greek Yogurt 2% M.F",
+      "retailer": "No Frills",
+      "retailer_sku": "21518407_EA",
+      "observed_at": "2026-11-05T21:38:39.424794+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Plain Greek Yogurt Club Size 0% M.F.",
+      "retailer": "No Frills",
+      "retailer_sku": "21518400_EA",
+      "observed_at": "2026-11-05T21:38:39.424794+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Vanilla Greek Yogurt 0%",
+      "retailer": "No Frills",
+      "retailer_sku": "21518405_EA",
+      "observed_at": "2026-11-05T21:38:39.424794+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Banana Skyr Yogurt 2%",
+      "retailer": "No Frills",
+      "retailer_sku": "21549531_EA",
+      "observed_at": "2026-11-05T21:38:39.424794+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Plain Skyr Yogurt 0%",
+      "retailer": "No Frills",
+      "retailer_sku": "21353892_EA",
+      "observed_at": "2026-11-05T21:38:39.424794+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Plain Skyr Yogurt 3.6%",
+      "retailer": "No Frills",
+      "retailer_sku": "21353865_EA",
+      "observed_at": "2026-11-05T21:38:39.424794+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Raspberry Skyr Yogurt 2%",
+      "retailer": "No Frills",
+      "retailer_sku": "21549534_EA",
+      "observed_at": "2026-11-05T21:38:39.424794+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Strawberry Skyr Yogurt 2%",
+      "retailer": "No Frills",
+      "retailer_sku": "21589925_EA",
+      "observed_at": "2026-11-05T21:38:39.424794+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Vanilla Skyr Yogurt 0%",
+      "retailer": "No Frills",
+      "retailer_sku": "21353874_EA",
+      "observed_at": "2026-11-05T21:38:39.424794+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Tubes Yogurt Strawberry 1% M.F, Kids Snacks, 56 g, 8 ct",
+      "retailer": "No Frills",
+      "retailer_sku": "21547595_EA",
+      "observed_at": "2026-11-05T21:38:39.424794+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Tubes Yogurt Vanilla Flavour 1% M.F.",
+      "retailer": "No Frills",
+      "retailer_sku": "21547571_EA",
+      "observed_at": "2026-11-05T21:38:39.424794+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "YOP Drinkable Yogurt 1.5% M.F. Mixed Berries",
+      "retailer": "No Frills",
+      "retailer_sku": "21757952_EA",
+      "observed_at": "2026-11-05T21:38:39.424794+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "YOP Drinkable Yogurt 1.5% M.F. Strawberry",
+      "retailer": "No Frills",
+      "retailer_sku": "21757965_EA",
+      "observed_at": "2026-11-05T21:38:39.424794+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "YOP Drinkable Yogurt 1.5% M.F. Vanilla",
+      "retailer": "No Frills",
+      "retailer_sku": "21757809_EA",
+      "observed_at": "2026-11-05T21:38:39.424794+00:00",
+      "check_status": "source_unavailable"
     }
   ]
 }
