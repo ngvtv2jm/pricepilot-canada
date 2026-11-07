@@ -78,7 +78,7 @@
         },
         {
           "heading": "Device storage and location",
-          "text": "Guest lists and a postal code you choose to enter are stored in your browser. Authentication session tokens are also kept in browser storage by the authentication SDK. We do not request precise GPS location. Device data can remain until you remove it or clear browser storage. Device storage controls in the app let you remove guest lists and the saved postal code separately from your account."
+          "text": "Guest lists and the first three characters of a postal code you choose to save are stored in your browser. Authentication session tokens are also kept in browser storage by the authentication SDK. If you choose Use my location in the branch finder, your browser asks permission to share device coordinates with this page. Distances are calculated on the device. PricePine does not save or transmit the coordinates or send postal searches to a geocoder. Device data can remain until you remove it or clear browser storage. Device storage controls in the app let you remove guest lists and the saved postal code separately from your account."
         },
         {
           "heading": "Service providers and external requests",
@@ -142,7 +142,7 @@
       "sections": [
         {
           "heading": "Current storage",
-          "text": "PricePine uses local storage for your guest shopping list, voluntarily saved postal code and authentication session. Hosting or authentication providers may use necessary security mechanisms. This release does not install optional analytics or advertising trackers."
+          "text": "PricePine uses local storage for your guest shopping list, voluntarily saved postal area and authentication session. Hosting or authentication providers may use necessary security mechanisms. This release does not install optional analytics or advertising trackers."
         },
         {
           "heading": "Your controls",

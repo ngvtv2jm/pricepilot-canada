@@ -10,7 +10,8 @@
     "test": "node --experimental-strip-types --test tests/*.test.ts",
     "prebuild": "node scripts/build-pages.mjs",
     "pretest": "node scripts/build-pages.mjs",
-    "predev": "node scripts/restore-catalog-images.mjs"
+    "predev": "node scripts/restore-catalog-images.mjs",
+    "test:browser": "node tests/catalog-browser.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "2.119.0",
@@ -21,6 +22,7 @@
   "devDependencies": {
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
+    "playwright": "1.62.1",
     "typescript": "^5.7.3",
     "vite": "^6.0.5"
   }

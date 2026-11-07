@@ -1,6 +1,6 @@
 export type Row = Record<string, any>;
 export type Item = {id:string; label:string; quantity:number; variant_id:string|null; checked:boolean; list_id?:string};
-export type Offer = {id:string; store_id:string; variant_id:string; regular_price:number|null; sale_price:number|null; observed_at:string; valid_until:string|null; status:string; currency:string; member_only:boolean; store_name?:string};
+export type Offer = {id:string; store_id:string; variant_id:string; regular_price:number|null; sale_price:number|null; observed_at:string; valid_until:string|null; status:string; currency:string; member_only:boolean; store_name?:string; retailer_name?:string};
 export function price(o:Offer):number|null {const p=o.sale_price??o.regular_price;return typeof p==='number'&&Number.isFinite(p)&&p>=0?p:null;}
 export function current(o:Offer,now=Date.now(),members=false) {const observed=Date.parse(o.observed_at);return o.status==='active'&&o.currency==='CAD'&&price(o)!==null&&Number.isFinite(observed)&&observed<=now&&observed>now-48*3600000&&(!o.valid_until||Date.parse(o.valid_until)>now)&&(!o.member_only||members);}
 export function unitPrice(amount:number,quantity:number,unit:string) {const units:Record<string,[number,string]>={g:[.001,'kg'],kg:[1,'kg'],ml:[.001,'L'],l:[1,'L'],each:[1,'each']};const conversion=units[unit.toLowerCase()];if(!conversion||!Number.isFinite(quantity)||quantity<=0||!Number.isFinite(amount)||amount<0)return null;return {value:amount/(quantity*conversion[0]),unit:conversion[1]};}

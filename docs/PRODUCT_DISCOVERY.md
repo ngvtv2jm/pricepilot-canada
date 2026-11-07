@@ -1,8 +1,8 @@
 # Automatic product discovery
 
-The GitHub Actions workflow `discover-products.yml` runs daily at 07:17 America/Toronto, or manually through **Admin → Find new products — open GitHub → Run workflow** (main branch). GitHub can delay scheduled starts. The account triggering a manual run needs repository write access. No GitHub credential is stored in the website.
+The GitHub Actions workflow `discover-products.yml` runs daily at 07:17 America/Toronto, or manually through **Admin → Find products, prices & images — open GitHub → Run workflow** (main branch). GitHub can delay scheduled starts. The account triggering a manual run needs repository write access. No GitHub credential is stored in the website.
 
-The job publishes `public/discovered-catalog.json` and `public/discovery-status.json`. The website fetches the current public GitHub feed on load and every 15 minutes, with its deployed file as a fallback. New products appear without another website deployment after the initial frontend integration is published.
+The workflow publishes discovery, baseline price refresh, website comparisons and image cache together. Discovery produces `public/discovered-catalog.json` and `public/discovery-status.json`. The website fetches the current public GitHub feed on load and every 15 minutes, with its deployed file as a fallback. New products appear without another website deployment after the initial frontend integration is published.
 
 This is a public catalog feed, as selected by the owner, not a database writer. Database editing, CSV exports, account foreign keys and account price watches continue to use database products. Feed-only items can be saved as shopping-list labels in signed-in lists; no synthetic IDs are sent to database foreign keys. Guest lists can retain their feed identifiers. Exact matches to database products use the database IDs and preserve account features.
 
@@ -28,3 +28,5 @@ Active HTTP adapters: Real Canadian Superstore, No Frills, Loblaws public catego
 `python3 scripts/test-discover-products.py`, `npm test`, `npm run build`.
 
 The Admin report shows additions, duplicate updates, conflicts and source results. Use GitHub's run page to distinguish a completed feed update from a job that failed before publishing. An empty new-product count can be normal when no unseen exact packages are found.
+
+See [Nearby branches](NEARBY_BRANCHES.md) for the separate location directory and limitations on branch price and stock coverage.

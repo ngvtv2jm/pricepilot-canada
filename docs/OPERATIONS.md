@@ -28,8 +28,16 @@ Owner must be granted membership in private.admin_users only after confirming th
 
 Account deletion requests: verify with the signed-in owner, revoke sessions and remove the account through the authentication administrator interface, then record resolution through the support process. Merely marking the request resolved is not deletion.
 
-Product snapshots use the public database client at build time; no service-role key is needed for SEO. Set VITE_SITE_URL if moving off the published Bolt hostname. Republish whenever catalog content changes. Do not place service credentials in any VITE variable.
+Product snapshots use the public database client at build time; no service-role key is needed for SEO. Set VITE_SITE_URL if moving off the published Bolt hostname. Republish to update static product snapshots or application code. The public catalog feeds refresh without a Bolt deployment. Do not place service credentials in any VITE variable.
 
 Import operator tool: `node scripts/import-offers.mjs batch.json` validates without a network call. `--apply` requires SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY in a server-side environment. Batch JSON has source_id and offers (external_id, store_id, regular_price/sale_price, currency=CAD, observed_at, optional valid_until/member_only). Products must already be matched. SQL enforces authorized redistribution, active retailer/store association, freshness, valid prices, transactional writes and idempotent history/notifications. Source adapters/scheduling are deliberately not configured.
 
 Run `npm test` and `npm run build` before deployment. CI repeats both for pushes/PRs. Email/push delivery, billing and external uptime monitoring remain inactive until their providers are configured.
+
+The Toronto branch pilot is separate from the public price feeds. See [Nearby branches](NEARBY_BRANCHES.md) for data attribution, monthly review and verified offer prerequisites.
+
+For the desktop and narrow-screen catalog regression, install Playwright Chromium with
+`npx playwright install chromium`, build and start a local preview with `npm run preview`,
+then run `npm run test:browser`. The test uses deployed-file fallbacks and a guest list
+in a clean browser context. It tests denied location without requesting a real location.
+The signed-in database flows require a separate test account on the project's Bolt database.
