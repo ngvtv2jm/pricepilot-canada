@@ -35,3 +35,15 @@ test('a stale or invalid directory date is identified', () => {
   assert.equal(directoryStale('2026-10-01', Date.parse('2026-11-25')), true);
   assert.equal(directoryStale('invalid'), true);
 });
+
+test('Dundas conversion keeps the current No Frills and excludes the retired Loblaws identity', () => {
+  assert.equal(directory.branches.some(branch => branch.id === 'dinesafe-001Vo000013QiZdIAK'), false);
+  const current = directory.branches.find(branch => branch.id === 'dinesafe-001Vo0000275HxdIAE');
+  assert.equal(current?.retailer, 'No Frills');
+  assert.equal(current?.address, '2280 Dundas St W');
+});
+
+test('device location is first-party only and remains subject to browser consent', () => {
+  const headers = readFileSync(new URL('../public/_headers', import.meta.url), 'utf8');
+  assert.match(headers, /Permissions-Policy: camera=\(\), microphone=\(\), geolocation=\(self\), payment=\(\)/);
+});

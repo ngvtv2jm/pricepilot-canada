@@ -13,6 +13,10 @@ LOCATORS = {
     "Giant Tiger": "https://stores.gianttiger.com/on/etobicoke/etobicoke-kipling-ave-00168.html",
 }
 POSTAL = re.compile(r"\b(M\d[A-Z] \d[A-Z]\d)$")
+# Retired retail identity verified against Loblaw's 2026-11-05 opening announcement.
+# Keep this specific ID excluded; do not merge distinct units at other addresses.
+# https://www.loblaw.ca/en/alessandrias-no-frills-opens-in-toronto-bringing-quality-and-value-to-dundas-and-bloor-shoppers/
+RETIRED_ESTABLISHMENTS = {"001Vo000013QiZdIAK"}
 
 
 def retailer(name):
@@ -28,6 +32,8 @@ def branches(csv_path, checked):
     newest = {}
     with csv_path.open(encoding="utf-8-sig", newline="") as file:
         for row in csv.DictReader(file):
+            if row["estId"] in RETIRED_ESTABLISHMENTS:
+                continue
             brand = retailer(row["estName"])
             match = POSTAL.search(row["address"])
             if not brand or not match or not row["estId"]:

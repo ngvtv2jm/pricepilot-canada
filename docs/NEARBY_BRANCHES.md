@@ -45,3 +45,9 @@ verified GTIN, variant, CAD price, offer conditions, fulfillment and observation
 time. Record expiry and evidence of stock only when supplied. Add a branch and
 fulfillment key to the ingestion and history model before supporting multiple
 fulfillment modes. Never use the public website prices to populate branch offers.
+
+## Verified directory correction: November 7, 2026
+
+The old Loblaws record `dinesafe-001Vo000013QiZdIAK` at 2280 Dundas St W Unit-1 is excluded. Keep No Frills record `dinesafe-001Vo0000275HxdIAE` at 2280 Dundas St W. [Loblaw’s November 5, 2026 announcement](https://www.loblaw.ca/en/alessandrias-no-frills-opens-in-toronto-bringing-quality-and-value-to-dundas-and-bloor-shoppers/) confirms Alessandria’s No Frills at this address. The exclusion is tied to the retired establishment ID rather than globally discarding unit numbers. This correction does not reverify the rest of the directory or establish branch stock/prices.
+
+The first-party page is allowed to request geolocation through `Permissions-Policy: geolocation=(self)`. Individual browser consent is still required. No camera, microphone or payment permissions were enabled. Denial continues to offer postal-code search, and coordinates remain transient on the page.

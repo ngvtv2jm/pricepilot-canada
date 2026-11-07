@@ -3,6 +3,7 @@ import {database,check,rows} from './lib/db';
 import type {Row,Offer} from './lib/domain';
 import { packageLabel } from './lib/catalogPrices';
 import { WebsitePriceSummary, BranchPriceSummary } from './PriceSummary';
+import VariantPicker from './VariantPicker';
 export function specificationRows(attributes:unknown):[string,string][]{if(!attributes||Array.isArray(attributes)||typeof attributes!=='object')return [];return Object.entries(attributes).filter(([k,v])=>k.length<=80&&['string','number','boolean'].includes(typeof v)).map(([k,v])=>[k,String(v)] as [string,string]).slice(0,40)}
 export function Specifications({attributes}:{attributes:unknown}){const entries=specificationRows(attributes);return entries.length?<div className="table-scroll"><table><caption>Specifications</caption><tbody>{entries.map(([k,v])=><tr key={k}><th scope="row">{k}</th><td>{v}</td></tr>)}</tbody></table></div>:<p>No verified specifications have been added for this variant.</p>}
 export function ComparisonBoard({ catalog, variants, observations, offers, members, now, filters }: {
@@ -13,15 +14,17 @@ export function ComparisonBoard({ catalog, variants, observations, offers, membe
   const selected = ids.map(id => variants.find(v => v.id === id));
   const keys = [...new Set(selected.flatMap(v => specificationRows(v?.attributes).map(([key]) => key)))];
   const productNames = new Map((catalog.products || []).map(product => [product.id, product.name]));
+  const brandNames = new Map((catalog.brands || []).map(brand => [brand.id, brand.name]));
+  const productBrands = new Map((catalog.products || []).map(product => [product.id, brandNames.get(product.brand_id) || '']));
   const label = (v: Row) => productNames.get(v.product_id) + ' — ' + packageLabel(v, observations.get(v.id));
+  const choices = variants.map(variant => ({ id: variant.id, label: label(variant), searchText: label(variant) + ' ' + productBrands.get(variant.product_id) }));
   return <section className="wrap page">
     <span className="overline">SIDE BY SIDE</span><h1>Compare product specifications</h1>
     <p>Compare up to three exact variants. Website observations and verified branch prices are listed separately.</p>
     {filters}
-    <div className="cards">{ids.map((id, i) => <label className="panel" key={i}>Product {i + 1}
-      <select aria-label={'Product '+(i+1)} value={selected[i]?.id ?? ''} onChange={e => setIds(all => all.map((v, n) => n === i ? e.target.value : v))}>
-        <option value="">Choose a variant</option>{variants.map(v => <option value={v.id} key={v.id}>{label(v)}</option>)}
-      </select></label>)}</div>
+    <div className="cards specification-pickers">{ids.map((id, i) => <VariantPicker key={i} number={i + 1}
+      choices={choices} value={selected[i]?.id ?? ''}
+      onChange={next => setIds(all => all.map((value, index) => index === i ? next : value))}/>)}</div>
     {selected.some(Boolean) ? <div className="table-scroll"><table>
       <thead><tr><th scope="col">Feature</th>{selected.map((v, i) => <th scope="col" key={i}>{v ? label(v) : 'Choose a product'}</th>)}</tr></thead>
       <tbody>
