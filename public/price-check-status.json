@@ -1,10 +1,10 @@
 {
-  "started_at": "2026-11-08T17:55:52.721433+00:00",
-  "completed_at": "2026-11-08T17:56:21.762087+00:00",
+  "started_at": "2026-11-09T22:21:06.921044+00:00",
+  "completed_at": "2026-11-09T22:21:22.804232+00:00",
   "total": 1800,
-  "verified": 361,
+  "verified": 0,
   "changed": 0,
-  "unverified": 1439,
+  "unverified": 1800,
   "unverified_products": [
     {
       "name": "Original Cereal",
@@ -357,11 +357,354 @@
       "check_status": "source_unavailable"
     },
     {
+      "name": "Original Cereal",
+      "retailer": "No Frills",
+      "retailer_sku": "21082500_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cheerios Cereal Apple Cinnamon Family Size",
+      "retailer": "No Frills",
+      "retailer_sku": "21103509_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cheerios Whole Grain Breakfast Cereal Limited Edition",
+      "retailer": "No Frills",
+      "retailer_sku": "21104173_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cinnamon Toast Crunch Breakfast Cereal, Family Size, Whole Grains",
+      "retailer": "No Frills",
+      "retailer_sku": "21103492_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cinnamon Toast Crunch Breakfast Cereal, Whole Grains and Real Cinnamon",
+      "retailer": "No Frills",
+      "retailer_sku": "21104055_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Honey Nut Cheerios Breakfast Cereal, Family Size, Whole Grains",
+      "retailer": "No Frills",
+      "retailer_sku": "21103495_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Honey Nut Cheerios Breakfast Cereal, Whole Grains",
+      "retailer": "No Frills",
+      "retailer_sku": "21104047_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Lucky Charms Breakfast Cereal with Marshmallows, Family Size, Whole Grains",
+      "retailer": "No Frills",
+      "retailer_sku": "21103505_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Lucky Charms Breakfast Cereal with Marshmallows, Whole Grains",
+      "retailer": "No Frills",
+      "retailer_sku": "21104054_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Multi Grain Breakfast Cereal, Whole Grains",
+      "retailer": "No Frills",
+      "retailer_sku": "21104058_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Multi Grain Cheerios Breakfast Cereal, Family Size, Whole Grains",
+      "retailer": "No Frills",
+      "retailer_sku": "21103503_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Nature Valley Protein Granola, Oats 'n Honey, Family Size",
+      "retailer": "No Frills",
+      "retailer_sku": "21499405_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Oatmeal Crisp Breakfast Cereal, Triple Berry, Family Size",
+      "retailer": "No Frills",
+      "retailer_sku": "21213661_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Original Cheerios Breakfast Cereal, Family Size, Whole Grains",
+      "retailer": "No Frills",
+      "retailer_sku": "21103499_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Corn Flakes Cereal",
+      "retailer": "No Frills",
+      "retailer_sku": "21450851_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Corn Flakes Family Size",
+      "retailer": "No Frills",
+      "retailer_sku": "21450811_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Corn Pops Cereal, Family Size",
+      "retailer": "No Frills",
+      "retailer_sku": "20054727_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Froot Loops Cereal",
+      "retailer": "No Frills",
+      "retailer_sku": "21652128_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Froot Loops Cereal Family Size",
+      "retailer": "No Frills",
+      "retailer_sku": "21651640_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Frosted Flakes Cereal",
+      "retailer": "No Frills",
+      "retailer_sku": "21652110_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Frosted Flakes Cereal Family Size",
+      "retailer": "No Frills",
+      "retailer_sku": "21651947_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Krave Cereal Family Size",
+      "retailer": "No Frills",
+      "retailer_sku": "21653742_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Mini Wheats Mini Wheat Frosted Cereal",
+      "retailer": "No Frills",
+      "retailer_sku": "21430748_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Poptarts Pop Tarts Frosted Strawberry",
+      "retailer": "No Frills",
+      "retailer_sku": "21290111_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Raisin Bran Cereal Family Size",
+      "retailer": "No Frills",
+      "retailer_sku": "21652002_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Raisin Bran Cereal Jumbo",
+      "retailer": "No Frills",
+      "retailer_sku": "21651842_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Rice Krispies Cereal",
+      "retailer": "No Frills",
+      "retailer_sku": "21450814_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Rice Krispies Original",
+      "retailer": "No Frills",
+      "retailer_sku": "21449784_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Vector Meal Replacement Cereal",
+      "retailer": "No Frills",
+      "retailer_sku": "20015041_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Vector Meal Replacement Cereal",
+      "retailer": "No Frills",
+      "retailer_sku": "20072706_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Vector Meal Replacement Family Size",
+      "retailer": "No Frills",
+      "retailer_sku": "21504064_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Large Flake 100% Whole Grain Oats",
+      "retailer": "No Frills",
+      "retailer_sku": "20923994_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "One-Minute 100% Whole Grain Oats",
+      "retailer": "No Frills",
+      "retailer_sku": "20923942_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Quick 100% Whole Grain Oats",
+      "retailer": "No Frills",
+      "retailer_sku": "20923828_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Honey Cereal",
+      "retailer": "No Frills",
+      "retailer_sku": "21427201_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Honeycomb Cereal",
+      "retailer": "No Frills",
+      "retailer_sku": "20299648_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Shredded Wheat Big Biscuit Cereal",
+      "retailer": "No Frills",
+      "retailer_sku": "20014409_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Shreddies Cereal Original Family Size",
+      "retailer": "No Frills",
+      "retailer_sku": "21575229_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Shreddies Original Cereals",
+      "retailer": "No Frills",
+      "retailer_sku": "21427214_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Spoon Size Shredded Wheat & Bran Cereal",
+      "retailer": "No Frills",
+      "retailer_sku": "20751584_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Weetabix Cereal",
+      "retailer": "No Frills",
+      "retailer_sku": "21713718_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Extra-Fluffy Buttermilk Pancake & Waffle Mix",
+      "retailer": "No Frills",
+      "retailer_sku": "20175129_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Flavour Variety Instant Oatmeal",
+      "retailer": "No Frills",
+      "retailer_sku": "21190260_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Harvest Crunch Light & Crisp Honey Nut Flavour Granola Cereal",
+      "retailer": "No Frills",
+      "retailer_sku": "21239228_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Harvest Crunch Original Granola Cereal",
+      "retailer": "No Frills",
+      "retailer_sku": "21219824_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
       "name": "Instant Oatmeal 3-Flavour Variety Family Size, 18 packets",
       "retailer": "No Frills",
       "retailer_sku": "21520660_EA",
       "observed_at": "2026-11-05T14:08:10.223281+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Large Flake Oats",
+      "retailer": "No Frills",
+      "retailer_sku": "20323113002_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Life Original Cereal",
+      "retailer": "No Frills",
+      "retailer_sku": "20637355_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Maple & Brown Sugar Flavour Instant Oatmeal",
+      "retailer": "No Frills",
+      "retailer_sku": "21190254_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "One Minute Oats",
+      "retailer": "No Frills",
+      "retailer_sku": "20323113003_EA",
+      "observed_at": "2026-11-08T17:55:52.722599+00:00",
+      "check_status": "source_unavailable"
     },
     {
       "name": "Original Cereal",
@@ -1065,6 +1408,356 @@
     },
     {
       "name": "Medium Phyllo Pastry",
+      "retailer": "No Frills",
+      "retailer_sku": "21606928_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Puff Pastry",
+      "retailer": "No Frills",
+      "retailer_sku": "21606988_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Buttery Taste Margarine",
+      "retailer": "No Frills",
+      "retailer_sku": "21279362_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Calorie-Reduced Margarine Light",
+      "retailer": "No Frills",
+      "retailer_sku": "21747681_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Chef's Signature with 8% Clarified Butter, Salted",
+      "retailer": "No Frills",
+      "retailer_sku": "21747634_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Chef's Signature with 8% Clarified Butter, Unsalted",
+      "retailer": "No Frills",
+      "retailer_sku": "21747584_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Margarine Original",
+      "retailer": "No Frills",
+      "retailer_sku": "21747694_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Margarine Original",
+      "retailer": "No Frills",
+      "retailer_sku": "21747653_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Margarine Original",
+      "retailer": "No Frills",
+      "retailer_sku": "21747692_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Margarine Salt Free",
+      "retailer": "No Frills",
+      "retailer_sku": "21747498_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Margarine Vegan",
+      "retailer": "No Frills",
+      "retailer_sku": "21747712_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Margarine With Avocado Oil",
+      "retailer": "No Frills",
+      "retailer_sku": "21747671_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Margarine With Olive Oil",
+      "retailer": "No Frills",
+      "retailer_sku": "21747703_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Margarine With Olive Oil",
+      "retailer": "No Frills",
+      "retailer_sku": "21747558_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Salted Plant Butter Sticks",
+      "retailer": "No Frills",
+      "retailer_sku": "21088919_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Unsalted Plant Butter Sticks",
+      "retailer": "No Frills",
+      "retailer_sku": "21088940_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Peach Chunks",
+      "retailer": "No Frills",
+      "retailer_sku": "21664435_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Salted Butter",
+      "retailer": "No Frills",
+      "retailer_sku": "20559408_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Spreadables Butter With Canola Oil",
+      "retailer": "No Frills",
+      "retailer_sku": "20119926002_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Unsalted Butter",
+      "retailer": "No Frills",
+      "retailer_sku": "20559466_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "55% Vegetable Oil Margarine Original",
+      "retailer": "No Frills",
+      "retailer_sku": "21747598_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Vegetable Oil Margarine Original",
+      "retailer": "No Frills",
+      "retailer_sku": "21747538_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "50% Vegetable Oil Margarine Non Hydrogenated",
+      "retailer": "No Frills",
+      "retailer_sku": "21747537_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "55% Vegetable Oil Margarine Non Hydrogenated",
+      "retailer": "No Frills",
+      "retailer_sku": "21747189_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "55% Vegetable Oil Margarine Non Hydrogenated",
+      "retailer": "No Frills",
+      "retailer_sku": "21747711_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Margarine Quarters Value Size",
+      "retailer": "No Frills",
+      "retailer_sku": "20164195_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Garlic & Provencal Herb Butter",
+      "retailer": "No Frills",
+      "retailer_sku": "20106744_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Lactose Free Butter Salted",
+      "retailer": "No Frills",
+      "retailer_sku": "21601669_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Lactose Free Butter Unsalted",
+      "retailer": "No Frills",
+      "retailer_sku": "21601712_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Salted Butter",
+      "retailer": "No Frills",
+      "retailer_sku": "20639926_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Unsalted Butter",
+      "retailer": "No Frills",
+      "retailer_sku": "20296112005_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Mirage Margarine",
+      "retailer": "No Frills",
+      "retailer_sku": "20074944_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Protein Overnight Oats, Apple Pie",
+      "retailer": "No Frills",
+      "retailer_sku": "21732660_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Protein Overnight Oats, Chocolatey Brownie",
+      "retailer": "No Frills",
+      "retailer_sku": "21732824_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Protein Overnight Oats, French Vanilla",
+      "retailer": "No Frills",
+      "retailer_sku": "21732873_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Deep Dish Pie Shells",
+      "retailer": "No Frills",
+      "retailer_sku": "20671251_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Margarine",
+      "retailer": "No Frills",
+      "retailer_sku": "20073675_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Pie Shells",
+      "retailer": "No Frills",
+      "retailer_sku": "20153259_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Ready-to-Bake Tart Shells",
+      "retailer": "No Frills",
+      "retailer_sku": "20296118001_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Unsalted Butter",
+      "retailer": "No Frills",
+      "retailer_sku": "20316543002_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Margarine with Olive Oil",
+      "retailer": "No Frills",
+      "retailer_sku": "20604430_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Original Margarine",
+      "retailer": "No Frills",
+      "retailer_sku": "20604565_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Chocolatey Chip Cookie Dough, Ready to Bake",
+      "retailer": "No Frills",
+      "retailer_sku": "20318034001_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Chub Chocolatey Chunk Cookie",
+      "retailer": "No Frills",
+      "retailer_sku": "20318034002_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cinnamon Rolls with Icing, Ready to Bake 8 ct",
+      "retailer": "No Frills",
+      "retailer_sku": "20320962002_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cookies Confetti",
+      "retailer": "No Frills",
+      "retailer_sku": "21096450_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Crescents - Reduced Fat",
+      "retailer": "No Frills",
+      "retailer_sku": "20305424001_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Crescents Country Biscuits, Ready to Bake Dough, 10 ct",
+      "retailer": "No Frills",
+      "retailer_sku": "20317832003_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Crescents Original Dough, 8 Pieces",
+      "retailer": "No Frills",
+      "retailer_sku": "21505340_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Crescents Pizza Crust, Refrigerated Pre-Made Dough, 1 ct",
+      "retailer": "No Frills",
+      "retailer_sku": "20317832002_EA",
+      "observed_at": "2026-11-08T17:55:53.931060+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Medium Phyllo Pastry",
       "retailer": "Loblaws",
       "retailer_sku": "21606928_EA",
       "observed_at": "2026-11-07T17:45:48.630749+00:00",
@@ -1673,11 +2366,270 @@
       "check_status": "source_unavailable"
     },
     {
+      "name": "All-Butter Brioche Buns",
+      "retailer": "No Frills",
+      "retailer_sku": "21094319_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Whole Wheat Lebanese-Style Pita Bread",
+      "retailer": "No Frills",
+      "retailer_sku": "21509333_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "All-Butter Brioche Hot Dog Buns",
+      "retailer": "No Frills",
+      "retailer_sku": "21431172_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "All-Butter Brioche Loaf",
+      "retailer": "No Frills",
+      "retailer_sku": "21050280_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "All-Butter Chocolate Chip Brioche Loaf",
+      "retailer": "No Frills",
+      "retailer_sku": "21607172_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "All-Butter Chocolate-Filled Croissants",
+      "retailer": "No Frills",
+      "retailer_sku": "21545086_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "All-Butter Croissants",
+      "retailer": "No Frills",
+      "retailer_sku": "21545111_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "All-Butter Raspberry-Filled Croissants",
+      "retailer": "No Frills",
+      "retailer_sku": "21545122_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Banana Chocolate Chip Protein Muffins",
+      "retailer": "No Frills",
+      "retailer_sku": "21739396_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Basque Northern Spanish-Style Cheesecake",
+      "retailer": "No Frills",
+      "retailer_sku": "21609491_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Blueberry Protein Muffins",
+      "retailer": "No Frills",
+      "retailer_sku": "21739320_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Brioche Mini Rolls",
+      "retailer": "No Frills",
+      "retailer_sku": "21410779_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Brioche Sesame Buns",
+      "retailer": "No Frills",
+      "retailer_sku": "21576538_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Burrito Tortillas",
+      "retailer": "No Frills",
+      "retailer_sku": "21687355_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cherry-Topped New York-Style Cheesecake",
+      "retailer": "No Frills",
+      "retailer_sku": "20147627_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Chocolate Northern Spanish-Style Basque Cheesecake",
+      "retailer": "No Frills",
+      "retailer_sku": "21687935_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Ciabatta Sourdough Baguette",
+      "retailer": "No Frills",
+      "retailer_sku": "21752789_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Ciabatta Sourdough Pull-Aparts",
+      "retailer": "No Frills",
+      "retailer_sku": "21753026_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Double Decker New York-Style Cheesecake",
+      "retailer": "No Frills",
+      "retailer_sku": "20287738_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Garlic Parmesan Sourdough Pull-Aparts",
+      "retailer": "No Frills",
+      "retailer_sku": "21753071_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Green Olive Sourdough Focaccia",
+      "retailer": "No Frills",
+      "retailer_sku": "21753048_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Meringue Nests",
+      "retailer": "No Frills",
+      "retailer_sku": "21572454_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Original New York-Style Cheesecake",
+      "retailer": "No Frills",
+      "retailer_sku": "20318102_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Original Tortillas",
+      "retailer": "No Frills",
+      "retailer_sku": "20182857_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Our Ultimate Butter-Tart Pie with Canadian Cranberries",
+      "retailer": "No Frills",
+      "retailer_sku": "21747382_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Parmesan and Caramelized Onion Sourdough Focaccia",
+      "retailer": "No Frills",
+      "retailer_sku": "21753067_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Portuguese Custard Tarts",
+      "retailer": "No Frills",
+      "retailer_sku": "21686419_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Protein Tortillas",
+      "retailer": "No Frills",
+      "retailer_sku": "21447518_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Rosemary Sea Salt Sourdough Focaccia",
+      "retailer": "No Frills",
+      "retailer_sku": "21752897_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Spinach Tortillas",
+      "retailer": "No Frills",
+      "retailer_sku": "21686978_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Sticky Toffee Pudding",
+      "retailer": "No Frills",
+      "retailer_sku": "21714939_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "The Decadent® Chocolate Chip Muffins",
+      "retailer": "No Frills",
+      "retailer_sku": "21717326_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "The Decadent® Double Chocolate Muffins",
+      "retailer": "No Frills",
+      "retailer_sku": "21717562_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
       "name": "Traditional Naan Dippers Flatbreads Club Pack",
       "retailer": "No Frills",
       "retailer_sku": "20999700_EA",
       "observed_at": "2026-11-06T19:24:37.167941+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Wild Blueberry-Topped New York-Style Cheesecake",
+      "retailer": "No Frills",
+      "retailer_sku": "20305400_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Yorkshire Pudding",
+      "retailer": "No Frills",
+      "retailer_sku": "20025468_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Naan Garlic",
+      "retailer": "No Frills",
+      "retailer_sku": "21671463_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Santosh Naan Plain, 5-Pack",
+      "retailer": "No Frills",
+      "retailer_sku": "21671462_EA",
+      "observed_at": "2026-11-08T17:55:56.460806+00:00",
+      "check_status": "source_unavailable"
     },
     {
       "name": "All-Butter Brioche Buns",
@@ -2272,6 +3224,342 @@
       "retailer": "Real Canadian Superstore",
       "retailer_sku": "20039497001_EA",
       "observed_at": "2026-11-07T17:45:54.124017+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Baking Soda",
+      "retailer": "No Frills",
+      "retailer_sku": "20063491001_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Creamy Deluxe Frosting, Chocolate",
+      "retailer": "No Frills",
+      "retailer_sku": "20562641002_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Super Moist Cake Mix Chocolate Fudge",
+      "retailer": "No Frills",
+      "retailer_sku": "21547846_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Super Moist Cake Mix Devil's Food",
+      "retailer": "No Frills",
+      "retailer_sku": "21547838_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Super Moist Cake Mix French Vanilla",
+      "retailer": "No Frills",
+      "retailer_sku": "21547834_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Super Moist Cake Mix Rainbow Bits",
+      "retailer": "No Frills",
+      "retailer_sku": "21547837_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Whipped Frosting, Cream Cheese, Gluten Free",
+      "retailer": "No Frills",
+      "retailer_sku": "20562641007_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Desi Style Durum Flour",
+      "retailer": "No Frills",
+      "retailer_sku": "20657367_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Artificial Vanilla Extract",
+      "retailer": "No Frills",
+      "retailer_sku": "20010752_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Artificial Vanilla Extract",
+      "retailer": "No Frills",
+      "retailer_sku": "20188513_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "French Vanilla Ext Imitatn",
+      "retailer": "No Frills",
+      "retailer_sku": "20811296001_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "All Vegetables Shortening",
+      "retailer": "No Frills",
+      "retailer_sku": "21475300_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Pure Pumpkin",
+      "retailer": "No Frills",
+      "retailer_sku": "20022361_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "White All Purpose Flour",
+      "retailer": "No Frills",
+      "retailer_sku": "20148914001_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Gluten-Free Corn Starch",
+      "retailer": "No Frills",
+      "retailer_sku": "20006692_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Quick Rise Yeast",
+      "retailer": "No Frills",
+      "retailer_sku": "20102920001_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Chipits Milk Chocolate Chips",
+      "retailer": "No Frills",
+      "retailer_sku": "21452844_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Chipits Milk Chocolate Chips",
+      "retailer": "No Frills",
+      "retailer_sku": "21452942_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Chipits Pure Semi-Sweet Chocolate Chips",
+      "retailer": "No Frills",
+      "retailer_sku": "21452924_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Chipits Pure Semi-Sweet Chocolate Chips",
+      "retailer": "No Frills",
+      "retailer_sku": "21452943_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Chipits White Creme Baking Chips",
+      "retailer": "No Frills",
+      "retailer_sku": "21452927_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Chipits White Creme Baking Chips",
+      "retailer": "No Frills",
+      "retailer_sku": "21429102_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Pitted Dates",
+      "retailer": "No Frills",
+      "retailer_sku": "20126861_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Orange Jelly Powder Mix",
+      "retailer": "No Frills",
+      "retailer_sku": "20320059_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Vanilla Instant Pudding Mix",
+      "retailer": "No Frills",
+      "retailer_sku": "20307001001_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Brilliant Yellow Sugar",
+      "retailer": "No Frills",
+      "retailer_sku": "20016320_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Granulated Sugar",
+      "retailer": "No Frills",
+      "retailer_sku": "20145033_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Icing Sugar",
+      "retailer": "No Frills",
+      "retailer_sku": "20097340_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Natural Dark Brown Sugar",
+      "retailer": "No Frills",
+      "retailer_sku": "20169394_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Baking Powder",
+      "retailer": "No Frills",
+      "retailer_sku": "20124984_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "100% Pure Corn Starch",
+      "retailer": "No Frills",
+      "retailer_sku": "21020366_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "100% Pure Pumpkin",
+      "retailer": "No Frills",
+      "retailer_sku": "21667990_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "All-Purpose Flour",
+      "retailer": "No Frills",
+      "retailer_sku": "20013256_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Baking Powder",
+      "retailer": "No Frills",
+      "retailer_sku": "20163323_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cocoa Powder",
+      "retailer": "No Frills",
+      "retailer_sku": "21467906_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Large Marshmallows",
+      "retailer": "No Frills",
+      "retailer_sku": "20304672001_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Maraschino Cherries",
+      "retailer": "No Frills",
+      "retailer_sku": "20050959_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Mini Marshmallows",
+      "retailer": "No Frills",
+      "retailer_sku": "20304672002_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Multi-Coloured Mini Marshmallows",
+      "retailer": "No Frills",
+      "retailer_sku": "20311578001_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Pecan Pieces",
+      "retailer": "No Frills",
+      "retailer_sku": "20171622_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Semi-Sweet Chocolate Chips",
+      "retailer": "No Frills",
+      "retailer_sku": "21743791_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Unbleached All-Purpose Flour",
+      "retailer": "No Frills",
+      "retailer_sku": "21030802_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "The Decadent Semi-Sweet Chocolate Chips",
+      "retailer": "No Frills",
+      "retailer_sku": "20011473_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "The Decadent Semi-Sweet Mini Chocolate Chips",
+      "retailer": "No Frills",
+      "retailer_sku": "21069789_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "The Decadent® Dark Chocolate Chips",
+      "retailer": "No Frills",
+      "retailer_sku": "21575106_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "The Decadent® Milk Chocolate Chips",
+      "retailer": "No Frills",
+      "retailer_sku": "20430272_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Original All Purpose Flour",
+      "retailer": "No Frills",
+      "retailer_sku": "20134743_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Original All Purpose Flour",
+      "retailer": "No Frills",
+      "retailer_sku": "20039497001_EA",
+      "observed_at": "2026-11-08T17:55:59.245191+00:00",
       "check_status": "source_unavailable"
     },
     {
@@ -2916,6 +4204,314 @@
       "retailer": "Real Canadian Superstore",
       "retailer_sku": "20759241002_EA",
       "observed_at": "2026-11-07T17:46:01.600128+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Original Cheddar Cheese Slices",
+      "retailer": "No Frills",
+      "retailer_sku": "21252564_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Original Thick Cheddar Slices",
+      "retailer": "No Frills",
+      "retailer_sku": "21278710_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Malai Paneer 20% M.F.",
+      "retailer": "No Frills",
+      "retailer_sku": "20283164_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Marble Cheese Slices",
+      "retailer": "No Frills",
+      "retailer_sku": "21290705_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Medium Cheddar Cheese Slices",
+      "retailer": "No Frills",
+      "retailer_sku": "21290684_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Tex Mex Shredded Cheese",
+      "retailer": "No Frills",
+      "retailer_sku": "21290616_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Nordica Cottage Cheese, 2%",
+      "retailer": "No Frills",
+      "retailer_sku": "20319458001_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Nordica Cottage Cheese, Creamed 4%",
+      "retailer": "No Frills",
+      "retailer_sku": "20319458002_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Grated Parmesan Cheese",
+      "retailer": "No Frills",
+      "retailer_sku": "21528135_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Original Slices",
+      "retailer": "No Frills",
+      "retailer_sku": "21188654_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Original Thick Slices",
+      "retailer": "No Frills",
+      "retailer_sku": "21189807_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Paneer",
+      "retailer": "No Frills",
+      "retailer_sku": "21286158_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "1% M.F. Light Cottage Cheese",
+      "retailer": "No Frills",
+      "retailer_sku": "20183991001_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "2% M.F. Cottage Cheese ",
+      "retailer": "No Frills",
+      "retailer_sku": "20823988_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cottage Cheese",
+      "retailer": "No Frills",
+      "retailer_sku": "20183991002_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cream Cheese Spread",
+      "retailer": "No Frills",
+      "retailer_sku": "21036106_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Marble Cheddar Cheese Slices",
+      "retailer": "No Frills",
+      "retailer_sku": "21614277_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Marble Farmer's Cheese",
+      "retailer": "No Frills",
+      "retailer_sku": "21289745_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Marble Farmer's Cheese",
+      "retailer": "No Frills",
+      "retailer_sku": "20975773_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Nacho Shredded Cheese Blend",
+      "retailer": "No Frills",
+      "retailer_sku": "21082795_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Old Cheddar Cheese",
+      "retailer": "No Frills",
+      "retailer_sku": "21289751_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Old Cheddar Cheese",
+      "retailer": "No Frills",
+      "retailer_sku": "20975873_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Pasteurized Cream Cheese",
+      "retailer": "No Frills",
+      "retailer_sku": "20308105001_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Pasteurized Light Cream Cheese Spread",
+      "retailer": "No Frills",
+      "retailer_sku": "20308105002_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Pizza Mozzarella Cheese",
+      "retailer": "No Frills",
+      "retailer_sku": "21289761_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Pizza Mozzarella Cheese",
+      "retailer": "No Frills",
+      "retailer_sku": "20975887_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Shredded Farmer's Marble Cheese",
+      "retailer": "No Frills",
+      "retailer_sku": "21200684_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Shredded Mozzarella",
+      "retailer": "No Frills",
+      "retailer_sku": "21082491_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Herb & Garlic Cream Cheese Product",
+      "retailer": "No Frills",
+      "retailer_sku": "20866924007_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Herb & Garlic Cream Cheese Product",
+      "retailer": "No Frills",
+      "retailer_sku": "20866929001_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Light Cream Cheese Product",
+      "retailer": "No Frills",
+      "retailer_sku": "20866924005_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Original Brick Cream Cheese",
+      "retailer": "No Frills",
+      "retailer_sku": "20641267_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Original Cream Cheese Product",
+      "retailer": "No Frills",
+      "retailer_sku": "20866924010_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Original Cream Cheese Product",
+      "retailer": "No Frills",
+      "retailer_sku": "20866929002_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Whipped Chives Cream Cheese Product",
+      "retailer": "No Frills",
+      "retailer_sku": "20866816001_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Whipped Original Cream Cheese Product",
+      "retailer": "No Frills",
+      "retailer_sku": "20866816002_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Extra Old White Cheddar",
+      "retailer": "No Frills",
+      "retailer_sku": "21289689_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Lactose Free Marble Cheddar ",
+      "retailer": "No Frills",
+      "retailer_sku": "21289664_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Parmesan Shredded Cheese",
+      "retailer": "No Frills",
+      "retailer_sku": "21203933_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Pizza Mozzarella Shredded Cheese",
+      "retailer": "No Frills",
+      "retailer_sku": "21060201_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Tex Mex Shredded Cheese Blend",
+      "retailer": "No Frills",
+      "retailer_sku": "21060207_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Triple Cheddar Shredded Cheese Blend",
+      "retailer": "No Frills",
+      "retailer_sku": "21060183_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Chef Collection Mozzarellissima Pizza Mozzarella Cheese",
+      "retailer": "No Frills",
+      "retailer_sku": "21023058_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Mozzarellissima Pizza Mozzarella Cheese",
+      "retailer": "No Frills",
+      "retailer_sku": "20759241002_EA",
+      "observed_at": "2026-11-08T17:56:01.661018+00:00",
       "check_status": "source_unavailable"
     },
     {
@@ -3563,11 +5159,340 @@
       "check_status": "source_unavailable"
     },
     {
+      "name": "Bold Original BBQ Sauce",
+      "retailer": "No Frills",
+      "retailer_sku": "20547834005_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Brown Gravy Mix",
+      "retailer": "No Frills",
+      "retailer_sku": "20302816001_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Brown Gravy Mix Less Salt",
+      "retailer": "No Frills",
+      "retailer_sku": "20302816005_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Brown Gravy Mix, Less Salt",
+      "retailer": "No Frills",
+      "retailer_sku": "20695762002_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Chicken Gravy Mix",
+      "retailer": "No Frills",
+      "retailer_sku": "20302816002_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Turkey Gravy Mix",
+      "retailer": "No Frills",
+      "retailer_sku": "20302816004_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Hot Sauce",
+      "retailer": "No Frills",
+      "retailer_sku": "20187632001_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Classic Yellow Prepared Mustard",
+      "retailer": "No Frills",
+      "retailer_sku": "20170862_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Original Dijon Prepared Mustard",
+      "retailer": "No Frills",
+      "retailer_sku": "20318504001_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Tomato Ketchup",
+      "retailer": "No Frills",
+      "retailer_sku": "20835951_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Yellow Mustard",
+      "retailer": "No Frills",
+      "retailer_sku": "20083238_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Condiment Pack",
+      "retailer": "No Frills",
+      "retailer_sku": "20552158_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Tomato Ketchup",
+      "retailer": "No Frills",
+      "retailer_sku": "20069080_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Tomato Ketchup",
+      "retailer": "No Frills",
+      "retailer_sku": "20110556_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Tomato Ketchup",
+      "retailer": "No Frills",
+      "retailer_sku": "20128881_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Tomato Ketchup",
+      "retailer": "No Frills",
+      "retailer_sku": "20115102001_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Tomato Ketchup No Sugar Added",
+      "retailer": "No Frills",
+      "retailer_sku": "20762350_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Mayonnaise Type Dressing Condiment Light Half Fat",
+      "retailer": "No Frills",
+      "retailer_sku": "20618579002_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Olive Oil Mayonnaise",
+      "retailer": "No Frills",
+      "retailer_sku": "20627339002_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
       "name": "Real Mayonnaise",
       "retailer": "No Frills",
       "retailer_sku": "20618579001_EA",
       "observed_at": "2026-11-06T19:24:52.922302+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Real Mayonnaise ",
+      "retailer": "No Frills",
+      "retailer_sku": "20008233001_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Mayonnaise",
+      "retailer": "No Frills",
+      "retailer_sku": "21644268_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Balsamic Salad Dressing",
+      "retailer": "No Frills",
+      "retailer_sku": "21584146_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Creamy Caesar Salad Dressing",
+      "retailer": "No Frills",
+      "retailer_sku": "21584931_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Creamy Cucumber Salad Dressing",
+      "retailer": "No Frills",
+      "retailer_sku": "21584558_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Greek With Feta And Oregano Salad Dressing",
+      "retailer": "No Frills",
+      "retailer_sku": "21584917_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Original BBQ Sauce",
+      "retailer": "No Frills",
+      "retailer_sku": "20627619007_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Original Spread",
+      "retailer": "No Frills",
+      "retailer_sku": "20298681001_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Rancher's Choice Salad Dressing",
+      "retailer": "No Frills",
+      "retailer_sku": "21584850_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Worchestershire Sauce",
+      "retailer": "No Frills",
+      "retailer_sku": "20063633_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Hoisin Squeeze Sauce",
+      "retailer": "No Frills",
+      "retailer_sku": "20045048_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Panda Brand Oyster Sauce",
+      "retailer": "No Frills",
+      "retailer_sku": "20139600_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Caesar Croutons",
+      "retailer": "No Frills",
+      "retailer_sku": "21096223_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Fully Cooked Real Bacon Bits",
+      "retailer": "No Frills",
+      "retailer_sku": "20159354_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Light Soy Sauce",
+      "retailer": "No Frills",
+      "retailer_sku": "20324462001_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Mayonnaise",
+      "retailer": "No Frills",
+      "retailer_sku": "20627614002_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Ranch Dressing",
+      "retailer": "No Frills",
+      "retailer_sku": "20628489003_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Seasoned Croutons",
+      "retailer": "No Frills",
+      "retailer_sku": "21096226_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Soy Sauce",
+      "retailer": "No Frills",
+      "retailer_sku": "20324462002_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Sweet Green Relish",
+      "retailer": "No Frills",
+      "retailer_sku": "20174360002_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Garlic and Butter Flavour Sourdough Croutons",
+      "retailer": "No Frills",
+      "retailer_sku": "20796248001_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Tomato Ketchup",
+      "retailer": "No Frills",
+      "retailer_sku": "20090124_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Caesar Dressing",
+      "retailer": "No Frills",
+      "retailer_sku": "20314592_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Mighty Caesar Dressing",
+      "retailer": "No Frills",
+      "retailer_sku": "20316056_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Mighty Caesar Dressing",
+      "retailer": "No Frills",
+      "retailer_sku": "20556299_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Honey Garlic Marinade",
+      "retailer": "No Frills",
+      "retailer_sku": "20297368_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Plum Dipping Sauce",
+      "retailer": "No Frills",
+      "retailer_sku": "20984013_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Soya Sauce",
+      "retailer": "No Frills",
+      "retailer_sku": "21127164_EA",
+      "observed_at": "2026-11-08T17:56:04.525531+00:00",
+      "check_status": "source_unavailable"
     },
     {
       "name": "Bold Original BBQ Sauce",
@@ -4242,18 +6167,340 @@
       "check_status": "source_unavailable"
     },
     {
+      "name": "Barnums, Animal Crackers, Cookies, School Snacks",
+      "retailer": "No Frills",
+      "retailer_sku": "21585246_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Crunch, Sharp White Cheddar, Baked Snack Crackers",
+      "retailer": "No Frills",
+      "retailer_sku": "21214559_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Crunch, Zesty Cheddar Ranch Flavour, Baked Snack Crackers",
+      "retailer": "No Frills",
+      "retailer_sku": "21214557_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Original, Baked Snack Crackers",
+      "retailer": "No Frills",
+      "retailer_sku": "21214560_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
       "name": "SNAP’d Double Cheese Flavour Crackers",
       "retailer": "No Frills",
       "retailer_sku": "21451181_EA",
       "observed_at": "2026-11-07T17:46:22.541600+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "CHIPS AHOY! Chewy Chocolate Chip Cookies",
+      "retailer": "No Frills",
+      "retailer_sku": "21361512_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Chips Ahoy! Mini Chocolate Chip Cookie Snack Packs",
+      "retailer": "No Frills",
+      "retailer_sku": "21585155_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "CHIPS AHOY! Original Chocolate Chip Cookies, 1 Family Size Resealable",
+      "retailer": "No Frills",
+      "retailer_sku": "21014087_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "CHIPS AHOY! Original Chocolate Chip Cookies, Resealable Pack",
+      "retailer": "No Frills",
+      "retailer_sku": "21361508_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Chips Ahoy! Rainbow Chocolate Chip Cookies, 6 Mini Snak Pak",
+      "retailer": "No Frills",
+      "retailer_sku": "21644050_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Crispers All Dressed Flavour Crackers",
+      "retailer": "No Frills",
+      "retailer_sku": "21358333_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "OREO Double Stuf Sandwich Cookies",
+      "retailer": "No Frills",
+      "retailer_sku": "21358406_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "OREO Mini Original Chocolate Sandwich Cookies",
+      "retailer": "No Frills",
+      "retailer_sku": "21585047_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "OREO Original Chocolate Sandwich Cookies, Family Size",
+      "retailer": "No Frills",
+      "retailer_sku": "21520747_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "OREO, Mini Golden Cookies, Snack Pack, School Snacks",
+      "retailer": "No Frills",
+      "retailer_sku": "21586618_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "OREO, Mini Original Chocolate Sandwich Cookies",
+      "retailer": "No Frills",
+      "retailer_sku": "21584976_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "OREO, Original Chocolate Sandwich Cookies, Packable, snackable, and forever dunk-able",
+      "retailer": "No Frills",
+      "retailer_sku": "21358407_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Premium Plus Salted Tops Crackers, Canada's favourite soda cracker brand",
+      "retailer": "No Frills",
+      "retailer_sku": "21109004_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "RITZ Bits Sandwiches Cheese Flavoured Snack Crackers",
+      "retailer": "No Frills",
+      "retailer_sku": "21715271_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "RITZ Original Crackers, Rich and buttery tasting, flaky",
+      "retailer": "No Frills",
+      "retailer_sku": "21547034_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Ritz Snackwich Crackers, Cheese Flavour",
+      "retailer": "No Frills",
+      "retailer_sku": "20106374_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Toppables Crackers, Eat on its own or topped, Buttery tasting, flaky, melt in your mouth crackers",
+      "retailer": "No Frills",
+      "retailer_sku": "21618621_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "TRISCUIT Original Crackers",
+      "retailer": "No Frills",
+      "retailer_sku": "21030647_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "WHEAT THINS Multigrain Crackers, Baked with the goodness of wheat",
+      "retailer": "No Frills",
+      "retailer_sku": "21547048_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "WHEAT THINS Original Crackers, Baked with the goodness of wheat",
+      "retailer": "No Frills",
+      "retailer_sku": "21547049_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Wheat Thins Vegetable Thins Crackers",
+      "retailer": "No Frills",
+      "retailer_sku": "21547047_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Bear Paws Banana Bread Cookies",
+      "retailer": "No Frills",
+      "retailer_sku": "21713824_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Bear Paws Birthday Cake Cookies",
+      "retailer": "No Frills",
+      "retailer_sku": "21014107_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Bear Paws Brownie Cookies",
+      "retailer": "No Frills",
+      "retailer_sku": "21713276_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Bear Paws Chocolate Chip Cookies",
+      "retailer": "No Frills",
+      "retailer_sku": "21713321_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Bear Paws Rainbow Chip Cookies",
+      "retailer": "No Frills",
+      "retailer_sku": "21713381_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Breton Garden Vegetable Crackers",
+      "retailer": "No Frills",
+      "retailer_sku": "21520682_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Breton Original Crackers",
+      "retailer": "No Frills",
+      "retailer_sku": "21520666_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Celebration Butter Cookies Caramel Truffle",
+      "retailer": "No Frills",
+      "retailer_sku": "21680074_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Celebration Butter Cookies Dark Chocolate",
+      "retailer": "No Frills",
+      "retailer_sku": "21680147_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Celebration Butter Cookies Milk Chocolate",
+      "retailer": "No Frills",
+      "retailer_sku": "21680155_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Biscoff Biscuit",
+      "retailer": "No Frills",
+      "retailer_sku": "21058121_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cheese Rice Crackers",
+      "retailer": "No Frills",
+      "retailer_sku": "20297188001_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Chocolately Chip Cookies",
+      "retailer": "No Frills",
+      "retailer_sku": "20318678001_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Original Rice Crackers",
+      "retailer": "No Frills",
+      "retailer_sku": "20297188003_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Sesame Rice Crackers",
+      "retailer": "No Frills",
+      "retailer_sku": "20297188006_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
     },
     {
       "name": "BISCUITS, Golden Cookies Filled with Rich Hazelnut Spread, Pack of 20 Cookies",
       "retailer": "No Frills",
       "retailer_sku": "21571552_EA",
       "observed_at": "2026-11-07T17:46:22.541600+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Biscuit Original Glucose",
+      "retailer": "No Frills",
+      "retailer_sku": "20956495_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cheddar Crackers",
+      "retailer": "No Frills",
+      "retailer_sku": "20300320_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Goldfish Colours Baked Snack Crackers",
+      "retailer": "No Frills",
+      "retailer_sku": "20306994003_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Rosemary Crackers",
+      "retailer": "No Frills",
+      "retailer_sku": "20603888002_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Sea Salt Crackers",
+      "retailer": "No Frills",
+      "retailer_sku": "20603888003_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "The Decadent Chocolate Chip Cookie",
+      "retailer": "No Frills",
+      "retailer_sku": "20612257_EA",
+      "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "source_unavailable"
     },
     {
       "name": "Barnums, Animal Crackers, Cookies, School Snacks",
@@ -4925,49 +7172,329 @@
       "retailer": "No Frills",
       "retailer_sku": "20307968001_EA",
       "observed_at": "2026-11-06T19:25:13.688872+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cranberry Cocktail",
+      "retailer": "No Frills",
+      "retailer_sku": "21222633_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Fruit punch cocktail",
+      "retailer": "No Frills",
+      "retailer_sku": "20307424002_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Lemonade",
+      "retailer": "No Frills",
+      "retailer_sku": "21433566_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Peach Cocktail",
+      "retailer": "No Frills",
+      "retailer_sku": "20307424003_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Pure Apple Juice Low Acid",
+      "retailer": "No Frills",
+      "retailer_sku": "20307424001_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
     },
     {
       "name": "100% Natural Raspberry Iced Tea",
       "retailer": "No Frills",
       "retailer_sku": "21220750_EA",
       "observed_at": "2026-11-07T17:46:27.956904+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Low-Calorie Green Tea with Ginseng and Honey",
+      "retailer": "No Frills",
+      "retailer_sku": "21220749_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Lemon Iced Tea",
+      "retailer": "No Frills",
+      "retailer_sku": "20326699001_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Ginger Ale, Bottle",
+      "retailer": "No Frills",
+      "retailer_sku": "20311362001_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cola Bottle",
+      "retailer": "No Frills",
+      "retailer_sku": "20299050_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cola Bottle",
+      "retailer": "No Frills",
+      "retailer_sku": "20316026002_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cola Bottle",
+      "retailer": "No Frills",
+      "retailer_sku": "20827293_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cola Zero Sugar Bottle",
+      "retailer": "No Frills",
+      "retailer_sku": "20316026005_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cola Zero Sugar Bottle",
+      "retailer": "No Frills",
+      "retailer_sku": "20827604_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Diet Cola Bottle",
+      "retailer": "No Frills",
+      "retailer_sku": "20316026001_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Diet Cola Bottle",
+      "retailer": "No Frills",
+      "retailer_sku": "20827666_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Guava Nectar",
+      "retailer": "No Frills",
+      "retailer_sku": "20894117003_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Mango Nectar",
+      "retailer": "No Frills",
+      "retailer_sku": "20894117004_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Morning Sunshine Juice Blend",
+      "retailer": "No Frills",
+      "retailer_sku": "21595736_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Pineapple Nectar",
+      "retailer": "No Frills",
+      "retailer_sku": "21009822_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
     },
     {
       "name": "Soda Orange Bottles",
       "retailer": "No Frills",
       "retailer_sku": "21531921_EA",
       "observed_at": "2026-11-05T15:42:15.306571+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Punch Drink",
+      "retailer": "No Frills",
+      "retailer_sku": "20109062_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Fruit Juice Strawberry Passion Awareness Gable top",
+      "retailer": "No Frills",
+      "retailer_sku": "20347440001_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Tomato Juice",
+      "retailer": "No Frills",
+      "retailer_sku": "20025557_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Zero Sugar Fruit Punch Bottle",
+      "retailer": "No Frills",
+      "retailer_sku": "21434122_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
     },
     {
       "name": "Zero Sugar Lemonade Bottle",
       "retailer": "No Frills",
       "retailer_sku": "21434119_EA",
       "observed_at": "2026-11-07T17:46:27.956904+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Zero Sugar Mango Passion Bottle",
+      "retailer": "No Frills",
+      "retailer_sku": "21434100_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Zero Sugar Strawberry Lemonade Bottle",
+      "retailer": "No Frills",
+      "retailer_sku": "21592037_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Clamato, Original",
+      "retailer": "No Frills",
+      "retailer_sku": "20318955002_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Apple Beverage",
+      "retailer": "No Frills",
+      "retailer_sku": "21622813_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Apple Beverage",
+      "retailer": "No Frills",
+      "retailer_sku": "20320439006_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Peach Beverage",
+      "retailer": "No Frills",
+      "retailer_sku": "20320439005_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Pulp Free 100% Orange Juice Blend",
+      "retailer": "No Frills",
+      "retailer_sku": "21671461_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Apple Juice",
+      "retailer": "No Frills",
+      "retailer_sku": "20336722001_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Exotic Mango Fruit Juice",
+      "retailer": "No Frills",
+      "retailer_sku": "20336722010_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "HydraFruit Fruit Fusion Fruit Juice",
+      "retailer": "No Frills",
+      "retailer_sku": "21004477_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Orange Pure Breakfast Juice",
+      "retailer": "No Frills",
+      "retailer_sku": "20336722005_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Pineapple Juice",
+      "retailer": "No Frills",
+      "retailer_sku": "20336722008_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
     },
     {
       "name": "Smoothie Green Activ",
       "retailer": "No Frills",
       "retailer_sku": "21529938_EA",
       "observed_at": "2026-11-05T15:42:15.306571+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Smoothie Strawberry Banana",
       "retailer": "No Frills",
       "retailer_sku": "21529910_EA",
       "observed_at": "2026-11-05T15:42:15.306571+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Smoothie Tropical Mango",
       "retailer": "No Frills",
       "retailer_sku": "21529907_EA",
       "observed_at": "2026-11-05T15:42:15.306571+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Tropical Passion Fruit Juice",
+      "retailer": "No Frills",
+      "retailer_sku": "20336722014_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cranberry Cocktail",
+      "retailer": "No Frills",
+      "retailer_sku": "20300006008_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Diet Cranberry Juice",
+      "retailer": "No Frills",
+      "retailer_sku": "20300006003_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cola",
+      "retailer": "No Frills",
+      "retailer_sku": "20040201001_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cola",
+      "retailer": "No Frills",
+      "retailer_sku": "20296926002_EA",
+      "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "source_unavailable"
     },
     {
       "name": "Lemon Lime Soft Drink",
