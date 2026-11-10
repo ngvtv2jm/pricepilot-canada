@@ -1,8 +1,10 @@
 {
-  "completed_at": "2026-11-09T22:24:27.685868+00:00",
-  "products": 2450,
-  "cached": 2450,
-  "missing": 0,
-  "missing_ids": [],
+  "completed_at": "2026-11-10T19:45:15.815304+00:00",
+  "products": 2650,
+  "cached": 2649,
+  "missing": 1,
+  "missing_ids": [
+    "discovered-4e9ff0e628847145c681b356"
+  ],
   "failures": []
 }

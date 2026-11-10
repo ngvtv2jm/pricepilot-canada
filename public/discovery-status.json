@@ -1,12 +1,12 @@
 {
-  "started_at": "2026-11-09T22:21:06.021423+00:00",
-  "completed_at": "2026-11-09T22:23:33.088766+00:00",
-  "added": 250,
-  "duplicates_updated": 3394,
-  "conflicts_skipped": 12,
-  "products": 2450,
-  "observations": 4563,
-  "validated_observations": 11943,
+  "started_at": "2026-11-10T19:43:11.544213+00:00",
+  "completed_at": "2026-11-10T19:44:24.589306+00:00",
+  "added": 200,
+  "duplicates_updated": 1140,
+  "conflicts_skipped": 0,
+  "products": 2650,
+  "observations": 4770,
+  "validated_observations": 6132,
   "sources": [
     {
       "retailer": "Giant Tiger",
@@ -37,12 +37,6 @@
       "url": "https://www.gianttiger.com/collections/frozen/products.json?limit=250&page=5",
       "status": "ok",
       "validated": 43
-    },
-    {
-      "retailer": "Giant Tiger",
-      "url": "https://www.gianttiger.com/collections/frozen/products.json?limit=250&page=9",
-      "status": "unavailable",
-      "detail": "ValueError: No validated priced packages on this source page"
     },
     {
       "retailer": "Giant Tiger",
@@ -144,13 +138,7 @@
       "retailer": "Giant Tiger",
       "url": "https://www.gianttiger.com/collections/pantry/products.json?limit=250&page=8",
       "status": "ok",
-      "validated": 9
-    },
-    {
-      "retailer": "Giant Tiger",
-      "url": "https://www.gianttiger.com/collections/pantry/products.json?limit=250&page=9",
-      "status": "unavailable",
-      "detail": "ValueError: No validated priced packages on this source page"
+      "validated": 7
     },
     {
       "retailer": "Giant Tiger",
@@ -209,398 +197,368 @@
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/cereal-breakfast/c/28183",
-      "status": "ok",
-      "validated": 56
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/cereal-breakfast/c/28183?page=2",
-      "status": "ok",
-      "validated": 53
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/cereal-breakfast/c/28183?page=3",
-      "status": "ok",
-      "validated": 54
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/cereal-breakfast/c/28183?page=4",
-      "status": "ok",
-      "validated": 56
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/cereal-breakfast/c/28183?page=5",
-      "status": "ok",
-      "validated": 48
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/bakery/c/28002",
-      "status": "ok",
-      "validated": 60
-    },
-    {
-      "retailer": "Loblaws",
-      "url": "https://www.loblaws.ca/en/food/bakery/c/28002?page=4",
-      "status": "ok",
-      "validated": 60
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/bakery/c/28002?page=5",
-      "status": "ok",
-      "validated": 60
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/dairy-eggs/c/28003",
-      "status": "ok",
-      "validated": 135
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/dairy-eggs/c/28003?page=2",
-      "status": "ok",
-      "validated": 94
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/dairy-eggs/c/28003?page=3",
-      "status": "ok",
-      "validated": 99
-    },
-    {
-      "retailer": "Loblaws",
-      "url": "https://www.loblaws.ca/en/food/dairy-eggs/c/28003?page=4",
-      "status": "ok",
-      "validated": 130
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/dairy-eggs/c/28003?page=5",
-      "status": "ok",
-      "validated": 128
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/dairy-eggs/cheese/c/28225",
-      "status": "ok",
-      "validated": 53
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/dairy-eggs/cheese/c/28225?page=2",
-      "status": "ok",
-      "validated": 54
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/dairy-eggs/cheese/c/28225?page=3",
-      "status": "ok",
-      "validated": 56
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/dairy-eggs/cheese/c/28225?page=4",
-      "status": "ok",
-      "validated": 50
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/dairy-eggs/cheese/c/28225?page=5",
-      "status": "ok",
-      "validated": 48
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/dairy-eggs/milk-cream/c/28224",
-      "status": "ok",
-      "validated": 55
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/dairy-eggs/milk-cream/c/28224?page=2",
-      "status": "ok",
-      "validated": 54
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/dairy-eggs/milk-cream/c/28224?page=3",
-      "status": "ok",
-      "validated": 51
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/dairy-eggs/milk-cream/c/28224?page=4",
-      "status": "ok",
-      "validated": 48
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/dairy-eggs/milk-cream/c/28224?page=5",
-      "status": "ok",
-      "validated": 45
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/dairy-eggs/yogurt/c/28227",
-      "status": "ok",
-      "validated": 55
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/dairy-eggs/yogurt/c/28227?page=2",
-      "status": "ok",
-      "validated": 55
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/dairy-eggs/yogurt/c/28227?page=3",
-      "status": "ok",
-      "validated": 50
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/dairy-eggs/yogurt/c/28227?page=4",
-      "status": "ok",
-      "validated": 48
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/dairy-eggs/yogurt/c/28227?page=5",
-      "status": "ok",
-      "validated": 48
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/drinks/c/28004",
-      "status": "ok",
-      "validated": 157
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/drinks/c/28004?page=2",
-      "status": "ok",
-      "validated": 136
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/drinks/c/28004?page=3",
-      "status": "ok",
-      "validated": 135
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/drinks/c/28004?page=4",
-      "status": "ok",
-      "validated": 136
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/drinks/c/28004?page=5",
-      "status": "ok",
-      "validated": 133
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/frozen-food/c/28005",
-      "status": "ok",
-      "validated": 110
-    },
-    {
-      "retailer": "Loblaws",
-      "url": "https://www.loblaws.ca/en/food/frozen-food/c/28005?page=4",
-      "status": "ok",
-      "validated": 110
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/frozen-food/c/28005?page=5",
-      "status": "ok",
-      "validated": 110
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/pantry/baking-essentials/c/28186",
-      "status": "ok",
-      "validated": 54
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/pantry/baking-essentials/c/28186?page=2",
-      "status": "ok",
-      "validated": 48
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/pantry/baking-essentials/c/28186?page=3",
-      "status": "ok",
-      "validated": 48
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/pantry/baking-essentials/c/28186?page=4",
-      "status": "ok",
-      "validated": 48
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/pantry/baking-essentials/c/28186?page=5",
-      "status": "ok",
-      "validated": 47
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/pantry/c/28006",
-      "status": "ok",
-      "validated": 133
-    },
-    {
-      "retailer": "Loblaws",
-      "url": "https://www.loblaws.ca/en/food/pantry/c/28006?page=4",
-      "status": "ok",
-      "validated": 133
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/pantry/c/28006?page=5",
-      "status": "ok",
-      "validated": 133
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/pantry/condiments/c/28243",
-      "status": "ok",
-      "validated": 56
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/pantry/condiments/c/28243?page=2",
-      "status": "ok",
-      "validated": 56
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/pantry/condiments/c/28243?page=3",
-      "status": "ok",
-      "validated": 56
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/pantry/condiments/c/28243?page=4",
-      "status": "ok",
-      "validated": 55
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/pantry/condiments/c/28243?page=5",
-      "status": "ok",
-      "validated": 48
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/pantry/crackers-cookies/c/28242",
-      "status": "ok",
-      "validated": 55
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/pantry/crackers-cookies/c/28242?page=2",
-      "status": "ok",
-      "validated": 48
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/pantry/crackers-cookies/c/28242?page=3",
-      "status": "ok",
-      "validated": 48
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/pantry/crackers-cookies/c/28242?page=4",
-      "status": "ok",
-      "validated": 48
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/pantry/crackers-cookies/c/28242?page=5",
-      "status": "ok",
-      "validated": 48
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/pantry/pasta-rice-beans/c/28246",
-      "status": "ok",
-      "validated": 53
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/pantry/pasta-rice-beans/c/28246?page=2",
-      "status": "ok",
-      "validated": 56
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/pantry/pasta-rice-beans/c/28246?page=3",
-      "status": "ok",
-      "validated": 49
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/pantry/pasta-rice-beans/c/28246?page=4",
-      "status": "ok",
-      "validated": 48
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/pantry/pasta-rice-beans/c/28246?page=5",
-      "status": "ok",
-      "validated": 48
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/snacks-chips-candy/c/57025",
-      "status": "ok",
-      "validated": 83
-    },
-    {
-      "retailer": "Loblaws",
-      "url": "https://www.loblaws.ca/en/food/snacks-chips-candy/c/57025?page=4",
-      "status": "ok",
-      "validated": 83
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/snacks-chips-candy/c/57025?page=5",
-      "status": "ok",
-      "validated": 83
+      "status": "unavailable",
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/bakery/c/28002",
       "status": "ok",
-      "validated": 126
+      "validated": 131
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/bakery/c/28002?page=2",
       "status": "ok",
-      "validated": 84
+      "validated": 87
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/bakery/c/28002?page=3",
       "status": "ok",
-      "validated": 108
+      "validated": 110
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/bakery/c/28002?page=4",
       "status": "ok",
-      "validated": 66
+      "validated": 61
     },
     {
       "retailer": "No Frills",
@@ -616,21 +574,15 @@
     },
     {
       "retailer": "No Frills",
-      "url": "https://www.nofrills.ca/en/food/dairy-eggs/c/28003?page=4",
-      "status": "ok",
-      "validated": 105
-    },
-    {
-      "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/dairy-eggs/c/28003?page=5",
       "status": "ok",
-      "validated": 53
+      "validated": 54
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/dairy-eggs/cheese/c/28225",
       "status": "ok",
-      "validated": 54
+      "validated": 53
     },
     {
       "retailer": "No Frills",
@@ -648,7 +600,13 @@
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/dairy-eggs/cheese/c/28225?page=4",
       "status": "ok",
-      "validated": 50
+      "validated": 53
+    },
+    {
+      "retailer": "No Frills",
+      "url": "https://www.nofrills.ca/en/food/dairy-eggs/cheese/c/28225?page=5",
+      "status": "ok",
+      "validated": 24
     },
     {
       "retailer": "No Frills",
@@ -660,313 +618,355 @@
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/dairy-eggs/milk-cream/c/28224?page=2",
       "status": "ok",
-      "validated": 52
+      "validated": 50
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/dairy-eggs/milk-cream/c/28224?page=3",
       "status": "ok",
-      "validated": 49
+      "validated": 52
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/dairy-eggs/milk-cream/c/28224?page=4",
       "status": "ok",
-      "validated": 48
+      "validated": 50
+    },
+    {
+      "retailer": "No Frills",
+      "url": "https://www.nofrills.ca/en/food/dairy-eggs/milk-cream/c/28224?page=5",
+      "status": "ok",
+      "validated": 8
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/dairy-eggs/yogurt/c/28227",
-      "status": "ok",
-      "validated": 55
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/dairy-eggs/yogurt/c/28227?page=2",
-      "status": "ok",
-      "validated": 55
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/dairy-eggs/yogurt/c/28227?page=3",
-      "status": "ok",
-      "validated": 52
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/dairy-eggs/yogurt/c/28227?page=4",
-      "status": "ok",
-      "validated": 48
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/dairy-eggs/yogurt/c/28227?page=5",
-      "status": "ok",
-      "validated": 48
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/drinks/c/28004",
-      "status": "ok",
-      "validated": 157
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/drinks/c/28004?page=2",
-      "status": "ok",
-      "validated": 142
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/drinks/c/28004?page=3",
-      "status": "ok",
-      "validated": 142
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/drinks/c/28004?page=4",
-      "status": "ok",
-      "validated": 140
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/drinks/c/28004?page=5",
-      "status": "ok",
-      "validated": 132
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/frozen-food/c/28005",
-      "status": "ok",
-      "validated": 159
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/frozen-food/c/28005?page=2",
-      "status": "ok",
-      "validated": 139
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/frozen-food/c/28005?page=3",
-      "status": "ok",
-      "validated": 94
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/frozen-food/c/28005?page=4",
-      "status": "ok",
-      "validated": 95
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/frozen-food/c/28005?page=5",
-      "status": "ok",
-      "validated": 139
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/baking-essentials/c/28186",
-      "status": "ok",
-      "validated": 55
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/baking-essentials/c/28186?page=2",
-      "status": "ok",
-      "validated": 48
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/baking-essentials/c/28186?page=3",
-      "status": "ok",
-      "validated": 48
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/baking-essentials/c/28186?page=4",
-      "status": "ok",
-      "validated": 48
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/baking-essentials/c/28186?page=5",
-      "status": "ok",
-      "validated": 48
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/c/28006",
-      "status": "ok",
-      "validated": 95
-    },
-    {
-      "retailer": "No Frills",
-      "url": "https://www.nofrills.ca/en/food/pantry/c/28006?page=4",
-      "status": "ok",
-      "validated": 95
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/c/28006?page=5",
-      "status": "ok",
-      "validated": 95
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/cereal-breakfast/c/28183",
-      "status": "ok",
-      "validated": 56
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/cereal-breakfast/c/28183?page=2",
-      "status": "ok",
-      "validated": 53
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/cereal-breakfast/c/28183?page=3",
-      "status": "ok",
-      "validated": 54
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/cereal-breakfast/c/28183?page=4",
-      "status": "ok",
-      "validated": 56
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/cereal-breakfast/c/28183?page=5",
-      "status": "ok",
-      "validated": 44
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/condiments/c/28243",
-      "status": "ok",
-      "validated": 56
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/condiments/c/28243?page=2",
-      "status": "ok",
-      "validated": 56
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/condiments/c/28243?page=3",
-      "status": "ok",
-      "validated": 56
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/condiments/c/28243?page=4",
-      "status": "ok",
-      "validated": 56
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/condiments/c/28243?page=5",
-      "status": "ok",
-      "validated": 48
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/crackers-cookies/c/28242",
-      "status": "ok",
-      "validated": 55
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/crackers-cookies/c/28242?page=2",
-      "status": "ok",
-      "validated": 51
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/crackers-cookies/c/28242?page=3",
-      "status": "ok",
-      "validated": 48
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/crackers-cookies/c/28242?page=4",
-      "status": "ok",
-      "validated": 48
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/crackers-cookies/c/28242?page=5",
-      "status": "ok",
-      "validated": 48
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/pasta-rice-beans/c/28246",
-      "status": "ok",
-      "validated": 52
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/pasta-rice-beans/c/28246?page=2",
-      "status": "ok",
-      "validated": 56
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/pasta-rice-beans/c/28246?page=3",
-      "status": "ok",
-      "validated": 48
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/pasta-rice-beans/c/28246?page=4",
-      "status": "ok",
-      "validated": 48
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
+    },
+    {
+      "retailer": "No Frills",
+      "url": "https://www.nofrills.ca/en/food/pantry/pasta-rice-beans/c/28246?page=5",
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/snacks-chips-candy/c/57025",
-      "status": "ok",
-      "validated": 170
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/snacks-chips-candy/c/57025?page=2",
-      "status": "ok",
-      "validated": 139
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/snacks-chips-candy/c/57025?page=3",
-      "status": "ok",
-      "validated": 137
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/snacks-chips-candy/c/57025?page=4",
-      "status": "ok",
-      "validated": 138
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/snacks-chips-candy/c/57025?page=5",
-      "status": "ok",
-      "validated": 138
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "Real Canadian Superstore",
       "url": "https://www.realcanadiansuperstore.ca/en/food/bakery/c/28002",
-      "status": "ok",
-      "validated": 64
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     },
     {
       "retailer": "Real Canadian Superstore",
       "url": "https://www.realcanadiansuperstore.ca/en/food/bakery/c/28002?page=4",
-      "status": "ok",
-      "validated": 64
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
+    },
+    {
+      "retailer": "Real Canadian Superstore",
+      "url": "https://www.realcanadiansuperstore.ca/en/food/bakery/c/28002?page=5",
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
+    },
+    {
+      "retailer": "Real Canadian Superstore",
+      "url": "https://www.realcanadiansuperstore.ca/en/food/dairy-eggs/c/28003",
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
+    },
+    {
+      "retailer": "Real Canadian Superstore",
+      "url": "https://www.realcanadiansuperstore.ca/en/food/dairy-eggs/c/28003?page=2",
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
+    },
+    {
+      "retailer": "Real Canadian Superstore",
+      "url": "https://www.realcanadiansuperstore.ca/en/food/dairy-eggs/c/28003?page=3",
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
+    },
+    {
+      "retailer": "Real Canadian Superstore",
+      "url": "https://www.realcanadiansuperstore.ca/en/food/dairy-eggs/c/28003?page=5",
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
+    },
+    {
+      "retailer": "Real Canadian Superstore",
+      "url": "https://www.realcanadiansuperstore.ca/en/food/dairy-eggs/cheese/c/28225",
+      "status": "unavailable",
+      "detail": "ValueError: Structured product data unavailable"
     }
   ]
 }
