@@ -1,10 +1,10 @@
 {
-  "started_at": "2026-11-10T19:43:10.730985+00:00",
-  "completed_at": "2026-11-10T19:44:35.842701+00:00",
+  "started_at": "2026-11-11T19:35:02.224877+00:00",
+  "completed_at": "2026-11-11T19:36:33.209339+00:00",
   "total": 1800,
-  "verified": 1748,
-  "changed": 31,
-  "unverified": 52,
+  "verified": 1749,
+  "changed": 14,
+  "unverified": 51,
   "unverified_products": [
     {
       "name": "Instant Oatmeal 3-Flavour Variety Family Size, 18 packets",
@@ -88,20 +88,6 @@
       "retailer": "Loblaws",
       "retailer_sku": "21671462_EA",
       "observed_at": "2026-11-07T17:45:53.898445+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "Artificial Vanilla Extract",
-      "retailer": "No Frills",
-      "retailer_sku": "20188513_EA",
-      "observed_at": "2026-11-08T17:55:59.245191+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "French Vanilla Ext Imitatn",
-      "retailer": "No Frills",
-      "retailer_sku": "20811296001_EA",
-      "observed_at": "2026-11-08T17:55:59.245191+00:00",
       "check_status": "needs_review"
     },
     {
@@ -235,6 +221,13 @@
       "retailer": "No Frills",
       "retailer_sku": "21592037_EA",
       "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "HydraFruit Fruit Fusion Fruit Juice",
+      "retailer": "No Frills",
+      "retailer_sku": "21004477_EA",
+      "observed_at": "2026-11-10T19:43:56.102214+00:00",
       "check_status": "needs_review"
     },
     {
