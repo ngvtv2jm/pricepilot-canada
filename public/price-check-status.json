@@ -1,10 +1,10 @@
 {
-  "started_at": "2026-11-13T19:40:50.007126+00:00",
-  "completed_at": "2026-11-13T19:42:58.626644+00:00",
+  "started_at": "2026-11-14T18:00:01.849355+00:00",
+  "completed_at": "2026-11-14T18:01:32.355934+00:00",
   "total": 1800,
-  "verified": 1713,
-  "changed": 394,
-  "unverified": 87,
+  "verified": 1750,
+  "changed": 8,
+  "unverified": 50,
   "unverified_products": [
     {
       "name": "Instant Oatmeal 3-Flavour Variety Family Size, 18 packets",
@@ -28,269 +28,31 @@
       "check_status": "needs_review"
     },
     {
-      "name": "All-Butter Brioche Buns",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21094319_EA",
-      "observed_at": "2026-11-11T19:35:17.406042+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "All-Butter Brioche Hot Dog Buns",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21431172_EA",
-      "observed_at": "2026-11-11T19:35:17.406042+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "All-Butter Brioche Loaf",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21050280_EA",
-      "observed_at": "2026-11-11T19:35:17.406042+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "All-Butter Chocolate Chip Brioche Loaf",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21607172_EA",
-      "observed_at": "2026-11-11T19:35:17.406042+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "All-Butter Chocolate-Filled Croissants",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21545086_EA",
-      "observed_at": "2026-11-11T19:35:17.406042+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "All-Butter Croissants",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21545111_EA",
-      "observed_at": "2026-11-11T19:35:17.406042+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "All-Butter Raspberry-Filled Croissants",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21545122_EA",
-      "observed_at": "2026-11-11T19:35:17.406042+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Banana Chocolate Chip Protein Muffins",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21739396_EA",
-      "observed_at": "2026-11-11T19:35:17.406042+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Basque Northern Spanish-Style Cheesecake",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21609491_EA",
-      "observed_at": "2026-11-11T19:35:17.406042+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Blueberry Protein Muffins",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21739320_EA",
-      "observed_at": "2026-11-11T19:35:17.406042+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Brioche Mini Rolls",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21410779_EA",
-      "observed_at": "2026-11-11T19:35:17.406042+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Brioche Sesame Buns",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21576538_EA",
-      "observed_at": "2026-11-11T19:35:17.406042+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Burrito Tortillas",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21687355_EA",
-      "observed_at": "2026-11-11T19:35:17.406042+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Cherry-Topped New York-Style Cheesecake",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "20147627_EA",
-      "observed_at": "2026-11-11T19:35:17.406042+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Chocolate Northern Spanish-Style Basque Cheesecake",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21687935_EA",
-      "observed_at": "2026-11-11T19:35:17.406042+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Ciabatta Sourdough Baguette",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21752789_EA",
-      "observed_at": "2026-11-11T19:35:17.406042+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Ciabatta Sourdough Pull-Aparts",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21753026_EA",
-      "observed_at": "2026-11-11T19:35:17.406042+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Double Decker New York-Style Cheesecake",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "20287738_EA",
-      "observed_at": "2026-11-11T19:35:17.406042+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Garlic Parmesan Sourdough Pull-Aparts",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21753071_EA",
-      "observed_at": "2026-11-11T19:35:17.406042+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Green Olive Sourdough Focaccia",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21753048_EA",
-      "observed_at": "2026-11-11T19:35:17.406042+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Meringue Nests",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21572454_EA",
-      "observed_at": "2026-11-11T19:35:17.406042+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Original New York-Style Cheesecake",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "20318102_EA",
-      "observed_at": "2026-11-11T19:35:17.406042+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
       "name": "Original Tortillas",
       "retailer": "Real Canadian Superstore",
       "retailer_sku": "20182857_EA",
       "observed_at": "2026-11-07T17:45:49.130884+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Our Ultimate Butter-Tart Pie with Canadian Cranberries",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21747382_EA",
-      "observed_at": "2026-11-11T19:35:17.406042+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Parmesan and Caramelized Onion Sourdough Focaccia",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21753067_EA",
-      "observed_at": "2026-11-11T19:35:17.406042+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Portuguese Custard Tarts",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21686419_EA",
-      "observed_at": "2026-11-11T19:35:17.406042+00:00",
-      "check_status": "source_unavailable"
+      "check_status": "needs_review"
     },
     {
       "name": "Protein Tortillas",
       "retailer": "Real Canadian Superstore",
       "retailer_sku": "21447518_EA",
       "observed_at": "2026-11-07T17:45:49.130884+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Rosemary Sea Salt Sourdough Focaccia",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21752897_EA",
-      "observed_at": "2026-11-11T19:35:17.406042+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Spinach Tortillas",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21686978_EA",
-      "observed_at": "2026-11-11T19:35:17.406042+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Sticky Toffee Pudding",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21714939_EA",
-      "observed_at": "2026-11-11T19:35:17.406042+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "The Decadent® Chocolate Chip Muffins",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21717326_EA",
-      "observed_at": "2026-11-11T19:35:17.406042+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "The Decadent® Double Chocolate Muffins",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21717562_EA",
-      "observed_at": "2026-11-11T19:35:17.406042+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Traditional Naan Dippers Flatbreads Club Pack",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "20999700_EA",
-      "observed_at": "2026-11-11T19:35:17.406042+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Wild Blueberry-Topped New York-Style Cheesecake",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "20305400_EA",
-      "observed_at": "2026-11-11T19:35:17.406042+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Yorkshire Pudding",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "20025468_EA",
-      "observed_at": "2026-11-11T19:35:17.406042+00:00",
-      "check_status": "source_unavailable"
+      "check_status": "needs_review"
     },
     {
       "name": "Naan Garlic",
       "retailer": "Real Canadian Superstore",
       "retailer_sku": "21671463_EA",
       "observed_at": "2026-11-07T17:45:49.130884+00:00",
-      "check_status": "source_unavailable"
+      "check_status": "needs_review"
     },
     {
       "name": "Santosh Naan Plain, 5-Pack",
       "retailer": "Real Canadian Superstore",
       "retailer_sku": "21671462_EA",
       "observed_at": "2026-11-07T17:45:49.130884+00:00",
-      "check_status": "source_unavailable"
-    },
-    {
-      "name": "Traditional Naan Dippers Flatbreads Club Pack",
-      "retailer": "No Frills",
-      "retailer_sku": "20999700_EA",
-      "observed_at": "2026-11-06T19:24:37.167941+00:00",
       "check_status": "needs_review"
     },
     {
@@ -322,24 +84,10 @@
       "check_status": "needs_review"
     },
     {
-      "name": "Chipits White Creme Baking Chips",
+      "name": "Brown Gravy Mix, Less Salt",
       "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21429102_EA",
-      "observed_at": "2026-11-11T19:35:21.229133+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "Chipits White Creme Baking Chips",
-      "retailer": "No Frills",
-      "retailer_sku": "21429102_EA",
-      "observed_at": "2026-11-11T19:35:21.819155+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "Chipits White Creme Baking Chips",
-      "retailer": "Loblaws",
-      "retailer_sku": "21429102_EA",
-      "observed_at": "2026-11-11T19:35:24.186862+00:00",
+      "retailer_sku": "20695762002_EA",
+      "observed_at": "2026-11-13T19:41:36.361804+00:00",
       "check_status": "needs_review"
     },
     {
@@ -350,10 +98,24 @@
       "check_status": "needs_review"
     },
     {
+      "name": "Brown Gravy Mix, Less Salt",
+      "retailer": "No Frills",
+      "retailer_sku": "20695762002_EA",
+      "observed_at": "2026-11-13T19:41:38.960088+00:00",
+      "check_status": "needs_review"
+    },
+    {
       "name": "Real Mayonnaise",
       "retailer": "No Frills",
       "retailer_sku": "20618579001_EA",
       "observed_at": "2026-11-06T19:24:52.922302+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Brown Gravy Mix, Less Salt",
+      "retailer": "Loblaws",
+      "retailer_sku": "20695762002_EA",
+      "observed_at": "2026-11-13T19:41:48.022356+00:00",
       "check_status": "needs_review"
     },
     {
@@ -389,20 +151,6 @@
       "retailer": "Real Canadian Superstore",
       "retailer_sku": "20307968001_EA",
       "observed_at": "2026-11-06T19:25:13.039030+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "Cranberry Cocktail",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21222633_EA",
-      "observed_at": "2026-11-07T17:46:23.459060+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "Lemonade",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21433566_EA",
-      "observed_at": "2026-11-07T17:46:23.459060+00:00",
       "check_status": "needs_review"
     },
     {
@@ -455,20 +203,6 @@
       "check_status": "needs_review"
     },
     {
-      "name": "Cranberry Cocktail",
-      "retailer": "No Frills",
-      "retailer_sku": "21222633_EA",
-      "observed_at": "2026-11-08T17:56:09.391097+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "Lemonade",
-      "retailer": "No Frills",
-      "retailer_sku": "21433566_EA",
-      "observed_at": "2026-11-08T17:56:09.391097+00:00",
-      "check_status": "needs_review"
-    },
-    {
       "name": "Soda Orange Bottles",
       "retailer": "No Frills",
       "retailer_sku": "21531921_EA",
@@ -480,6 +214,13 @@
       "retailer": "No Frills",
       "retailer_sku": "21592037_EA",
       "observed_at": "2026-11-08T17:56:09.391097+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Apple Beverage",
+      "retailer": "No Frills",
+      "retailer_sku": "21622813_EA",
+      "observed_at": "2026-11-13T19:42:01.882055+00:00",
       "check_status": "needs_review"
     },
     {
@@ -511,17 +252,10 @@
       "check_status": "needs_review"
     },
     {
-      "name": "Cranberry Cocktail",
+      "name": "Morning Sunshine Juice Blend",
       "retailer": "Loblaws",
-      "retailer_sku": "21222633_EA",
-      "observed_at": "2026-11-07T17:46:28.832609+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "Lemonade",
-      "retailer": "Loblaws",
-      "retailer_sku": "21433566_EA",
-      "observed_at": "2026-11-07T17:46:28.832609+00:00",
+      "retailer_sku": "21595736_EA",
+      "observed_at": "2026-11-13T19:42:07.647294+00:00",
       "check_status": "needs_review"
     },
     {
@@ -613,6 +347,13 @@
       "retailer": "Loblaws",
       "retailer_sku": "21099689_EA",
       "observed_at": "2026-11-07T17:46:49.738120+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Sea Salt and Cracked Pepper Flavour Kettle Cooked Potato Chips",
+      "retailer": "No Frills",
+      "retailer_sku": "21422910_EA",
+      "observed_at": "2026-11-13T19:42:51.782891+00:00",
       "check_status": "needs_review"
     }
   ]
