@@ -1,10 +1,10 @@
 {
-  "started_at": "2026-11-14T18:00:01.849355+00:00",
-  "completed_at": "2026-11-14T18:01:32.355934+00:00",
+  "started_at": "2026-11-15T18:50:36.810845+00:00",
+  "completed_at": "2026-11-15T18:52:28.707711+00:00",
   "total": 1800,
-  "verified": 1750,
-  "changed": 8,
-  "unverified": 50,
+  "verified": 1746,
+  "changed": 0,
+  "unverified": 54,
   "unverified_products": [
     {
       "name": "Instant Oatmeal 3-Flavour Variety Family Size, 18 packets",
@@ -126,6 +126,13 @@
       "check_status": "needs_review"
     },
     {
+      "name": "BISCUITS, Golden Cookies Filled with Rich Hazelnut Spread, Pack of 20 Cookies",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21571552_EA",
+      "observed_at": "2026-11-14T18:00:45.296423+00:00",
+      "check_status": "needs_review"
+    },
+    {
       "name": "Cheddar Crackers",
       "retailer": "Real Canadian Superstore",
       "retailer_sku": "20300320_EA",
@@ -133,10 +140,24 @@
       "check_status": "needs_review"
     },
     {
+      "name": "BISCUITS, Golden Cookies Filled with Rich Hazelnut Spread, Pack of 20 Cookies",
+      "retailer": "No Frills",
+      "retailer_sku": "21571552_EA",
+      "observed_at": "2026-11-14T18:00:46.872349+00:00",
+      "check_status": "needs_review"
+    },
+    {
       "name": "Cheddar Crackers",
       "retailer": "No Frills",
       "retailer_sku": "20300320_EA",
       "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "BISCUITS, Golden Cookies Filled with Rich Hazelnut Spread, Pack of 20 Cookies",
+      "retailer": "Loblaws",
+      "retailer_sku": "21571552_EA",
+      "observed_at": "2026-11-14T18:00:52.155264+00:00",
       "check_status": "needs_review"
     },
     {
@@ -151,6 +172,13 @@
       "retailer": "Real Canadian Superstore",
       "retailer_sku": "20307968001_EA",
       "observed_at": "2026-11-06T19:25:13.039030+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Cola Zero Sugar Bottle",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20316026005_EA",
+      "observed_at": "2026-11-14T18:00:53.423767+00:00",
       "check_status": "needs_review"
     },
     {
@@ -266,6 +294,13 @@
       "check_status": "needs_review"
     },
     {
+      "name": "Zero Sugar Lemonade Bottle",
+      "retailer": "Loblaws",
+      "retailer_sku": "21434119_EA",
+      "observed_at": "2026-11-14T18:00:56.959718+00:00",
+      "check_status": "needs_review"
+    },
+    {
       "name": "Zero Sugar Strawberry Lemonade Bottle",
       "retailer": "Loblaws",
       "retailer_sku": "21592037_EA",
@@ -347,13 +382,6 @@
       "retailer": "Loblaws",
       "retailer_sku": "21099689_EA",
       "observed_at": "2026-11-07T17:46:49.738120+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "Sea Salt and Cracked Pepper Flavour Kettle Cooked Potato Chips",
-      "retailer": "No Frills",
-      "retailer_sku": "21422910_EA",
-      "observed_at": "2026-11-13T19:42:51.782891+00:00",
       "check_status": "needs_review"
     }
   ]
