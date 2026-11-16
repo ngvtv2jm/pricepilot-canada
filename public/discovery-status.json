@@ -1,12 +1,12 @@
 {
-  "started_at": "2026-11-15T18:50:44.042147+00:00",
-  "completed_at": "2026-11-15T18:53:16.572327+00:00",
+  "started_at": "2026-11-16T22:00:16.389669+00:00",
+  "completed_at": "2026-11-16T22:02:43.382658+00:00",
   "added": 250,
-  "duplicates_updated": 4591,
-  "conflicts_skipped": 13,
-  "products": 3750,
-  "observations": 6159,
-  "validated_observations": 11748,
+  "duplicates_updated": 4959,
+  "conflicts_skipped": 16,
+  "products": 4000,
+  "observations": 6477,
+  "validated_observations": 11909,
   "sources": [
     {
       "retailer": "Giant Tiger",
@@ -40,7 +40,7 @@
     },
     {
       "retailer": "Giant Tiger",
-      "url": "https://www.gianttiger.com/collections/frozen/products.json?limit=250&page=7",
+      "url": "https://www.gianttiger.com/collections/frozen/products.json?limit=250&page=8",
       "status": "unavailable",
       "detail": "ValueError: No validated priced packages on this source page"
     },
@@ -144,7 +144,7 @@
       "retailer": "Giant Tiger",
       "url": "https://www.gianttiger.com/collections/pantry/products.json?limit=250&page=8",
       "status": "ok",
-      "validated": 8
+      "validated": 6
     },
     {
       "retailer": "Giant Tiger",
@@ -162,13 +162,13 @@
       "retailer": "Giant Tiger",
       "url": "https://www.gianttiger.com/collections/snacks-and-drinks/products.json?limit=250&page=3",
       "status": "ok",
-      "validated": 249
+      "validated": 250
     },
     {
       "retailer": "Giant Tiger",
       "url": "https://www.gianttiger.com/collections/snacks-and-drinks/products.json?limit=250&page=4",
       "status": "ok",
-      "validated": 249
+      "validated": 248
     },
     {
       "retailer": "Giant Tiger",
@@ -192,13 +192,13 @@
       "retailer": "Giant Tiger",
       "url": "https://www.gianttiger.com/collections/snacks-and-drinks/products.json?limit=250&page=8",
       "status": "ok",
-      "validated": 244
+      "validated": 243
     },
     {
       "retailer": "Giant Tiger",
       "url": "https://www.gianttiger.com/collections/snacks-and-drinks/products.json?limit=250&page=9",
       "status": "ok",
-      "validated": 246
+      "validated": 247
     },
     {
       "retailer": "Loblaws",
@@ -210,7 +210,7 @@
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/cereal-breakfast/c/28183?page=2",
       "status": "ok",
-      "validated": 54
+      "validated": 53
     },
     {
       "retailer": "Loblaws",
@@ -240,31 +240,31 @@
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/bakery/c/28002",
       "status": "ok",
-      "validated": 90
+      "validated": 89
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/bakery/c/28002?page=3",
       "status": "ok",
-      "validated": 81
+      "validated": 82
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/bakery/c/28002?page=4",
       "status": "ok",
-      "validated": 84
+      "validated": 83
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/bakery/c/28002?page=5",
       "status": "ok",
-      "validated": 79
+      "validated": 78
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/bakery/c/28002?page=6",
       "status": "ok",
-      "validated": 47
+      "validated": 51
     },
     {
       "retailer": "Loblaws",
@@ -282,19 +282,13 @@
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/dairy-eggs/c/28003?page=3",
       "status": "ok",
-      "validated": 96
-    },
-    {
-      "retailer": "Loblaws",
-      "url": "https://www.loblaws.ca/en/food/dairy-eggs/c/28003?page=5",
-      "status": "ok",
-      "validated": 122
+      "validated": 97
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/dairy-eggs/c/28003?page=6",
       "status": "ok",
-      "validated": 132
+      "validated": 133
     },
     {
       "retailer": "Loblaws",
@@ -342,7 +336,7 @@
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/dairy-eggs/milk-cream/c/28224?page=2",
       "status": "ok",
-      "validated": 54
+      "validated": 53
     },
     {
       "retailer": "Loblaws",
@@ -364,6 +358,12 @@
     },
     {
       "retailer": "Loblaws",
+      "url": "https://www.loblaws.ca/en/food/dairy-eggs/milk-cream/c/28224?page=6",
+      "status": "unavailable",
+      "detail": "ValueError: No validated priced packages on this source page"
+    },
+    {
+      "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/dairy-eggs/yogurt/c/28227",
       "status": "ok",
       "validated": 55
@@ -378,13 +378,13 @@
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/dairy-eggs/yogurt/c/28227?page=3",
       "status": "ok",
-      "validated": 55
+      "validated": 52
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/dairy-eggs/yogurt/c/28227?page=4",
       "status": "ok",
-      "validated": 53
+      "validated": 56
     },
     {
       "retailer": "Loblaws",
@@ -402,7 +402,7 @@
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/drinks/c/28004",
       "status": "ok",
-      "validated": 152
+      "validated": 154
     },
     {
       "retailer": "Loblaws",
@@ -414,13 +414,13 @@
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/drinks/c/28004?page=3",
       "status": "ok",
-      "validated": 137
+      "validated": 136
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/drinks/c/28004?page=4",
       "status": "ok",
-      "validated": 137
+      "validated": 136
     },
     {
       "retailer": "Loblaws",
@@ -437,12 +437,6 @@
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/frozen-food/c/28005",
-      "status": "ok",
-      "validated": 109
-    },
-    {
-      "retailer": "Loblaws",
-      "url": "https://www.loblaws.ca/en/food/frozen-food/c/28005?page=5",
       "status": "ok",
       "validated": 109
     },
@@ -496,12 +490,6 @@
     },
     {
       "retailer": "Loblaws",
-      "url": "https://www.loblaws.ca/en/food/pantry/c/28006?page=5",
-      "status": "ok",
-      "validated": 133
-    },
-    {
-      "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/pantry/c/28006?page=6",
       "status": "ok",
       "validated": 133
@@ -516,7 +504,7 @@
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/pantry/condiments/c/28243?page=2",
       "status": "ok",
-      "validated": 55
+      "validated": 56
     },
     {
       "retailer": "Loblaws",
@@ -558,13 +546,13 @@
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/pantry/crackers-cookies/c/28242?page=3",
       "status": "ok",
-      "validated": 48
+      "validated": 56
     },
     {
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/pantry/crackers-cookies/c/28242?page=4",
       "status": "ok",
-      "validated": 48
+      "validated": 49
     },
     {
       "retailer": "Loblaws",
@@ -594,7 +582,7 @@
       "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/pantry/pasta-rice-beans/c/28246?page=3",
       "status": "ok",
-      "validated": 50
+      "validated": 51
     },
     {
       "retailer": "Loblaws",
@@ -622,12 +610,6 @@
     },
     {
       "retailer": "Loblaws",
-      "url": "https://www.loblaws.ca/en/food/snacks-chips-candy/c/57025?page=5",
-      "status": "ok",
-      "validated": 82
-    },
-    {
-      "retailer": "Loblaws",
       "url": "https://www.loblaws.ca/en/food/snacks-chips-candy/c/57025?page=6",
       "status": "ok",
       "validated": 82
@@ -636,31 +618,25 @@
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/bakery/c/28002",
       "status": "ok",
-      "validated": 124
+      "validated": 128
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/bakery/c/28002?page=2",
       "status": "ok",
-      "validated": 81
+      "validated": 84
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/bakery/c/28002?page=3",
       "status": "ok",
-      "validated": 111
+      "validated": 110
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/bakery/c/28002?page=4",
       "status": "ok",
-      "validated": 62
-    },
-    {
-      "retailer": "No Frills",
-      "url": "https://www.nofrills.ca/en/food/bakery/c/28002?page=5",
-      "status": "ok",
-      "validated": 54
+      "validated": 61
     },
     {
       "retailer": "No Frills",
@@ -676,15 +652,9 @@
     },
     {
       "retailer": "No Frills",
-      "url": "https://www.nofrills.ca/en/food/dairy-eggs/c/28003?page=5",
-      "status": "ok",
-      "validated": 55
-    },
-    {
-      "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/dairy-eggs/c/28003?page=6",
       "status": "ok",
-      "validated": 84
+      "validated": 85
     },
     {
       "retailer": "No Frills",
@@ -718,6 +688,12 @@
     },
     {
       "retailer": "No Frills",
+      "url": "https://www.nofrills.ca/en/food/dairy-eggs/cheese/c/28225?page=6",
+      "status": "unavailable",
+      "detail": "ValueError: No validated priced packages on this source page"
+    },
+    {
+      "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/dairy-eggs/milk-cream/c/28224",
       "status": "ok",
       "validated": 55
@@ -748,6 +724,12 @@
     },
     {
       "retailer": "No Frills",
+      "url": "https://www.nofrills.ca/en/food/dairy-eggs/milk-cream/c/28224?page=6",
+      "status": "unavailable",
+      "detail": "ValueError: No validated priced packages on this source page"
+    },
+    {
+      "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/dairy-eggs/yogurt/c/28227",
       "status": "ok",
       "validated": 55
@@ -762,13 +744,13 @@
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/dairy-eggs/yogurt/c/28227?page=3",
       "status": "ok",
-      "validated": 55
+      "validated": 54
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/dairy-eggs/yogurt/c/28227?page=4",
       "status": "ok",
-      "validated": 50
+      "validated": 56
     },
     {
       "retailer": "No Frills",
@@ -786,19 +768,19 @@
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/drinks/c/28004",
       "status": "ok",
-      "validated": 166
+      "validated": 163
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/drinks/c/28004?page=2",
       "status": "ok",
-      "validated": 142
+      "validated": 141
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/drinks/c/28004?page=3",
       "status": "ok",
-      "validated": 143
+      "validated": 141
     },
     {
       "retailer": "No Frills",
@@ -822,19 +804,19 @@
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/frozen-food/c/28005",
       "status": "ok",
-      "validated": 159
+      "validated": 161
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/frozen-food/c/28005?page=2",
       "status": "ok",
-      "validated": 137
+      "validated": 139
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/frozen-food/c/28005?page=3",
       "status": "ok",
-      "validated": 97
+      "validated": 96
     },
     {
       "retailer": "No Frills",
@@ -846,7 +828,7 @@
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/frozen-food/c/28005?page=5",
       "status": "ok",
-      "validated": 137
+      "validated": 140
     },
     {
       "retailer": "No Frills",
@@ -898,12 +880,6 @@
     },
     {
       "retailer": "No Frills",
-      "url": "https://www.nofrills.ca/en/food/pantry/c/28006?page=5",
-      "status": "ok",
-      "validated": 95
-    },
-    {
-      "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/c/28006?page=6",
       "status": "ok",
       "validated": 95
@@ -918,13 +894,13 @@
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/cereal-breakfast/c/28183?page=2",
       "status": "ok",
-      "validated": 54
+      "validated": 53
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/cereal-breakfast/c/28183?page=3",
       "status": "ok",
-      "validated": 54
+      "validated": 53
     },
     {
       "retailer": "No Frills",
@@ -940,6 +916,12 @@
     },
     {
       "retailer": "No Frills",
+      "url": "https://www.nofrills.ca/en/food/pantry/cereal-breakfast/c/28183?page=6",
+      "status": "unavailable",
+      "detail": "ValueError: No validated priced packages on this source page"
+    },
+    {
+      "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/condiments/c/28243",
       "status": "ok",
       "validated": 56
@@ -948,25 +930,43 @@
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/condiments/c/28243?page=2",
       "status": "ok",
-      "validated": 55
+      "validated": 56
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/condiments/c/28243?page=3",
       "status": "ok",
-      "validated": 52
+      "validated": 54
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/condiments/c/28243?page=4",
       "status": "ok",
-      "validated": 53
+      "validated": 55
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/condiments/c/28243?page=5",
       "status": "ok",
       "validated": 48
+    },
+    {
+      "retailer": "No Frills",
+      "url": "https://www.nofrills.ca/en/food/pantry/condiments/c/28243?page=6",
+      "status": "ok",
+      "validated": 48
+    },
+    {
+      "retailer": "No Frills",
+      "url": "https://www.nofrills.ca/en/food/pantry/crackers-cookies/c/28242",
+      "status": "ok",
+      "validated": 55
+    },
+    {
+      "retailer": "No Frills",
+      "url": "https://www.nofrills.ca/en/food/pantry/crackers-cookies/c/28242?page=2",
+      "status": "ok",
+      "validated": 54
     }
   ]
 }
