@@ -1,10 +1,10 @@
 {
-  "started_at": "2026-11-17T20:54:41.388381+00:00",
-  "completed_at": "2026-11-17T20:56:07.994125+00:00",
+  "started_at": "2026-11-18T20:30:06.950699+00:00",
+  "completed_at": "2026-11-18T20:31:52.294454+00:00",
   "total": 1800,
-  "verified": 1743,
-  "changed": 13,
-  "unverified": 57,
+  "verified": 1599,
+  "changed": 24,
+  "unverified": 201,
   "unverified_products": [
     {
       "name": "Instant Oatmeal 3-Flavour Variety Family Size, 18 packets",
@@ -28,10 +28,1025 @@
       "check_status": "needs_review"
     },
     {
+      "name": "Medium Phyllo Pastry",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21606928_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Puff Pastry",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21606988_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Buttery Taste Margarine",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21279362_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Calorie-Reduced Margarine Light",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21747681_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Chef's Signature with 8% Clarified Butter, Salted",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21747634_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Chef's Signature with 8% Clarified Butter, Unsalted",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21747584_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Margarine Original",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21747694_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Margarine Original",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21747653_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Margarine Original",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21747692_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Margarine Salt Free",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21747498_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Margarine Vegan",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21747712_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Margarine With Avocado Oil",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21747671_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Margarine With Olive Oil",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21747703_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Margarine With Olive Oil",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21747558_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Salted Plant Butter Sticks",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21088919_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Unsalted Plant Butter Sticks",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21088940_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Peach Chunks",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21664435_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Salted Butter",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20559408_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Spreadables Butter With Canola Oil",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20119926002_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Unsalted Butter",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20559466_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "55% Vegetable Oil Margarine Original",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21747598_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Vegetable Oil Margarine Original",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21747538_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "50% Vegetable Oil Margarine Non Hydrogenated",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21747537_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "55% Vegetable Oil Margarine Non Hydrogenated",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21747189_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "55% Vegetable Oil Margarine Non Hydrogenated",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21747711_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Margarine Quarters Value Size",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20164195_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Garlic & Provencal Herb Butter",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20106744_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Lactose Free Butter Salted",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21601669_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Lactose Free Butter Unsalted",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21601712_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Salted Butter",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20639926_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Unsalted Butter",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20296112005_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Mirage Margarine",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20074944_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Protein Overnight Oats, Apple Pie",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21732660_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Protein Overnight Oats, Chocolatey Brownie",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21732824_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Protein Overnight Oats, French Vanilla",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21732873_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Deep Dish Pie Shells",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20671251_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Margarine",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20073675_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Pie Shells",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20153259_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Ready-to-Bake Tart Shells",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20296118001_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Unsalted Butter",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20316543002_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Chocolatey Chip Cookie Dough, Ready to Bake",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20318034001_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Chub Chocolatey Chunk Cookie",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20318034002_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Cinnamon Rolls with Icing, Ready to Bake 8 ct",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20320962002_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Cookies Confetti",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21096450_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Crescents - Reduced Fat",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20305424001_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Crescents Country Biscuits, Ready to Bake Dough, 10 ct",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20317832003_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Crescents Original Dough, 8 Pieces",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21505340_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Crescents Pizza Crust, Refrigerated Pre-Made Dough, 1 ct",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20317832002_EA",
+      "observed_at": "2026-11-17T20:54:53.834158+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Medium Phyllo Pastry",
+      "retailer": "No Frills",
+      "retailer_sku": "21606928_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Puff Pastry",
+      "retailer": "No Frills",
+      "retailer_sku": "21606988_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Buttery Taste Margarine",
+      "retailer": "No Frills",
+      "retailer_sku": "21279362_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Calorie-Reduced Margarine Light",
+      "retailer": "No Frills",
+      "retailer_sku": "21747681_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Chef's Signature with 8% Clarified Butter, Salted",
+      "retailer": "No Frills",
+      "retailer_sku": "21747634_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Chef's Signature with 8% Clarified Butter, Unsalted",
+      "retailer": "No Frills",
+      "retailer_sku": "21747584_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Margarine Original",
+      "retailer": "No Frills",
+      "retailer_sku": "21747694_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Margarine Original",
+      "retailer": "No Frills",
+      "retailer_sku": "21747653_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Margarine Original",
+      "retailer": "No Frills",
+      "retailer_sku": "21747692_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Margarine Salt Free",
+      "retailer": "No Frills",
+      "retailer_sku": "21747498_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Margarine Vegan",
+      "retailer": "No Frills",
+      "retailer_sku": "21747712_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Margarine With Avocado Oil",
+      "retailer": "No Frills",
+      "retailer_sku": "21747671_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Margarine With Olive Oil",
+      "retailer": "No Frills",
+      "retailer_sku": "21747703_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Margarine With Olive Oil",
+      "retailer": "No Frills",
+      "retailer_sku": "21747558_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Salted Plant Butter Sticks",
+      "retailer": "No Frills",
+      "retailer_sku": "21088919_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Unsalted Plant Butter Sticks",
+      "retailer": "No Frills",
+      "retailer_sku": "21088940_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Peach Chunks",
+      "retailer": "No Frills",
+      "retailer_sku": "21664435_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Salted Butter",
+      "retailer": "No Frills",
+      "retailer_sku": "20559408_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Spreadables Butter With Canola Oil",
+      "retailer": "No Frills",
+      "retailer_sku": "20119926002_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Unsalted Butter",
+      "retailer": "No Frills",
+      "retailer_sku": "20559466_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "55% Vegetable Oil Margarine Original",
+      "retailer": "No Frills",
+      "retailer_sku": "21747598_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Vegetable Oil Margarine Original",
+      "retailer": "No Frills",
+      "retailer_sku": "21747538_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "50% Vegetable Oil Margarine Non Hydrogenated",
+      "retailer": "No Frills",
+      "retailer_sku": "21747537_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "55% Vegetable Oil Margarine Non Hydrogenated",
+      "retailer": "No Frills",
+      "retailer_sku": "21747189_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "55% Vegetable Oil Margarine Non Hydrogenated",
+      "retailer": "No Frills",
+      "retailer_sku": "21747711_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Margarine Quarters Value Size",
+      "retailer": "No Frills",
+      "retailer_sku": "20164195_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Garlic & Provencal Herb Butter",
+      "retailer": "No Frills",
+      "retailer_sku": "20106744_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Lactose Free Butter Salted",
+      "retailer": "No Frills",
+      "retailer_sku": "21601669_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Lactose Free Butter Unsalted",
+      "retailer": "No Frills",
+      "retailer_sku": "21601712_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Salted Butter",
+      "retailer": "No Frills",
+      "retailer_sku": "20639926_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Unsalted Butter",
+      "retailer": "No Frills",
+      "retailer_sku": "20296112005_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Mirage Margarine",
+      "retailer": "No Frills",
+      "retailer_sku": "20074944_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Protein Overnight Oats, Apple Pie",
+      "retailer": "No Frills",
+      "retailer_sku": "21732660_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Protein Overnight Oats, Chocolatey Brownie",
+      "retailer": "No Frills",
+      "retailer_sku": "21732824_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Protein Overnight Oats, French Vanilla",
+      "retailer": "No Frills",
+      "retailer_sku": "21732873_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Deep Dish Pie Shells",
+      "retailer": "No Frills",
+      "retailer_sku": "20671251_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Margarine",
+      "retailer": "No Frills",
+      "retailer_sku": "20073675_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Pie Shells",
+      "retailer": "No Frills",
+      "retailer_sku": "20153259_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Ready-to-Bake Tart Shells",
+      "retailer": "No Frills",
+      "retailer_sku": "20296118001_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Unsalted Butter",
+      "retailer": "No Frills",
+      "retailer_sku": "20316543002_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Margarine with Olive Oil",
+      "retailer": "No Frills",
+      "retailer_sku": "20604430_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Original Margarine",
+      "retailer": "No Frills",
+      "retailer_sku": "20604565_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Chocolatey Chip Cookie Dough, Ready to Bake",
+      "retailer": "No Frills",
+      "retailer_sku": "20318034001_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Chub Chocolatey Chunk Cookie",
+      "retailer": "No Frills",
+      "retailer_sku": "20318034002_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Cinnamon Rolls with Icing, Ready to Bake 8 ct",
+      "retailer": "No Frills",
+      "retailer_sku": "20320962002_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Cookies Confetti",
+      "retailer": "No Frills",
+      "retailer_sku": "21096450_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Crescents - Reduced Fat",
+      "retailer": "No Frills",
+      "retailer_sku": "20305424001_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Crescents Country Biscuits, Ready to Bake Dough, 10 ct",
+      "retailer": "No Frills",
+      "retailer_sku": "20317832003_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Crescents Original Dough, 8 Pieces",
+      "retailer": "No Frills",
+      "retailer_sku": "21505340_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Crescents Pizza Crust, Refrigerated Pre-Made Dough, 1 ct",
+      "retailer": "No Frills",
+      "retailer_sku": "20317832002_EA",
+      "observed_at": "2026-11-17T20:54:55.236078+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Medium Phyllo Pastry",
+      "retailer": "Loblaws",
+      "retailer_sku": "21606928_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Puff Pastry",
+      "retailer": "Loblaws",
+      "retailer_sku": "21606988_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Buttery Taste Margarine",
+      "retailer": "Loblaws",
+      "retailer_sku": "21279362_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Calorie-Reduced Margarine Light",
+      "retailer": "Loblaws",
+      "retailer_sku": "21747681_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Chef's Signature with 8% Clarified Butter, Salted",
+      "retailer": "Loblaws",
+      "retailer_sku": "21747634_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Chef's Signature with 8% Clarified Butter, Unsalted",
+      "retailer": "Loblaws",
+      "retailer_sku": "21747584_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Margarine Original",
+      "retailer": "Loblaws",
+      "retailer_sku": "21747694_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Margarine Original",
+      "retailer": "Loblaws",
+      "retailer_sku": "21747653_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
       "name": "Margarine Original",
       "retailer": "Loblaws",
       "retailer_sku": "21747692_EA",
       "observed_at": "2026-11-15T18:50:55.013133+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Margarine Salt Free",
+      "retailer": "Loblaws",
+      "retailer_sku": "21747498_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Margarine Vegan",
+      "retailer": "Loblaws",
+      "retailer_sku": "21747712_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Margarine With Avocado Oil",
+      "retailer": "Loblaws",
+      "retailer_sku": "21747671_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Margarine With Olive Oil",
+      "retailer": "Loblaws",
+      "retailer_sku": "21747703_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Margarine With Olive Oil",
+      "retailer": "Loblaws",
+      "retailer_sku": "21747558_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Salted Plant Butter Sticks",
+      "retailer": "Loblaws",
+      "retailer_sku": "21088919_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Unsalted Plant Butter Sticks",
+      "retailer": "Loblaws",
+      "retailer_sku": "21088940_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Peach Chunks",
+      "retailer": "Loblaws",
+      "retailer_sku": "21664435_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Salted Butter",
+      "retailer": "Loblaws",
+      "retailer_sku": "20559408_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Spreadables Butter With Canola Oil",
+      "retailer": "Loblaws",
+      "retailer_sku": "20119926002_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Unsalted Butter",
+      "retailer": "Loblaws",
+      "retailer_sku": "20559466_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "55% Vegetable Oil Margarine Original",
+      "retailer": "Loblaws",
+      "retailer_sku": "21747598_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Vegetable Oil Margarine Original",
+      "retailer": "Loblaws",
+      "retailer_sku": "21747538_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "50% Vegetable Oil Margarine Non Hydrogenated",
+      "retailer": "Loblaws",
+      "retailer_sku": "21747537_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "55% Vegetable Oil Margarine Non Hydrogenated",
+      "retailer": "Loblaws",
+      "retailer_sku": "21747189_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "55% Vegetable Oil Margarine Non Hydrogenated",
+      "retailer": "Loblaws",
+      "retailer_sku": "21747711_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Margarine Quarters Value Size",
+      "retailer": "Loblaws",
+      "retailer_sku": "20164195_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Garlic & Provencal Herb Butter",
+      "retailer": "Loblaws",
+      "retailer_sku": "20106744_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Lactose Free Butter Salted",
+      "retailer": "Loblaws",
+      "retailer_sku": "21601669_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Lactose Free Butter Unsalted",
+      "retailer": "Loblaws",
+      "retailer_sku": "21601712_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Salted Butter",
+      "retailer": "Loblaws",
+      "retailer_sku": "20639926_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Unsalted Butter",
+      "retailer": "Loblaws",
+      "retailer_sku": "20296112005_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Mirage Margarine",
+      "retailer": "Loblaws",
+      "retailer_sku": "20074944_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Protein Overnight Oats, Apple Pie",
+      "retailer": "Loblaws",
+      "retailer_sku": "21732660_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Protein Overnight Oats, Chocolatey Brownie",
+      "retailer": "Loblaws",
+      "retailer_sku": "21732824_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Protein Overnight Oats, French Vanilla",
+      "retailer": "Loblaws",
+      "retailer_sku": "21732873_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Deep Dish Pie Shells",
+      "retailer": "Loblaws",
+      "retailer_sku": "20671251_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Margarine",
+      "retailer": "Loblaws",
+      "retailer_sku": "20073675_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Pie Shells",
+      "retailer": "Loblaws",
+      "retailer_sku": "20153259_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Ready-to-Bake Tart Shells",
+      "retailer": "Loblaws",
+      "retailer_sku": "20296118001_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Unsalted Butter",
+      "retailer": "Loblaws",
+      "retailer_sku": "20316543002_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Chocolatey Chip Cookie Dough, Ready to Bake",
+      "retailer": "Loblaws",
+      "retailer_sku": "20318034001_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Chub Chocolatey Chunk Cookie",
+      "retailer": "Loblaws",
+      "retailer_sku": "20318034002_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Cinnamon Rolls with Icing, Ready to Bake 8 ct",
+      "retailer": "Loblaws",
+      "retailer_sku": "20320962002_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Cookies Confetti",
+      "retailer": "Loblaws",
+      "retailer_sku": "21096450_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Crescents - Reduced Fat",
+      "retailer": "Loblaws",
+      "retailer_sku": "20305424001_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Crescents Country Biscuits, Ready to Bake Dough, 10 ct",
+      "retailer": "Loblaws",
+      "retailer_sku": "20317832003_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Crescents Original Dough, 8 Pieces",
+      "retailer": "Loblaws",
+      "retailer_sku": "21505340_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Crescents Pizza Crust, Refrigerated Pre-Made Dough, 1 ct",
+      "retailer": "Loblaws",
+      "retailer_sku": "20317832002_EA",
+      "observed_at": "2026-11-17T20:54:55.324209+00:00",
       "check_status": "needs_review"
     },
     {
@@ -98,38 +1113,10 @@
       "check_status": "needs_review"
     },
     {
-      "name": "Condiment Pack",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "20552158_EA",
-      "observed_at": "2026-11-15T18:51:17.587799+00:00",
-      "check_status": "needs_review"
-    },
-    {
       "name": "Real Mayonnaise",
       "retailer": "Real Canadian Superstore",
       "retailer_sku": "20618579001_EA",
       "observed_at": "2026-11-06T19:24:52.784003+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "Balsamic Salad Dressing",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21584146_EA",
-      "observed_at": "2026-11-15T18:51:17.587799+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "Creamy Cucumber Salad Dressing",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21584558_EA",
-      "observed_at": "2026-11-15T18:51:17.587799+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "Seasoned Croutons",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21096226_EA",
-      "observed_at": "2026-11-15T18:51:17.587799+00:00",
       "check_status": "needs_review"
     },
     {
@@ -154,10 +1141,45 @@
       "check_status": "needs_review"
     },
     {
+      "name": "Condiment Pack",
+      "retailer": "Loblaws",
+      "retailer_sku": "20552158_EA",
+      "observed_at": "2026-11-17T20:55:18.523614+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Tomato Ketchup No Sugar Added",
+      "retailer": "Loblaws",
+      "retailer_sku": "20762350_EA",
+      "observed_at": "2026-11-17T20:55:18.523614+00:00",
+      "check_status": "needs_review"
+    },
+    {
       "name": "Real Mayonnaise",
       "retailer": "Loblaws",
       "retailer_sku": "20618579001_EA",
       "observed_at": "2026-11-06T19:24:56.627771+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Balsamic Salad Dressing",
+      "retailer": "Loblaws",
+      "retailer_sku": "21584146_EA",
+      "observed_at": "2026-11-17T20:55:18.523614+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Creamy Cucumber Salad Dressing",
+      "retailer": "Loblaws",
+      "retailer_sku": "21584558_EA",
+      "observed_at": "2026-11-17T20:55:18.523614+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Seasoned Croutons",
+      "retailer": "Loblaws",
+      "retailer_sku": "21096226_EA",
+      "observed_at": "2026-11-17T20:55:18.523614+00:00",
       "check_status": "needs_review"
     },
     {
@@ -189,10 +1211,10 @@
       "check_status": "needs_review"
     },
     {
-      "name": "Soda Orange Bottles",
+      "name": "Zero Sugar Fruit Punch Bottle",
       "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21531921_EA",
-      "observed_at": "2026-11-05T15:42:08.710983+00:00",
+      "retailer_sku": "21434122_EA",
+      "observed_at": "2026-11-17T20:55:29.146394+00:00",
       "check_status": "needs_review"
     },
     {
@@ -235,13 +1257,6 @@
       "retailer": "No Frills",
       "retailer_sku": "20307968001_EA",
       "observed_at": "2026-11-06T19:25:13.688872+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "Soda Orange Bottles",
-      "retailer": "No Frills",
-      "retailer_sku": "21531921_EA",
-      "observed_at": "2026-11-05T15:42:15.306571+00:00",
       "check_status": "needs_review"
     },
     {
@@ -298,13 +1313,6 @@
       "retailer": "Loblaws",
       "retailer_sku": "20307968001_EA",
       "observed_at": "2026-11-06T19:25:17.417752+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "Soda Orange Bottles",
-      "retailer": "Loblaws",
-      "retailer_sku": "21531921_EA",
-      "observed_at": "2026-11-05T15:42:22.167348+00:00",
       "check_status": "needs_review"
     },
     {

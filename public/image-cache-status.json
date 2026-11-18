@@ -1,11 +1,12 @@
 {
-  "completed_at": "2026-11-17T20:57:12.857553+00:00",
-  "products": 4100,
-  "cached": 4098,
-  "missing": 2,
+  "completed_at": "2026-11-18T20:34:54.104139+00:00",
+  "products": 4350,
+  "cached": 4347,
+  "missing": 3,
   "missing_ids": [
     "discovered-4e9ff0e628847145c681b356",
-    "discovered-c2a79e5387dd0b4940aa800c"
+    "discovered-c2a79e5387dd0b4940aa800c",
+    "discovered-f284c1315da8054ea6bec518"
   ],
   "failures": []
 }
