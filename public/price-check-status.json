@@ -1,10 +1,10 @@
 {
-  "started_at": "2026-11-18T20:30:06.950699+00:00",
-  "completed_at": "2026-11-18T20:31:52.294454+00:00",
+  "started_at": "2026-11-19T20:36:12.161275+00:00",
+  "completed_at": "2026-11-19T20:38:12.106716+00:00",
   "total": 1800,
-  "verified": 1599,
-  "changed": 24,
-  "unverified": 201,
+  "verified": 1601,
+  "changed": 299,
+  "unverified": 199,
   "unverified_products": [
     {
       "name": "Instant Oatmeal 3-Flavour Variety Family Size, 18 packets",
@@ -1141,45 +1141,10 @@
       "check_status": "needs_review"
     },
     {
-      "name": "Condiment Pack",
-      "retailer": "Loblaws",
-      "retailer_sku": "20552158_EA",
-      "observed_at": "2026-11-17T20:55:18.523614+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "Tomato Ketchup No Sugar Added",
-      "retailer": "Loblaws",
-      "retailer_sku": "20762350_EA",
-      "observed_at": "2026-11-17T20:55:18.523614+00:00",
-      "check_status": "needs_review"
-    },
-    {
       "name": "Real Mayonnaise",
       "retailer": "Loblaws",
       "retailer_sku": "20618579001_EA",
       "observed_at": "2026-11-06T19:24:56.627771+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "Balsamic Salad Dressing",
-      "retailer": "Loblaws",
-      "retailer_sku": "21584146_EA",
-      "observed_at": "2026-11-17T20:55:18.523614+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "Creamy Cucumber Salad Dressing",
-      "retailer": "Loblaws",
-      "retailer_sku": "21584558_EA",
-      "observed_at": "2026-11-17T20:55:18.523614+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "Seasoned Croutons",
-      "retailer": "Loblaws",
-      "retailer_sku": "21096226_EA",
-      "observed_at": "2026-11-17T20:55:18.523614+00:00",
       "check_status": "needs_review"
     },
     {
@@ -1211,6 +1176,20 @@
       "check_status": "needs_review"
     },
     {
+      "name": "Guava Nectar",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "20894117003_EA",
+      "observed_at": "2026-11-18T20:31:03.608954+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Soda Orange Bottles",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21531921_EA",
+      "observed_at": "2026-11-18T20:31:03.608954+00:00",
+      "check_status": "needs_review"
+    },
+    {
       "name": "Zero Sugar Fruit Punch Bottle",
       "retailer": "Real Canadian Superstore",
       "retailer_sku": "21434122_EA",
@@ -1229,13 +1208,6 @@
       "retailer": "Real Canadian Superstore",
       "retailer_sku": "21592037_EA",
       "observed_at": "2026-11-07T17:46:23.459060+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "Apple Beverage",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21622813_EA",
-      "observed_at": "2026-11-11T19:35:52.853724+00:00",
       "check_status": "needs_review"
     },
     {
@@ -1260,6 +1232,13 @@
       "check_status": "needs_review"
     },
     {
+      "name": "Soda Orange Bottles",
+      "retailer": "No Frills",
+      "retailer_sku": "21531921_EA",
+      "observed_at": "2026-11-18T20:31:06.574512+00:00",
+      "check_status": "needs_review"
+    },
+    {
       "name": "Zero Sugar Fruit Punch Bottle",
       "retailer": "No Frills",
       "retailer_sku": "21434122_EA",
@@ -1281,13 +1260,6 @@
       "check_status": "needs_review"
     },
     {
-      "name": "Apple Beverage",
-      "retailer": "No Frills",
-      "retailer_sku": "21622813_EA",
-      "observed_at": "2026-11-13T19:42:01.882055+00:00",
-      "check_status": "needs_review"
-    },
-    {
       "name": "Smoothie Green Activ",
       "retailer": "No Frills",
       "retailer_sku": "21529938_EA",
@@ -1302,13 +1274,6 @@
       "check_status": "needs_review"
     },
     {
-      "name": "Cola",
-      "retailer": "No Frills",
-      "retailer_sku": "20040201001_EA",
-      "observed_at": "2026-11-15T18:51:40.586783+00:00",
-      "check_status": "needs_review"
-    },
-    {
       "name": "Lemon Lime Soft Drink",
       "retailer": "Loblaws",
       "retailer_sku": "20307968001_EA",
@@ -1316,10 +1281,10 @@
       "check_status": "needs_review"
     },
     {
-      "name": "Punch Drink",
+      "name": "Soda Orange Bottles",
       "retailer": "Loblaws",
-      "retailer_sku": "20109062_EA",
-      "observed_at": "2026-11-15T18:51:43.563499+00:00",
+      "retailer_sku": "21531921_EA",
+      "observed_at": "2026-11-18T20:31:07.572039+00:00",
       "check_status": "needs_review"
     },
     {
@@ -1362,6 +1327,27 @@
       "retailer": "Loblaws",
       "retailer_sku": "21529907_EA",
       "observed_at": "2026-11-05T15:42:22.167348+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Dried Cranberries",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21195390_EA",
+      "observed_at": "2026-11-18T20:31:20.457220+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Dried Cranberries",
+      "retailer": "No Frills",
+      "retailer_sku": "21195390_EA",
+      "observed_at": "2026-11-18T20:31:22.552051+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "Dried Cranberries",
+      "retailer": "Loblaws",
+      "retailer_sku": "21195390_EA",
+      "observed_at": "2026-11-18T20:31:24.110486+00:00",
       "check_status": "needs_review"
     },
     {
