@@ -24,6 +24,8 @@ export function prepareDeployment(root){
    }
    const route=path.relative(dist,file).split(path.sep).join('/');
    if(!/^(?:[a-z0-9-]+\/)?[a-z0-9-]+\.html$/.test(route)||route==='404.html')continue;
+   // Search Console must fetch ownership proof at its exact .html URL.
+   if(/^google[0-9a-f]{16}\.html$/.test(route))continue;
    if(route==='index.html'){
     aliases.push('/index.html / 301!');
    }else if(!route.endsWith('/index.html')){

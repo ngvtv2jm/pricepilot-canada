@@ -14,6 +14,7 @@ test('release routing aliases only pages that exist and keeps the canonical page
    'index.html':'homepage',
    '404.html':'not found',
    'contact.html':'contact',
+   'google50626bb868aab171.html':'google-site-verification: google50626bb868aab171.html',
    'cookies.html':'cookies',
    'catalog-2.html':'catalog page two',
    'products/discovered-test.html':'test product',
@@ -38,9 +39,10 @@ test('release routing aliases only pages that exist and keeps the canonical page
    assert.equal(dictionary.has(dest),false,'no redirect loop at '+old);
    assert.equal(fs.existsSync(path.join(dist,dest==='/'?'index.html':dest.slice(1)+'.html')),true,dest);
   }
-  for(const unknown of ['/:page','/not-found-fixture','/unknown.html','/products/missing.html','/404.html','/brands/index.html']){
+  for(const unknown of ['/:page','/not-found-fixture','/unknown.html','/products/missing.html','/404.html','/brands/index.html','/google50626bb868aab171.html']){
    assert.equal(dictionary.has(unknown),false,unknown);
   }
+  assert.equal(fs.readFileSync(path.join(dist,'google50626bb868aab171.html'),'utf8'),files['google50626bb868aab171.html']);
   assert.equal(lines.every(([old,dest])=>!old.includes('*')&&!old.includes(':')&&!dest.includes(':')),true);
   assert.equal(fs.readFileSync(path.join(dist,'404.html'),'utf8'),'not found');
   assert.equal(fs.readFileSync(path.join(dist,'categories/index.html'),'utf8'),'category hub');

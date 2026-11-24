@@ -56,8 +56,15 @@ export async function buildProductPages(base){
  const publishTime=Date.now();
  const seoProducts=merged.products.map(p=>({...p,brand_name:merged.brands.find(b=>b.id===p.brand_id)?.name||''}));
  const relatedIndex=seoIndex(seoProducts);
- const navigation=buildNavigation(base,seoProducts,{productGroup,brandPath,productPath,variantsByProduct,observations,helpers,publishTime});
  const imageCache=JSON.parse(fs.readFileSync('public/image-cache.json','utf8')).images||{};
+ const photosByProduct=helpers.groupBy(merged.product_images||[],r=>r.product_id);
+ function featuredImage(p){
+  const cached=[p.feed_id,p.id,...(p.feed_aliases||[])].map(id=>imageCache[id]?.path).find(path=>/^catalog-cache\/[a-f0-9]{64}\.webp$/.test(path||''));
+  const photos=[...(photosByProduct.get(p.id)||[])].sort((a,b)=>a.sort_order-b.sort_order).map(photo=>photo.url).concat(p.image_url||'');
+  return [cached?'/'+cached:'',...photos.map(photo=>Object.hasOwn(cachedImages,photo)?cachedImages[photo]:photo)].map(githubProductImage)
+   .find(url=>/^https:\/\/raw\.githubusercontent\.com\/ngvtv2jm\/pricepilot-canada\/main\/public\/(?:catalog-cache\/[a-f0-9]{64}|catalog-images\/[a-zA-Z0-9_-]+)\.webp$/.test(url))||null;
+ }
+ const navigation=buildNavigation(base,seoProducts,{productGroup,brandPath,productPath,variantsByProduct,observations,helpers,publishTime,featuredImage});
  fs.mkdirSync('public/products',{recursive:true});
  const paths=[...navigation.paths];const expected=new Set();
  for(const p of merged.products){

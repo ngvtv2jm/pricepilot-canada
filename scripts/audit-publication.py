@@ -30,6 +30,9 @@ def main():
   text=file.read_text();page=Page(text);pages[file]=page;label=str(file.relative_to(DIST))
   if page.redirect:redirects+=1;continue
   if file.name=='404.html':continue
+  if file.parent==DIST and re.fullmatch(r'google[0-9a-f]{16}\.html',file.name):
+   if text.rstrip('\n')!='google-site-verification: '+file.name:errors.append(label+': invalid verification payload')
+   continue
   if page.lang!='en-CA':errors.append(label+': missing document language')
   if page.h1!=1 and file!=DIST/'index.html':errors.append(label+': needs one H1')
   if not re.search(r'<title>[^<]+</title>',text):errors.append(label+': missing title')
