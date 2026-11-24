@@ -1,0 +1,4 @@
+import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import vm from 'node:vm';
+const code=fs.readFileSync('public/clean-urls.js','utf8');
+test('legacy policy and product URLs clean the address without losing query or fragment',()=>{for(const pathname of ['/contact.html','/cookies.html','/products/test.html','/brands/test.html']){let target='';vm.runInNewContext(code,{window:{location:{pathname,search:'?source=test',hash:'#content'}},history:{state:{},replaceState:(_s:unknown,_t:string,url:string)=>target=url}});assert.equal(target,pathname.replace('.html','')+'?source=test#content')}});
+test('clean routes and real error documents are not rewritten',()=>{for(const pathname of ['/contact','/contact/','/404.html']){let called=false;vm.runInNewContext(code,{window:{location:{pathname,search:'',hash:''}},history:{replaceState:()=>called=true}});assert.equal(called,false)}});

@@ -19,7 +19,7 @@ class Page(HTMLParser):
 def resolve(url):
  path=urllib.parse.unquote(urllib.parse.urlsplit(url).path).lstrip('/')
  file=DIST/path
- return file/'index.html' if not path or path.endswith('/') else file
+ return file/'index.html' if not path or path.endswith('/') or file.is_dir() else file
 
 def main():
  errors=[];pages={};canonical={};links=0;github_images=0;redirects=0
@@ -33,7 +33,8 @@ def main():
   if not page.meta.get('description'):errors.append(label+': missing description')
   if not page.canonical.startswith('https://pricepine.ca/'):errors.append(label+': wrong canonical domain')
   if '.html' in page.canonical:errors.append(label+': non-clean canonical')
-  if 'noindex' not in page.meta.get('robots',''):
+  legacy=file.name!='index.html' and file.with_suffix('').is_dir() and 'src="/clean-urls.js"' in text
+  if 'noindex' not in page.meta.get('robots','') and not legacy:
    if page.canonical in canonical:errors.append(label+': duplicate indexed canonical')
    canonical[page.canonical]=label
   for href in page.links:

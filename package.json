@@ -10,7 +10,7 @@
     "test": "node --experimental-strip-types --test tests/*.test.ts",
     "prebuild": "node scripts/build-pages.mjs",
     "pretest": "node scripts/build-pages.mjs",
-    "predev": "node scripts/restore-catalog-images.mjs",
+    "predev": "node scripts/hydrate-catalog.mjs",
     "test:browser": "node tests/catalog-browser.mjs",
     "audit:publication": "python3 scripts/audit-publication.py"
   },

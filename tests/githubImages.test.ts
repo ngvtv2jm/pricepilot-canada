@@ -24,7 +24,7 @@ test('deployment excludes product images while source images and indexed pages s
   for(const dir of ['catalog-cache','catalog-images']){assert.equal(fs.existsSync(path.join(root,'dist',dir)),false);assert.equal(fs.readFileSync(path.join(root,'public',dir,'image.webp'),'utf8'),'original-image');}
   assert.ok(fs.existsSync(path.join(root,'dist/products/one.html')));
   assert.equal(fs.readFileSync(path.join(root,'dist/products/one/index.html'),'utf8'),'<h1>Product</h1>');
-  assert.ok(fs.readFileSync(path.join(root,'dist/products/one.html'),'utf8').includes('0;url=/products/one/'));
+  assert.equal(fs.readFileSync(path.join(root,'dist/products/one.html'),'utf8'),'<h1>Product</h1>');
   prepareDeployment(root);
   assert.equal(fs.readFileSync(path.join(root,'dist/products/one/index.html'),'utf8'),'<h1>Product</h1>');
  }finally{fs.rmSync(root,{recursive:true,force:true});}

@@ -1,0 +1,38 @@
+name: Prepare lightweight Bolt source
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - src/**
+      - scripts/**
+      - package.json
+      - package-lock.json
+      - index.html
+      - public/clean-urls.js
+      - public/product-description.js
+      - public/_headers
+      - .github/workflows/sync-bolt-source.yml
+permissions:
+  contents: write
+concurrency:
+  group: lightweight-bolt-source
+  cancel-in-progress: false
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Prepare source without generated pages or product images
+        run: |
+          expected=$(git ls-remote origin refs/heads/bolt-release | cut -f1)
+          python3 scripts/sync-bolt-source.py
+          git checkout -B bolt-release
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'Prepare lightweight Bolt source from main [skip ci]'
+          git push --force-with-lease="refs/heads/bolt-release:$expected" origin HEAD:refs/heads/bolt-release

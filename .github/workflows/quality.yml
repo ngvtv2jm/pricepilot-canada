@@ -20,3 +20,14 @@ jobs:
       - run: npm run build
       - run: python3 scripts/test-product-descriptions.py
       - run: python3 scripts/audit-publication.py
+      - run: npx playwright install --with-deps chromium
+      - name: Check homepage and clean URLs in desktop and mobile Chromium
+        run: |
+          npm run preview -- --host 127.0.0.1 > /tmp/pricepine-preview.log 2>&1 &
+          node tests/home-browser.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: homepage-desktop-and-mobile
+          path: outputs/homepage-qa
+          retention-days: 7

@@ -33,7 +33,7 @@ export async function buildProductPages(base){
  const paths=[...navigation.paths];const expected=new Set();
  for(const p of merged.products){
   if(!/^[a-zA-Z0-9-]+$/.test(p.id))throw Error('Invalid product identifier');
-  const path='products/'+p.id+'.html',url=base+'/'+path.replace(/\.html$/,'/');
+  const path='products/'+p.id+'.html',url=base+'/'+path.replace(/\.html$/,'');
   const desc=(p.description||'Compare available prices, package options and specifications for '+p.name+' on PricePine Canada.').slice(0,300);
   const photo=merged.product_images?.filter(i=>i.product_id===p.id).sort((a,b)=>a.sort_order-b.sort_order)[0]?.url||p.image_url;
   const cached=imageCache[p.feed_id||p.id]?.path;
