@@ -1,10 +1,10 @@
 {
-  "started_at": "2026-11-22T19:38:06.645917+00:00",
-  "completed_at": "2026-11-22T19:38:25.365114+00:00",
+  "started_at": "2026-11-23T23:52:37.408110+00:00",
+  "completed_at": "2026-11-23T23:52:53.911618+00:00",
   "total": 1800,
-  "verified": 51,
+  "verified": 0,
   "changed": 0,
-  "unverified": 1749,
+  "unverified": 1800,
   "unverified_products": [
     {
       "name": "Original Cereal",
@@ -707,11 +707,354 @@
       "check_status": "source_unavailable"
     },
     {
+      "name": "Original Cereal",
+      "retailer": "Loblaws",
+      "retailer_sku": "21082500_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cheerios Cereal Apple Cinnamon Family Size",
+      "retailer": "Loblaws",
+      "retailer_sku": "21103509_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cheerios Whole Grain Breakfast Cereal Limited Edition",
+      "retailer": "Loblaws",
+      "retailer_sku": "21104173_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cinnamon Toast Crunch Breakfast Cereal, Family Size, Whole Grains",
+      "retailer": "Loblaws",
+      "retailer_sku": "21103492_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Cinnamon Toast Crunch Breakfast Cereal, Whole Grains and Real Cinnamon",
+      "retailer": "Loblaws",
+      "retailer_sku": "21104055_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Honey Nut Cheerios Breakfast Cereal, Family Size, Whole Grains",
+      "retailer": "Loblaws",
+      "retailer_sku": "21103495_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Honey Nut Cheerios Breakfast Cereal, Whole Grains",
+      "retailer": "Loblaws",
+      "retailer_sku": "21104047_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Lucky Charms Breakfast Cereal with Marshmallows, Family Size, Whole Grains",
+      "retailer": "Loblaws",
+      "retailer_sku": "21103505_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Lucky Charms Breakfast Cereal with Marshmallows, Whole Grains",
+      "retailer": "Loblaws",
+      "retailer_sku": "21104054_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Multi Grain Breakfast Cereal, Whole Grains",
+      "retailer": "Loblaws",
+      "retailer_sku": "21104058_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Multi Grain Cheerios Breakfast Cereal, Family Size, Whole Grains",
+      "retailer": "Loblaws",
+      "retailer_sku": "21103503_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Nature Valley Protein Granola, Oats 'n Honey, Family Size",
+      "retailer": "Loblaws",
+      "retailer_sku": "21499405_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Oatmeal Crisp Breakfast Cereal, Triple Berry, Family Size",
+      "retailer": "Loblaws",
+      "retailer_sku": "21213661_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Original Cheerios Breakfast Cereal, Family Size, Whole Grains",
+      "retailer": "Loblaws",
+      "retailer_sku": "21103499_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Corn Flakes Cereal",
+      "retailer": "Loblaws",
+      "retailer_sku": "21450851_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Corn Flakes Family Size",
+      "retailer": "Loblaws",
+      "retailer_sku": "21450811_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Corn Pops Cereal, Family Size",
+      "retailer": "Loblaws",
+      "retailer_sku": "20054727_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Froot Loops Cereal",
+      "retailer": "Loblaws",
+      "retailer_sku": "21652128_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Froot Loops Cereal Family Size",
+      "retailer": "Loblaws",
+      "retailer_sku": "21651640_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Frosted Flakes Cereal",
+      "retailer": "Loblaws",
+      "retailer_sku": "21652110_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Frosted Flakes Cereal Family Size",
+      "retailer": "Loblaws",
+      "retailer_sku": "21651947_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Krave Cereal Family Size",
+      "retailer": "Loblaws",
+      "retailer_sku": "21653742_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Mini Wheats Mini Wheat Frosted Cereal",
+      "retailer": "Loblaws",
+      "retailer_sku": "21430748_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Poptarts Pop Tarts Frosted Strawberry",
+      "retailer": "Loblaws",
+      "retailer_sku": "21290111_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Raisin Bran Cereal Family Size",
+      "retailer": "Loblaws",
+      "retailer_sku": "21652002_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Raisin Bran Cereal Jumbo",
+      "retailer": "Loblaws",
+      "retailer_sku": "21651842_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Rice Krispies Cereal",
+      "retailer": "Loblaws",
+      "retailer_sku": "21450814_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Rice Krispies Original",
+      "retailer": "Loblaws",
+      "retailer_sku": "21449784_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Vector Meal Replacement Cereal",
+      "retailer": "Loblaws",
+      "retailer_sku": "20015041_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Vector Meal Replacement Cereal",
+      "retailer": "Loblaws",
+      "retailer_sku": "20072706_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Vector Meal Replacement Family Size",
+      "retailer": "Loblaws",
+      "retailer_sku": "21504064_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Large Flake 100% Whole Grain Oats",
+      "retailer": "Loblaws",
+      "retailer_sku": "20923994_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "One-Minute 100% Whole Grain Oats",
+      "retailer": "Loblaws",
+      "retailer_sku": "20923942_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Quick 100% Whole Grain Oats",
+      "retailer": "Loblaws",
+      "retailer_sku": "20923828_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Honey Cereal",
+      "retailer": "Loblaws",
+      "retailer_sku": "21427201_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Honeycomb Cereal",
+      "retailer": "Loblaws",
+      "retailer_sku": "20299648_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Shredded Wheat Big Biscuit Cereal",
+      "retailer": "Loblaws",
+      "retailer_sku": "20014409_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Shreddies Cereal Original Family Size",
+      "retailer": "Loblaws",
+      "retailer_sku": "21575229_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Shreddies Original Cereals",
+      "retailer": "Loblaws",
+      "retailer_sku": "21427214_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Spoon Size Shredded Wheat & Bran Cereal",
+      "retailer": "Loblaws",
+      "retailer_sku": "20751584_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Weetabix Cereal",
+      "retailer": "Loblaws",
+      "retailer_sku": "21713718_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Extra-Fluffy Buttermilk Pancake & Waffle Mix",
+      "retailer": "Loblaws",
+      "retailer_sku": "20175129_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Flavour Variety Instant Oatmeal",
+      "retailer": "Loblaws",
+      "retailer_sku": "21190260_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Harvest Crunch Light & Crisp Honey Nut Flavour Granola Cereal",
+      "retailer": "Loblaws",
+      "retailer_sku": "21239228_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Harvest Crunch Original Granola Cereal",
+      "retailer": "Loblaws",
+      "retailer_sku": "21219824_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
       "name": "Instant Oatmeal 3-Flavour Variety Family Size, 18 packets",
       "retailer": "Loblaws",
       "retailer_sku": "21520660_EA",
       "observed_at": "2026-11-05T14:08:10.983816+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Large Flake Oats",
+      "retailer": "Loblaws",
+      "retailer_sku": "20323113002_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Life Original Cereal",
+      "retailer": "Loblaws",
+      "retailer_sku": "20637355_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Maple & Brown Sugar Flavour Instant Oatmeal",
+      "retailer": "Loblaws",
+      "retailer_sku": "21190254_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "One Minute Oats",
+      "retailer": "Loblaws",
+      "retailer_sku": "20323113003_EA",
+      "observed_at": "2026-11-22T19:38:06.647411+00:00",
+      "check_status": "source_unavailable"
     },
     {
       "name": "Medium Phyllo Pastry",
@@ -1418,336 +1761,350 @@
       "retailer": "Loblaws",
       "retailer_sku": "21606928_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Puff Pastry",
       "retailer": "Loblaws",
       "retailer_sku": "21606988_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Buttery Taste Margarine",
       "retailer": "Loblaws",
       "retailer_sku": "21279362_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Calorie-Reduced Margarine Light",
       "retailer": "Loblaws",
       "retailer_sku": "21747681_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Chef's Signature with 8% Clarified Butter, Salted",
       "retailer": "Loblaws",
       "retailer_sku": "21747634_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Chef's Signature with 8% Clarified Butter, Unsalted",
       "retailer": "Loblaws",
       "retailer_sku": "21747584_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Margarine Original",
       "retailer": "Loblaws",
       "retailer_sku": "21747694_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Margarine Original",
       "retailer": "Loblaws",
       "retailer_sku": "21747653_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Margarine Original",
       "retailer": "Loblaws",
       "retailer_sku": "21747692_EA",
       "observed_at": "2026-11-15T18:50:55.013133+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Margarine Salt Free",
       "retailer": "Loblaws",
       "retailer_sku": "21747498_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Margarine Vegan",
       "retailer": "Loblaws",
       "retailer_sku": "21747712_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Margarine With Avocado Oil",
       "retailer": "Loblaws",
       "retailer_sku": "21747671_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Margarine With Olive Oil",
       "retailer": "Loblaws",
       "retailer_sku": "21747703_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Margarine With Olive Oil",
       "retailer": "Loblaws",
       "retailer_sku": "21747558_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Salted Plant Butter Sticks",
       "retailer": "Loblaws",
       "retailer_sku": "21088919_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Unsalted Plant Butter Sticks",
       "retailer": "Loblaws",
       "retailer_sku": "21088940_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Peach Chunks",
       "retailer": "Loblaws",
       "retailer_sku": "21664435_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Salted Butter",
       "retailer": "Loblaws",
       "retailer_sku": "20559408_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Spreadables Butter With Canola Oil",
       "retailer": "Loblaws",
       "retailer_sku": "20119926002_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Unsalted Butter",
       "retailer": "Loblaws",
       "retailer_sku": "20559466_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "55% Vegetable Oil Margarine Original",
       "retailer": "Loblaws",
       "retailer_sku": "21747598_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Vegetable Oil Margarine Original",
       "retailer": "Loblaws",
       "retailer_sku": "21747538_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "50% Vegetable Oil Margarine Non Hydrogenated",
       "retailer": "Loblaws",
       "retailer_sku": "21747537_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "55% Vegetable Oil Margarine Non Hydrogenated",
       "retailer": "Loblaws",
       "retailer_sku": "21747189_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "55% Vegetable Oil Margarine Non Hydrogenated",
       "retailer": "Loblaws",
       "retailer_sku": "21747711_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Margarine Quarters Value Size",
       "retailer": "Loblaws",
       "retailer_sku": "20164195_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Garlic & Provencal Herb Butter",
       "retailer": "Loblaws",
       "retailer_sku": "20106744_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Lactose Free Butter Salted",
       "retailer": "Loblaws",
       "retailer_sku": "21601669_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Lactose Free Butter Unsalted",
       "retailer": "Loblaws",
       "retailer_sku": "21601712_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Salted Butter",
       "retailer": "Loblaws",
       "retailer_sku": "20639926_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Unsalted Butter",
       "retailer": "Loblaws",
       "retailer_sku": "20296112005_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Mirage Margarine",
       "retailer": "Loblaws",
       "retailer_sku": "20074944_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Protein Overnight Oats, Apple Pie",
       "retailer": "Loblaws",
       "retailer_sku": "21732660_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Protein Overnight Oats, Chocolatey Brownie",
       "retailer": "Loblaws",
       "retailer_sku": "21732824_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Protein Overnight Oats, French Vanilla",
       "retailer": "Loblaws",
       "retailer_sku": "21732873_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Deep Dish Pie Shells",
       "retailer": "Loblaws",
       "retailer_sku": "20671251_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Margarine",
       "retailer": "Loblaws",
       "retailer_sku": "20073675_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Pie Shells",
       "retailer": "Loblaws",
       "retailer_sku": "20153259_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Ready-to-Bake Tart Shells",
       "retailer": "Loblaws",
       "retailer_sku": "20296118001_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Unsalted Butter",
       "retailer": "Loblaws",
       "retailer_sku": "20316543002_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Margarine with Olive Oil",
+      "retailer": "Loblaws",
+      "retailer_sku": "20604430_EA",
+      "observed_at": "2026-11-22T19:38:08.858088+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Original Margarine",
+      "retailer": "Loblaws",
+      "retailer_sku": "20604565_EA",
+      "observed_at": "2026-11-22T19:38:08.858088+00:00",
+      "check_status": "source_unavailable"
     },
     {
       "name": "Chocolatey Chip Cookie Dough, Ready to Bake",
       "retailer": "Loblaws",
       "retailer_sku": "20318034001_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Chub Chocolatey Chunk Cookie",
       "retailer": "Loblaws",
       "retailer_sku": "20318034002_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Cinnamon Rolls with Icing, Ready to Bake 8 ct",
       "retailer": "Loblaws",
       "retailer_sku": "20320962002_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Cookies Confetti",
       "retailer": "Loblaws",
       "retailer_sku": "21096450_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Crescents - Reduced Fat",
       "retailer": "Loblaws",
       "retailer_sku": "20305424001_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Crescents Country Biscuits, Ready to Bake Dough, 10 ct",
       "retailer": "Loblaws",
       "retailer_sku": "20317832003_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Crescents Original Dough, 8 Pieces",
       "retailer": "Loblaws",
       "retailer_sku": "21505340_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "Crescents Pizza Crust, Refrigerated Pre-Made Dough, 1 ct",
       "retailer": "Loblaws",
       "retailer_sku": "20317832002_EA",
       "observed_at": "2026-11-17T20:54:55.324209+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
     },
     {
       "name": "All-Butter Brioche Buns",
