@@ -12,6 +12,8 @@ export function prepareDeployment(root){
  // Bolt's native pretty-URL router serves /contact from contact.html, including
  // refreshes. Keep one full document per page; clean-urls.js normalizes legacy
  // addresses. Directory index copies double the catalog size and are unnecessary.
+ // These two routes also contain child pages, so retain their directory entry.
+ for(const hub of ['categories','brands']){const file=path.join(dist,hub+'.html');if(fs.existsSync(file)){fs.mkdirSync(path.join(dist,hub),{recursive:true});fs.copyFileSync(file,path.join(dist,hub,'index.html'));}}
  fs.writeFileSync(path.join(dist,'_redirects'),'/products/:product.html /products/:product 301\n/categories/:category.html /categories/:category 301\n/brands/:brand.html /brands/:brand 301\n/:page.html /:page 301\n');
  let rawBytes=0,zipBytes=22,files=0;
  function inspect(dir){for(const entry of fs.readdirSync(dir,{withFileTypes:true})){
