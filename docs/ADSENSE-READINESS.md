@@ -1,6 +1,6 @@
 # PricePine AdSense readiness
 
-PricePine does not serve Google ads by default. Do not enable ads or add a publisher ID copied from another site. The current public privacy and cookie pages describe the no-advertising release. An exact publisher ID obtained from an authorized AdSense account is public configuration, not an API key. The requested PricePine publisher ID is configured for homepage ownership verification only; it does not inject ad code or authorize a seller in ads.txt.
+PricePine does not serve Google ads by default. Do not enable ads or add a publisher ID copied from another site. The current public privacy and cookie pages describe the no-advertising release. An exact publisher ID obtained from an authorized AdSense account is public configuration, not an API key. The owner-approved PricePine publisher ID is configured for homepage ownership verification and an exact DIRECT seller record in ads.txt. Neither injects ad code.
 
 ## Before requesting a review
 
@@ -18,7 +18,7 @@ PricePine does not serve Google ads by default. Do not enable ads or add a publi
 
 ## Deployment safety check (does not contact Google)
 
-Run `python3 scripts/check-ads-off.py dist` against the exact PricePine deployment before an ads-off publish. The script flags Google ad activation markers in deployable HTML/JavaScript and any Google seller row in ads.txt; it does not inspect dashboard approval, verify remote scripts at runtime, or prohibit an ownership-only meta tag.
+Run `python3 scripts/check-ads-off.py dist --allow-google-seller pub-3805697991276218` against the exact PricePine deployment before an ads-off publish. The script flags Google ad activation markers in deployable HTML/JavaScript and asserts the exact authorized ads.txt record; it does not inspect dashboard approval, verify remote scripts at runtime, or prohibit an ownership-only meta tag.
 
 ## Google references
 

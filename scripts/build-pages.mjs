@@ -25,7 +25,10 @@ const verificationEnv=base===trust.seo.siteUrl
  : siteEnv;
 index=index.replace('</head>',verificationMarkup(verificationEnv)+'</head>');
 fs.writeFileSync('index.html',index);
-const ads=adsTxt(siteEnv);
-// Empty file advertises no authorized seller until a real publisher ID is configured.
+// The approved PricePine seller record is independent of ad script delivery.
+const sellerEnv=base===trust.seo.siteUrl&&trust.seo.adsensePublishSellerRecord
+ ? {...siteEnv,ADSENSE_PUBLISHER_ID:trust.seo.adsenseVerificationAccount}
+ : siteEnv;
+const ads=adsTxt(sellerEnv);
 fs.writeFileSync('public/ads.txt',ads);
 
