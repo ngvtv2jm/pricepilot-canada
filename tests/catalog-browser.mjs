@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
 import { chromium } from 'playwright';
 
 const browser = await chromium.launch(process.env.PRICEPINE_CHROMIUM
@@ -8,7 +9,7 @@ const origin = new URL(process.env.PRICEPINE_PREVIEW_URL || 'http://127.0.0.1:41
 if (!['localhost', '127.0.0.1'].includes(new URL(origin).hostname)) throw Error('Run this fixture test against a local preview.');
 try {
   const context=await browser.newContext({viewport:{width:320,height:700},permissions:[]});
-  await context.route('https://raw.githubusercontent.com/ngvtv2jm/pricepilot-canada/**',route=>route.abort());
+  await context.route('https://raw.githubusercontent.com/ngvtv2jm/pricepilot-canada/**',route=>{const url=new URL(route.request().url());const p=url.pathname.replace('/ngvtv2jm/pricepilot-canada/main/','');if(/^public\/(catalog-cache|catalog-images)\/[a-zA-Z0-9_-]+\.webp$/.test(p)&&fs.existsSync(p))return route.fulfill({contentType:'image/webp',body:fs.readFileSync(p)});return route.abort();});
   await context.addInitScript(()=>{
     Object.defineProperty(window, 'IntersectionObserver', { value: undefined });
     Object.defineProperty(navigator,'geolocation',{configurable:true,value:{getCurrentPosition(_,fail){fail({code:1});}}});

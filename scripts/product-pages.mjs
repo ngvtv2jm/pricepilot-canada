@@ -26,7 +26,7 @@ export async function buildProductPages(base){
  const paths=[];const expected=new Set();
  for(const p of merged.products){
   if(!/^[a-zA-Z0-9-]+$/.test(p.id))throw Error('Invalid product identifier');
-  const path='products/'+p.id+'.html',url=base+'/'+path;
+  const path='products/'+p.id+'.html',url=base+'/'+path.replace(/\.html$/,'/');
   const desc=(p.description||'Compare available prices, package options and specifications for '+p.name+' on PricePine Canada.').slice(0,300);
   const photo=merged.product_images?.filter(i=>i.product_id===p.id).sort((a,b)=>a.sort_order-b.sort_order)[0]?.url||p.image_url;
   const cached=imageCache[p.feed_id||p.id]?.path;
@@ -43,7 +43,7 @@ export async function buildProductPages(base){
  const count=100, pageCount=Math.ceil(merged.products.length/count);
  for(let i=0;i<pageCount;i++){
   const path=i?'catalog-'+(i+1)+'.html':'catalog.html';paths.push(path);
-  const body=`<h1>Product directory${i?' — page '+(i+1):''}</h1><p>Browse exact products and package sizes. Open a comparison for dated retailer prices.</p><ul>${merged.products.slice(i*count,(i+1)*count).map(p=>`<li><a href="/products/${p.id}.html">${escapeHtml(p.name)}</a></li>`).join('')}</ul><nav aria-label="Directory pages">${Array.from({length:pageCount},(_,n)=>`<a ${n===i?'aria-current="page"':''} href="/${n?'catalog-'+(n+1)+'.html':'catalog.html'}">Page ${n+1}</a>`).join(' · ')}</nav>`;
+  const body=`<h1>Product directory${i?' — page '+(i+1):''}</h1><p>Browse exact products and package sizes. Open a comparison for dated retailer prices.</p><ul>${merged.products.slice(i*count,(i+1)*count).map(p=>`<li><a href="/products/${p.id}/">${escapeHtml(p.name)}</a></li>`).join('')}</ul><nav aria-label="Directory pages">${Array.from({length:pageCount},(_,n)=>`<a ${n===i?'aria-current="page"':''} href="/${n?'catalog-'+(n+1)+'/':'catalog/'}">Page ${n+1}</a>`).join(' · ')}</nav>`;
   fs.writeFileSync('public/'+path,renderPage({base,path,title:'Product directory — page '+(i+1),description:'Browse PricePine Canadian grocery products and package sizes, directory page '+(i+1)+'.',body}));
  }
  fs.writeFileSync('public/product-page-ids.json',JSON.stringify(merged.products.map(p=>p.id)));

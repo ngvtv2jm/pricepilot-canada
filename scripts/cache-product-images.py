@@ -40,7 +40,8 @@ def main():
     for p in products:
         urls=list(dict.fromkeys([p.get('image_url','')]+[r.get('image_url','') for r in p['observations']]))
         for url in urls:
-            if valid_url(url):by_url.setdefault(url,[]).append(p['id'])
+            local=legacy.get(url,'')
+            if valid_url(url) or (re.fullmatch(r'/catalog-images/[a-zA-Z0-9_-]+\.webp',local) and (ROOT/'public'/local.lstrip('/')).is_file()):by_url.setdefault(url,[]).append(p['id'])
     def download(entry):
         url,ids=entry
         for pid in ids:

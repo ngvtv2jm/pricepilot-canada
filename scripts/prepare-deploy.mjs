@@ -9,6 +9,21 @@ export function prepareDeployment(root){
  // These are copies in dist only. The original public/ files stay on GitHub,
  // where the daily cache job continues to add and repair product images.
  for(const dir of ['catalog-cache','catalog-images'])fs.rmSync(path.join(dist,dir),{recursive:true,force:true});
+ // Publish real directory indexes, so clean URLs work on refresh without JS.
+ // Keep tiny legacy documents as a fallback on hosts that ignore _redirects.
+ function cleanPages(dir){for(const entry of fs.readdirSync(dir,{withFileTypes:true})){
+  const file=path.join(dir,entry.name);
+  if(entry.isDirectory()){cleanPages(file);continue;}
+  if(!entry.name.endsWith('.html')||['index.html','404.html'].includes(entry.name))continue;
+  if(fs.readFileSync(file,'utf8').includes('<meta http-equiv="refresh"'))continue;
+  const relative=path.relative(dist,file).replaceAll(path.sep,'/');
+  const target='/'+relative.replace(/\.html$/,'/');
+  const output=file.slice(0,-5);fs.mkdirSync(output,{recursive:true});
+  fs.copyFileSync(file,path.join(output,'index.html'));
+  fs.writeFileSync(file,`<!doctype html><html lang="en-CA"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,follow"><link rel="canonical" href="https://pricepine.ca${target}"><meta http-equiv="refresh" content="0;url=${target}"><title>Page moved | PricePine Canada</title></head><body><p>This page has moved. <a href="${target}">Continue to PricePine</a>.</p></body></html>`);
+ }}
+ cleanPages(dist);
+ fs.writeFileSync(path.join(dist,'_redirects'),'/products/:product.html /products/:product/ 301\n/:page.html /:page/ 301\n');
  let rawBytes=0,zipBytes=22,files=0;
  function inspect(dir){for(const entry of fs.readdirSync(dir,{withFileTypes:true})){
   const file=path.join(dir,entry.name);
