@@ -1,6 +1,6 @@
 # PricePine AdSense readiness
 
-PricePine does not serve Google ads by default. Do not enable ads or add a publisher ID copied from another site. The current public privacy and cookie pages describe the no-advertising release. An exact publisher ID obtained from an authorized AdSense account is public configuration, not an API key.
+PricePine does not serve Google ads by default. Do not enable ads or add a publisher ID copied from another site. The current public privacy and cookie pages describe the no-advertising release. An exact publisher ID obtained from an authorized AdSense account is public configuration, not an API key. The requested PricePine publisher ID is configured for homepage ownership verification only; it does not inject ad code or authorize a seller in ads.txt.
 
 ## Before requesting a review
 

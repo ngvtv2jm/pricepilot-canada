@@ -23,3 +23,10 @@ test('verification accepts real identifiers without loading ad scripts',()=>{
  assert.throws(()=>adsTxt({ADSENSE_PUBLISHER_ID:'ca-pub-example'}));
  assert.ok(!adsTxt({}).includes('pub-'));
 });
+
+test('a verification-only account adds the meta tag without activating an ad seller',()=>{
+ const env={ADSENSE_VERIFICATION_ACCOUNT:'ca-pub-3805697991276218'};
+ assert.equal(verificationMarkup(env),'<!-- site-verification:start --><meta name="google-adsense-account" content="ca-pub-3805697991276218"><!-- site-verification:end -->');
+ assert.equal(adsTxt(env),'# No advertising sellers are authorized yet.\n');
+ assert.throws(()=>verificationMarkup({ADSENSE_VERIFICATION_ACCOUNT:'invalid'}));
+});

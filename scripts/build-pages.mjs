@@ -20,7 +20,10 @@ for(const [attr,name,value] of [['name','description',trust.seo.description],['p
 index=index.replace(/<link rel="canonical"[^>]*>/,'<link rel="canonical" href="'+base+'/"/>');
 index=index.replace(/<script type="application\/ld\+json">.*?<\/script>/s,'<script type="application/ld+json">'+JSON.stringify({'@context':'https://schema.org','@type':'WebSite',name:trust.business.tradingName,description:trust.seo.description,inLanguage:'en-CA',url:base+'/'}).replace(/</g,'\\u003c')+'</script>');
 index=index.replace(/<!-- site-verification:start -->[\s\S]*?<!-- site-verification:end -->/g,'');
-index=index.replace('</head>',verificationMarkup(siteEnv)+'</head>');
+const verificationEnv=base===trust.seo.siteUrl
+ ? {...siteEnv,ADSENSE_VERIFICATION_ACCOUNT:siteEnv.ADSENSE_VERIFICATION_ACCOUNT||trust.seo.adsenseVerificationAccount}
+ : siteEnv;
+index=index.replace('</head>',verificationMarkup(verificationEnv)+'</head>');
 fs.writeFileSync('index.html',index);
 const ads=adsTxt(siteEnv);
 // Empty file advertises no authorized seller until a real publisher ID is configured.

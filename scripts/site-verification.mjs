@@ -5,7 +5,7 @@ export function publisherId(env={}){
  return id;
 }
 export function verificationMarkup(env={}){
- const id=publisherId(env), token=(env.GOOGLE_SITE_VERIFICATION||'').trim();
+ const id=publisherId({ADSENSE_PUBLISHER_ID:env.ADSENSE_VERIFICATION_ACCOUNT||env.ADSENSE_PUBLISHER_ID}), token=(env.GOOGLE_SITE_VERIFICATION||'').trim();
  if(token&&!/^[a-zA-Z0-9_-]+$/.test(token))throw Error('GOOGLE_SITE_VERIFICATION must contain only the Google verification token');
  return '<!-- site-verification:start -->'+(id?`<meta name="google-adsense-account" content="${id}">`:'')+(token?`<meta name="google-site-verification" content="${token}">`:'')+'<!-- site-verification:end -->';
 }
