@@ -13,7 +13,7 @@ test('catalog display keeps the package/source/date but not retailer marketing',
  assert.equal(p.description_source,entry.source_url);assert.equal(p.description_checked_at,entry.checked_at);assert.equal(entry.description,description);
  assert.doesNotMatch(publicProductDescription('Retailer overview: “copy”','Apple Juice, 2 L','2 L'),/copy|Listed package/);
 });
-test('runtime source refresh applies the same text to body, metadata and Product schema',async()=>{
+test('runtime source refresh updates factual body text without rewriting stable search metadata or schema',async()=>{
  const text={textContent:''};const meta:string[]=[];
  const product={textContent:'{"@type":"Product"}'};const crumbs={textContent:'{"@type":"BreadcrumbList"}'};
  let attribution:any;
@@ -22,7 +22,7 @@ test('runtime source refresh applies the same text to body, metadata and Product
  vm.runInNewContext(readFileSync('public/product-description.js','utf8'),{document,fetch:async()=>({ok:true,json:async()=>entry}),AbortSignal,URL,Date});
  await new Promise(resolve=>setImmediate(resolve));
  const safe=publicProductDescription(description,name,package_size);
- assert.equal(text.textContent,safe);assert.deepEqual(meta,[safe,safe,safe]);assert.equal(JSON.parse(product.textContent).description,safe);
+ assert.equal(text.textContent,safe);assert.deepEqual(meta,[]);assert.equal(JSON.parse(product.textContent).description,undefined);
  assert.equal(crumbs.textContent,'{"@type":"BreadcrumbList"}');
  assert.equal(attribution[0].href,entry.source_url);assert.match(attribution[1],/Checked/);
 });

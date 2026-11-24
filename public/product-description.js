@@ -22,8 +22,6 @@
   const description=publicProductDescription(entry.description,root.dataset.productName,entry.package_size);
   root.querySelector('[data-description-text]').textContent=description;
   const attribution=root.querySelector('[data-description-source]'),link=document.createElement('a');link.href=url.href;link.textContent='Description source: '+(entry.source_label||'Retailer');link.rel='noopener noreferrer';attribution.replaceChildren(link,document.createTextNode(' · Checked '+new Date(checked).toLocaleDateString()));
-  for(const selector of ['meta[name="description"]','meta[property="og:description"]','meta[name="twitter:description"]'])document.querySelector(selector)?.setAttribute('content',description.slice(0,300));
-  for(const element of document.querySelectorAll('script[type="application/ld+json"]')){try{const schema=JSON.parse(element.textContent);if(schema['@type']==='Product'){schema.description=description;element.textContent=JSON.stringify(schema).replace(/</g,'\\u003c')}}catch{}}
   return;
  }catch{}}}
  void update();

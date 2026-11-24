@@ -1,3 +1,4 @@
+import {productMetadata} from './product-metadata.mjs';
 import fs from 'node:fs';
 import {renderObservations} from './render-observations.mjs';
 import {buildNavigation} from './product-navigation.mjs';
@@ -55,21 +56,25 @@ export async function buildProductPages(base){
  const publishTime=Date.now();
  const seoProducts=merged.products.map(p=>({...p,brand_name:merged.brands.find(b=>b.id===p.brand_id)?.name||''}));
  const relatedIndex=seoIndex(seoProducts);
- const navigation=buildNavigation(base,seoProducts,{productGroup,brandPath,productPath});
+ const navigation=buildNavigation(base,seoProducts,{productGroup,brandPath,productPath,variantsByProduct,observations,helpers,publishTime});
  const imageCache=JSON.parse(fs.readFileSync('public/image-cache.json','utf8')).images||{};
  fs.mkdirSync('public/products',{recursive:true});
  const paths=[...navigation.paths];const expected=new Set();
  for(const p of merged.products){
   if(!/^[a-zA-Z0-9-]+$/.test(p.id))throw Error('Invalid product identifier');
   const path='products/'+p.id+'.html',url=base+'/'+path.replace(/\.html$/,'');
-  const desc=(p.description||'Compare available prices, package options and specifications for '+p.name+' on PricePine Canada.').slice(0,300);
   const photo=merged.product_images?.filter(i=>i.product_id===p.id).sort((a,b)=>a.sort_order-b.sort_order)[0]?.url||p.image_url;
   const cached=imageCache[p.feed_id||p.id]?.path;
   const image=httpsUrl(githubProductImage(cached&&/^catalog-cache\/[a-f0-9]{64}\.webp$/.test(cached)?'/'+cached:cachedImages[photo]||photo||''))||base+'/pricepine-social-card.png';
   const brand=merged.brands.find(b=>b.id===p.brand_id)?.name;
   const pv=[...new Map((variantsByProduct.get(p.id)||[]).map(v=>[v.id,v])).values()];
-  const schema={'@context':'https://schema.org','@type':'Product',name:p.name,description:desc,image,...(brand?{brand:{'@type':'Brand',name:brand}}:{}),url};
-  let body=`<h1>${escapeHtml(p.name)}</h1><img src="${escapeHtml(image)}" alt="${escapeHtml(p.name)}" width="800" height="800" referrerpolicy="no-referrer"><div data-product-description data-product-id="${p.id}" data-product-name="${escapeHtml(p.name)}" data-description-ids="${[p.id,p.feed_id,...(p.feed_aliases||[])].filter(Boolean).join(',')}"><p data-description-text>${escapeHtml(p.description||desc)}</p><p data-description-source>${p.description_source?`<a href="${escapeHtml(p.description_source)}" rel="noopener noreferrer">Description source: ${escapeHtml(p.description_source_label||'Retailer')}</a> · Checked ${escapeHtml(p.description_checked_at.slice(0,10))}`:''}</p></div>${httpsUrl(p.source_url)?`<p>Product source: <a href="${escapeHtml(httpsUrl(p.source_url))}" rel="noopener noreferrer">${escapeHtml(p.source_provider||'Retailer')}</a>. ${escapeHtml(p.source_license||'')}</p>`:''}<h2>Package options & specifications</h2>${pv.map(v=>`<h3>${escapeHtml(v.name)}</h3><p>${escapeHtml([v.quantity,v.unit].filter(x=>x!=null).join(' '))}</p>${Object.keys(v.attributes||{}).length?`<table><caption>${escapeHtml(v.name)} specifications</caption><tbody>${Object.entries(v.attributes||{}).filter(([,val])=>['string','number','boolean'].includes(typeof val)).map(([k,val])=>`<tr><th scope="row">${escapeHtml(k)}</th><td>${escapeHtml(val)}</td></tr>`).join('')}</tbody></table>`:''}${renderObservations(v,observations.get(v.id)||[],helpers,publishTime)}`).join('')}<p><a href="/#product/${p.id}">Check current store prices and add to your shopping list →</a></p><p>Prices and availability change. Open the comparison to check dated retailer observations and eligible branch offers. Source-backed descriptions can refresh between publications; other product information updates when the site is published.</p>`;
+  const tables=new Map(pv.map(v=>[v.id,renderObservations(v,observations.get(v.id)||[],helpers,publishTime)]));
+  const {title,description:desc}=productMetadata(p,brand,pv,[...tables.values()].some(Boolean));
+  // Website observations in the current inputs do not verify availability. A dated
+  // reading is not an offer; don't emit an incomplete Product rich-result entity.
+  // Keep BreadcrumbList and social metadata. Rich-result markup can be enabled only
+  // once exact-package, available retailer offers have a freshness-enforced source.
+  let body=`<h1>${escapeHtml(p.name)}</h1><img src="${escapeHtml(image)}" alt="${escapeHtml(p.name)}" width="800" height="800" referrerpolicy="no-referrer"><div data-product-description data-product-id="${p.id}" data-product-name="${escapeHtml(p.name)}" data-description-ids="${[p.id,p.feed_id,...(p.feed_aliases||[])].filter(Boolean).join(',')}"><p data-description-text>${escapeHtml(p.description||desc)}</p><p data-description-source>${p.description_source?`<a href="${escapeHtml(p.description_source)}" rel="noopener noreferrer">Description source: ${escapeHtml(p.description_source_label||'Retailer')}</a> · Checked ${escapeHtml(p.description_checked_at.slice(0,10))}`:''}</p></div>${httpsUrl(p.source_url)?`<p>Product source: <a href="${escapeHtml(httpsUrl(p.source_url))}" rel="noopener noreferrer">${escapeHtml(p.source_provider||'Retailer')}</a>. ${escapeHtml(p.source_license||'')}</p>`:''}<h2>Package options & specifications</h2>${pv.map(v=>`<h3>${escapeHtml(v.name)}</h3><p>${escapeHtml([v.quantity,v.unit].filter(x=>x!=null).join(' '))}</p>${Object.keys(v.attributes||{}).length?`<table><caption>${escapeHtml(v.name)} specifications</caption><tbody>${Object.entries(v.attributes||{}).filter(([,val])=>['string','number','boolean'].includes(typeof val)).map(([k,val])=>`<tr><th scope="row">${escapeHtml(k)}</th><td>${escapeHtml(val)}</td></tr>`).join('')}</tbody></table>`:''}${tables.get(v.id)}`).join('')}<p><a href="/#product/${p.id}">Check current store prices and add to your shopping list →</a></p><p>Prices and availability change. Open the comparison to check dated retailer observations and eligible branch offers. Source-backed descriptions can refresh between publications; other product information updates when the site is published.</p>`;
   const full=seoProducts.find(q=>q.id===p.id);const group=productGroup(full);const others=relatedProducts(full,relatedIndex);
   const breadcrumbs=[{name:'Home',item:base+'/'},{name:'All products',item:base+'/catalog'}];
   let contextLinks='';
@@ -79,9 +84,9 @@ export async function buildProductPages(base){
   body+=`<p>${contextLinks}</p><script type="application/ld+json">${jsonLd({'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:breadcrumbs.map((b,i)=>({'@type':'ListItem',position:i+1,...b}))})}</script>`;
   if(others.length)body+=`<section aria-labelledby="related-products"><h2 id="related-products">Related products</h2><p>Explore similar products and package sizes. These are browsing suggestions, not exact-package price comparisons.</p><ul class="related-grid">${others.map(q=>{const photo=merged.product_images.find(i=>i.product_id===q.id)?.url||q.image_url;const cached=imageCache[q.feed_id||q.id]?.path;const image=httpsUrl(githubProductImage(cached?'/'+cached:cachedImages[photo]||photo||''));return `<li><a href="${productPath(q.id)}">${image?`<img src="${escapeHtml(image)}" alt="${escapeHtml(q.name)}" width="180" height="180" loading="lazy">`:''}<strong>${escapeHtml(q.name)}</strong></a>${q.brand_name?`<p>${escapeHtml(q.brand_name)}</p>`:''}</li>`}).join('')}</ul></section>`;
   body+='<script src="/product-description.js" defer></script>';
-  fs.writeFileSync('public/'+path,renderPage({base,path,title:p.name,description:desc,image,body,schema}));paths.push(path);expected.add(p.id+'.html');
+  fs.writeFileSync('public/'+path,renderPage({base,path,title,description:desc,image,body}));paths.push(path);expected.add(p.id+'.html');
   // Preserve shared URLs for feed products merged into a database product, without indexing duplicates.
-  for(const alias of p.feed_aliases||[]){if(alias===p.id)continue;const name=alias+'.html';if(!/^discovered-[a-f0-9]{24}\.html$/.test(name))continue;fs.writeFileSync('public/products/'+name,renderPage({base,path,title:p.name,description:desc,image,body,noindex:true}));expected.add(name)}
+  for(const alias of p.feed_aliases||[]){if(alias===p.id)continue;const name=alias+'.html';if(!/^discovered-[a-f0-9]{24}\.html$/.test(name))continue;fs.writeFileSync('public/products/'+name,renderPage({base,path,title,description:desc,image,body,noindex:true}));expected.add(name)}
  }
  for(const name of fs.readdirSync('public/products'))if(name.endsWith('.html')&&!expected.has(name))fs.unlinkSync('public/products/'+name);
  const count=100, pageCount=Math.ceil(merged.products.length/count);

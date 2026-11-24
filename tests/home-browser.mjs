@@ -17,7 +17,9 @@ const page=await context.newPage();page.on('pageerror',e=>errors.push(e.message)
 fs.mkdirSync('outputs/homepage-qa',{recursive:true});
 try{
  await page.goto(origin);
- await page.getByRole('heading',{name:/Good groceries/}).waitFor();
+ await page.getByRole('heading',{name:'Compare Canadian grocery prices',exact:true}).waitFor();
+ assert.equal(await page.title(),'PricePine Canada — Compare Canadian grocery prices');
+ assert.equal(await page.locator('meta[name=description]').getAttribute('content'),await page.locator('meta[property="og:description"]').getAttribute('content'));
  await page.locator('.home-product').first().waitFor();
  await page.waitForFunction(()=>document.querySelector('.home-product-image img')?.naturalWidth>0);
  assert.ok(await page.locator('.home-categories>a').count()>=4);
