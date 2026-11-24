@@ -2,7 +2,8 @@ import type {Row} from './domain';
 const pcHosts=['www.realcanadiansuperstore.ca','www.nofrills.ca','www.loblaws.ca'];
 const hosts:Record<string,string>={'Real Canadian Superstore':pcHosts[0],'No Frills':pcHosts[1],Loblaws:pcHosts[2],'Giant Tiger':'www.gianttiger.com'};
 const norm=(s:unknown)=>String(s??'').normalize('NFKC').trim().replace(/\s+/g,' ').toLowerCase();
-const size=(s:unknown)=>norm(s).replace(/×/g,'x').replace(/(\d)\s*-?\s*(kg|g|ml|l|lb|oz|pk|pack|count|ct)\b/g,'$1 $2');
+export const discoveryPackageKey=(s:unknown)=>norm(s).replace(/×/g,'x').replace(/(\d)\s*-?\s*(kg|g|ml|l|lb|oz|pk|pack|count|ct)\b/g,'$1 $2');
+const size=discoveryPackageKey;
 export function fingerprint(name:string,brand:string,pack:string){
  brand=norm(brand);name=norm(name);pack=size(pack);
  if(!brand||brand==='giant tiger'||!pack)return '';

@@ -18,6 +18,18 @@ test('canonical product identities and alias pages do not compete in sitemap',()
  const sitemap=fs.readFileSync('public/sitemap.xml','utf8');const urls=[...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(m=>m[1]);assert.equal(urls.length,new Set(urls).size);
  for(const name of fs.readdirSync('public/products')){const html=fs.readFileSync('public/products/'+name,'utf8');if(html.includes('content="noindex,follow"'))assert.ok(!urls.some(u=>u.endsWith('/'+name.replace(/\.html$/,'/'))),name);}
 });
-test('all policy pages are public, versioned and linked from the footer',()=>{
- for(const slug of ['about','privacy','terms','contact','cookies','disclaimer','accessibility']){const html=fs.readFileSync('public/'+slug+'.html','utf8');assert.ok(/Version \d+/.test(html));assert.ok(html.includes('Updated <time'));assert.ok(html.includes('href="/privacy/"'));assert.ok(html.includes('href="/contact/"'));}
+test('all policy pages are public, versioned and linked from the footer with canonical URLs',()=>{
+ const slugs=['about','privacy','terms','contact','cookies','disclaimer','accessibility'];
+ for(const slug of slugs){
+   const html=fs.readFileSync('public/'+slug+'.html','utf8');
+   assert.ok(/Version \d+/.test(html),slug);
+   assert.ok(html.includes('Updated <time'),slug);
+   const footer=html.match(/<footer\b[^>]*>([\s\S]*?)<\/footer>/)?.[1];
+   assert.ok(footer,slug);
+   for(const link of slugs){
+     assert.ok(footer.includes('href="/'+link+'"'),slug+' → /'+link);
+     assert.ok(!footer.includes('href="/'+link+'/"'),slug+' → trailing slash '+link);
+     assert.ok(!footer.includes('href="/'+link+'.html"'),slug+' → .html '+link);
+   }
+ }
 });

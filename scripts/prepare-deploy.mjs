@@ -9,12 +9,31 @@ export function prepareDeployment(root){
  // These are copies in dist only. The original public/ files stay on GitHub,
  // where the daily cache job continues to add and repair product images.
  for(const dir of ['catalog-cache','catalog-images'])fs.rmSync(path.join(dist,dir),{recursive:true,force:true});
- // Bolt's native pretty-URL router serves /contact from contact.html, including
- // refreshes. Keep one full document per page; clean-urls.js normalizes legacy
- // addresses. Directory index copies double the catalog size and are unnecessary.
- // These two routes also contain child pages, so retain their directory entry.
+ // Bolt serves clean URLs from these HTML files. Preserve one canonical document
+ // per route; only hubs with children need their directory entry duplicated.
  for(const hub of ['categories','brands']){const file=path.join(dist,hub+'.html');if(fs.existsSync(file)){fs.mkdirSync(path.join(dist,hub),{recursive:true});fs.copyFileSync(file,path.join(dist,hub,'index.html'));}}
- fs.writeFileSync(path.join(dist,'_redirects'),'/products/:product.html /products/:product 301\n/categories/:category.html /categories/:category 301\n/brands/:brand.html /brands/:brand 301\n/:page.html /:page 301\n');
+ // Bolt treated the previous /:page.html pattern as a whole segment and sent
+ // unknown requests to a literal /:page. Emit only exact known old URLs.
+ const aliases=[];
+ function collectAliases(dir){
+  for(const entry of fs.readdirSync(dir,{withFileTypes:true})){
+   const file=path.join(dir,entry.name);
+   if(entry.isDirectory()){
+    if(dir===dist&&['products','categories','brands'].includes(entry.name)) collectAliases(file);
+    continue;
+   }
+   const route=path.relative(dist,file).split(path.sep).join('/');
+   if(!/^(?:[a-z0-9-]+\/)?[a-z0-9-]+\.html$/.test(route)||route==='404.html')continue;
+   if(route==='index.html'){
+    aliases.push('/index.html / 301!');
+   }else if(!route.endsWith('/index.html')){
+    aliases.push('/'+route+' /'+route.slice(0,-5)+' 301!');
+   }
+  }
+ }
+ collectAliases(dist);
+ // No catch-all: missing pages must remain actual 404 responses with 404.html.
+ fs.writeFileSync(path.join(dist,'_redirects'),aliases.sort().join('\n')+'\n');
  let rawBytes=0,zipBytes=22,files=0;
  function inspect(dir){for(const entry of fs.readdirSync(dir,{withFileTypes:true})){
   const file=path.join(dir,entry.name);

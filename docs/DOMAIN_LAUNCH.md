@@ -27,3 +27,22 @@ Google references:
 - https://support.google.com/adsense/answer/13554020
 
 Neither an available custom domain nor a successful build guarantees indexing or AdSense acceptance. The site still uses retailer-derived product data; original comparisons and tools add functionality, but Google assesses overall value and rights.
+
+## Redirect verification after publishing
+
+The release emits exact permanent redirects for existing legacy HTML documents
+and keeps the canonical HTML content in place. Unmatched URLs are left to the
+native 404 handler, not sent to the homepage. A known-host browser fallback
+keeps old bookmarks, path/query and public product fragments working when
+the platform does not enforce a redirect. It does not copy account credentials,
+browser sessions, or guest data between origins, and does not itself return
+HTTP 301. The rule syntax uses the static hosting provider's documented force
+marker; verify Bolt's parser before claiming it was applied. If live behavior
+still disagrees, use a verified provider redirect mechanism instead of adding a
+wildcard that could break all clean paths.
+
+Release smoke test (ordinary GET, not just HEAD): the home and clean product,
+brand, category, catalog and policy routes should return 200 directly; old
+`.html` routes should return a one-hop 301; nonsense root and product paths
+should return real 404; the old product-hash bookmark must be exercised in
+a browser; auth callbacks on their original origin must continue to work.

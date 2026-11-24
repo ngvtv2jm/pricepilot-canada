@@ -1,8 +1,9 @@
 import fs from 'node:fs';
 const files=['catalog-snapshot.json','discovered-catalog.json','retailer-prices.json','comparison-prices.json','image-cache.json'];
+const optionalFiles=['product-descriptions.json'];
 const lean=fs.existsSync('.bolt-release.json');
 const base='https://raw.githubusercontent.com/ngvtv2jm/pricepilot-canada/main/public/';
-await Promise.all(files.map(async name=>{
+await Promise.all([...files,...optionalFiles].map(async name=>{
  const target='public/'+name;if(!lean&&fs.existsSync(target))return;
  let problem;
  for(let attempt=0;attempt<3;attempt++)try{
@@ -13,5 +14,6 @@ await Promise.all(files.map(async name=>{
  // A previously loaded public snapshot remains an acceptable fallback between
  // releases. Missing build inputs must fail clearly instead of producing 404s.
  if(fs.existsSync(target)){console.warn('Using saved catalog input after source failed: '+name);return;}
+ if(optionalFiles.includes(name)){console.warn('Optional product enrichment unavailable: '+name);return;}
  throw Error('Cannot load '+name+': '+problem);
 }));
