@@ -1,0 +1,56 @@
+name: Research product descriptions
+on:
+  schedule:
+    - cron: '47 8 * * *'
+      timezone: America/Toronto
+  workflow_run:
+    workflows: [Daily catalog and price maintenance]
+    types: [completed]
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/enrich-product-descriptions.py
+      - scripts/test-product-descriptions.py
+      - .github/workflows/enrich-descriptions.yml
+permissions:
+  contents: read
+concurrency:
+  group: product-descriptions
+  cancel-in-progress: false
+jobs:
+  research:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - run: python3 scripts/test-product-descriptions.py
+      - run: python3 -m pip install playwright==1.65.2
+      - run: python3 -m playwright install --with-deps chromium
+      - name: Research missing and outdated descriptions
+        run: python3 scripts/enrich-product-descriptions.py
+        env:
+          DESCRIPTION_RENDER: '1'
+          DESCRIPTION_MAX_PRODUCTS: '1000'
+          DESCRIPTION_TIME_BUDGET_SECONDS: '1100'
+      - name: Publish verified descriptions and queue report
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/product-descriptions.json public/product-descriptions public/description-status.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update sourced product descriptions and research queue [skip ci]'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: product-description-research-report
+          path: public/description-status.json
+          retention-days: 7

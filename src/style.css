@@ -11,3 +11,4 @@ footer nav{display:flex;flex-wrap:wrap;justify-content:flex-start;gap:8px 18px;p
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 
 .product-link small,.branch-results small{display:block}.branch-results article p{margin-block:.5rem}.branch-results h3{margin-bottom:.35rem}
+.related-products{margin-top:48px;padding-top:24px;border-top:1px solid #dbe9e0}.related-products a{text-decoration:none}.related-products img{height:160px;width:100%;object-fit:contain}.related-products h3{font-size:18px;color:#173e35}.product-breadcrumb{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;font-size:14px}
