@@ -19,10 +19,22 @@ def webp(raw):
         im.load();im=ImageOps.exif_transpose(im).convert('RGB');im.thumbnail((800,800))
         output=io.BytesIO();im.save(output,'WEBP',quality=85,method=4);return output.getvalue()
 
+def image_products(discovered,snapshot):
+    products={p['id']:{**p,'observations':list(p.get('observations',[]))} for p in discovered}
+    for p in snapshot.get('products',[]):
+        products.setdefault(p['id'],{**p,'observations':[]})
+    for image in snapshot.get('product_images',[]):
+        if image.get('product_id') in products:
+            products[image['product_id']]['observations'].append({'image_url':image.get('url','')})
+    return list(products.values())
+
 def main():
     started=datetime.datetime.now(datetime.timezone.utc).isoformat();path=ROOT/'public/image-cache.json'
     previous=json.loads(path.read_text()).get('images',{}) if path.exists() else {}
-    products=json.loads((ROOT/'public/discovered-catalog.json').read_text())['products']
+    discovered=json.loads((ROOT/'public/discovered-catalog.json').read_text())['products']
+    snapshot_path=ROOT/'public/catalog-snapshot.json'
+    snapshot=json.loads(snapshot_path.read_text()) if snapshot_path.exists() else {}
+    products=image_products(discovered,snapshot)
     legacy=json.loads((ROOT/'src/lib/catalogImages.json').read_text())
     cache=ROOT/'public/catalog-cache';cache.mkdir(exist_ok=True);by_url={}
     for p in products:

@@ -8,6 +8,8 @@ export {escapeHtml,jsonLd} from './trust-pages.mjs';
 const compiled=ts.transpileModule(fs.readFileSync('src/lib/discoveryFeed.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.ESNext,target:ts.ScriptTarget.ES2022}}).outputText;
 const {mergeDiscovered,validDiscovery}=await import('data:text/javascript;base64,'+Buffer.from(compiled).toString('base64'));
 const cachedImages=JSON.parse(fs.readFileSync('src/lib/catalogImages.json','utf8'));
+const imageHelpers=ts.transpileModule(fs.readFileSync('src/lib/githubImages.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.ESNext,target:ts.ScriptTarget.ES2022}}).outputText;
+const {githubProductImage}=await import('data:text/javascript;base64,'+Buffer.from(imageHelpers).toString('base64'));
 export async function buildProductPages(base){
  const env={...loadEnv('production',process.cwd(),'VITE_'),...process.env};
  let catalog=JSON.parse(fs.readFileSync('public/catalog-snapshot.json','utf8'));
@@ -28,7 +30,7 @@ export async function buildProductPages(base){
   const desc=(p.description||'Compare available prices, package options and specifications for '+p.name+' on PricePine Canada.').slice(0,300);
   const photo=merged.product_images?.filter(i=>i.product_id===p.id).sort((a,b)=>a.sort_order-b.sort_order)[0]?.url||p.image_url;
   const cached=imageCache[p.feed_id||p.id]?.path;
-  const image=cached&&/^catalog-cache\/[a-f0-9]{64}\.webp$/.test(cached)?base+'/'+cached:cachedImages[photo]?base+cachedImages[photo]:httpsUrl(photo)||base+'/pricepine-social-card.png';
+  const image=httpsUrl(githubProductImage(cached&&/^catalog-cache\/[a-f0-9]{64}\.webp$/.test(cached)?'/'+cached:cachedImages[photo]||photo||''))||base+'/pricepine-social-card.png';
   const brand=merged.brands.find(b=>b.id===p.brand_id)?.name;
   const pv=merged.product_variants.filter(v=>v.product_id===p.id);
   const schema={'@context':'https://schema.org','@type':'Product',name:p.name,description:desc,image,...(brand?{brand:{'@type':'Brand',name:brand}}:{}),url};

@@ -7,6 +7,13 @@ m=module('matcher','find-store-prices.py');c=module('cache','cache-product-image
 r={'name':'Chocolate Milk','brand':'Neilson','package_size':'2 l','retailer':'No Frills','retailer_sku':'20187292_EA','price_cad':4.79,'observed_at':'2026-01-01T00:00:00Z'}
 p={'id':'test','name':'Chocolate Milk','brand':'Neilson','package_size':'2 l','observations':[r]}
 class Maintenance(unittest.TestCase):
+ def test_images_include_old_database_products_and_gallery(self):
+  original={'id':'new','image_url':'https://cdn.shopify.com/new.jpg','observations':[]}
+  snapshot={'products':[{'id':'old'},{'id':'new'}],'product_images':[{'product_id':'old','url':'https://digital.loblaws.ca/old.png'},{'product_id':'new','url':'https://digital.loblaws.ca/new-gallery.png'}]}
+  products=c.image_products([original],snapshot)
+  self.assertEqual(len(products),2);self.assertEqual({p['id'] for p in products},{'old','new'})
+  self.assertEqual(products[1]['observations'][0]['image_url'],'https://digital.loblaws.ca/old.png')
+  self.assertEqual(len(products[0]['observations']),1);self.assertEqual(original['observations'],[])
  def test_shared_sku(self):self.assertTrue(m.exact_match(p,{**r,'retailer':'Loblaws'}))
  def test_size_and_flavour(self):
   self.assertFalse(m.exact_match(p,{**r,'package_size':'1 l'}));self.assertFalse(m.exact_match(p,{**r,'name':'Lactose Free Chocolate Milk'}));self.assertFalse(m.exact_match(p,{**r,'retailer_sku':'OTHER'}))
