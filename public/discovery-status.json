@@ -1,6 +1,6 @@
 {
-  "started_at": "2026-11-24T14:11:38.518992+00:00",
-  "completed_at": "2026-11-24T14:12:45.890368+00:00",
+  "started_at": "2026-11-24T14:23:51.899615+00:00",
+  "completed_at": "2026-11-24T14:24:58.241996+00:00",
   "added": 100,
   "duplicates_updated": 2148,
   "conflicts_skipped": 81,
@@ -702,271 +702,271 @@
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/dairy-eggs/cheese/c/28225?page=2",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/dairy-eggs/cheese/c/28225?page=3",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/dairy-eggs/cheese/c/28225?page=4",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/dairy-eggs/cheese/c/28225?page=5",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/dairy-eggs/milk-cream/c/28224",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/dairy-eggs/milk-cream/c/28224?page=2",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/dairy-eggs/milk-cream/c/28224?page=3",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/dairy-eggs/milk-cream/c/28224?page=4",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/dairy-eggs/milk-cream/c/28224?page=5",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/dairy-eggs/yogurt/c/28227",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/dairy-eggs/yogurt/c/28227?page=2",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/dairy-eggs/yogurt/c/28227?page=3",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/dairy-eggs/yogurt/c/28227?page=4",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/dairy-eggs/yogurt/c/28227?page=5",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/dairy-eggs/yogurt/c/28227?page=6",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/drinks/c/28004",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/drinks/c/28004?page=2",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/drinks/c/28004?page=3",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/drinks/c/28004?page=4",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/drinks/c/28004?page=5",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/drinks/c/28004?page=6",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/frozen-food/c/28005",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/frozen-food/c/28005?page=2",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/frozen-food/c/28005?page=3",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/frozen-food/c/28005?page=4",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/frozen-food/c/28005?page=5",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/frozen-food/c/28005?page=6",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/baking-essentials/c/28186",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/baking-essentials/c/28186?page=2",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/baking-essentials/c/28186?page=3",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/baking-essentials/c/28186?page=4",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/baking-essentials/c/28186?page=5",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/baking-essentials/c/28186?page=6",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/c/28006",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/c/28006?page=4",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/c/28006?page=6",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/cereal-breakfast/c/28183",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/cereal-breakfast/c/28183?page=2",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/cereal-breakfast/c/28183?page=3",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/cereal-breakfast/c/28183?page=4",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/cereal-breakfast/c/28183?page=5",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/condiments/c/28243",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/condiments/c/28243?page=2",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/condiments/c/28243?page=3",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "retailer": "No Frills",
       "url": "https://www.nofrills.ca/en/food/pantry/condiments/c/28243?page=4",
       "status": "unavailable",
-      "detail": "ValueError: Structured product data unavailable"
+      "detail": "HTTPError: HTTP Error 403: Forbidden"
     }
   ]
 }
