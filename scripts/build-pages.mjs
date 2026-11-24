@@ -2,7 +2,10 @@ import './restore-catalog-images.mjs';
 import {buildProductPages} from './product-pages.mjs';
 import {buildTrustPages,trust,renderPage,escapeHtml} from './trust-pages.mjs';
 import fs from 'node:fs';
-const base=(process.env.VITE_SITE_URL||trust.seo.siteUrl).replace(/\/$/,'');
+import {loadEnv} from 'vite';
+import {verificationMarkup,adsTxt} from './site-verification.mjs';
+const siteEnv={...loadEnv('production',process.cwd(),''),...process.env};
+const base=(siteEnv.VITE_SITE_URL||trust.seo.siteUrl).replace(/\/$/,'');
 if(!/^https:\/\/[a-z0-9.-]+(?::\d+)?$/i.test(base))throw Error('VITE_SITE_URL must be an HTTPS origin');
 const paths=[...buildTrustPages(base),...await buildProductPages(base)];
 fs.writeFileSync('public/robots.txt',`User-agent: *\nAllow: /\nSitemap: ${base}/sitemap.xml\n`);
@@ -15,4 +18,11 @@ for(const [attr,name,value] of [['name','description',trust.seo.description],['p
  index=index.replace(new RegExp('<meta '+attr+'="'+name+'"[^>]*>'),'<meta '+attr+'="'+name+'" content="'+escapeHtml(value)+'"/>');
 }
 index=index.replace(/<link rel="canonical"[^>]*>/,'<link rel="canonical" href="'+base+'/"/>');
+index=index.replace(/<script type="application\/ld\+json">.*?<\/script>/s,'<script type="application/ld+json">'+JSON.stringify({'@context':'https://schema.org','@type':'WebSite',name:trust.business.tradingName,description:trust.seo.description,inLanguage:'en-CA',url:base+'/'}).replace(/</g,'\\u003c')+'</script>');
+index=index.replace(/<!-- site-verification:start -->[\s\S]*?<!-- site-verification:end -->/g,'');
+index=index.replace('</head>',verificationMarkup(siteEnv)+'</head>');
 fs.writeFileSync('index.html',index);
+const ads=adsTxt(siteEnv);
+// Empty file advertises no authorized seller until a real publisher ID is configured.
+fs.writeFileSync('public/ads.txt',ads);
+

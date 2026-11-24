@@ -1,18 +1,18 @@
 {
-  "version": 1,
-  "updatedAt": "2026-11-05",
+  "version": 2,
+  "updatedAt": "2026-11-24",
   "business": {
     "tradingName": "PricePine Canada",
-    "legalName": "",
-    "supportEmail": "",
-    "privacyEmail": "",
+    "legalName": "Altergy Network Solutions Corp.",
+    "supportEmail": "info@ansolcorp.ca",
+    "privacyEmail": "info@ansolcorp.ca",
     "serviceArea": "Canada",
     "businessLocation": "",
     "registration": "",
     "socialProfiles": []
   },
   "seo": {
-    "siteUrl": "https://pricepilot-canada-0s3l.bolt.host",
+    "siteUrl": "https://pricepine.ca",
     "title": "PricePine Canada \u2014 Compare Canadian grocery prices",
     "description": "Compare exact grocery products and package sizes, check dated Canadian retailer prices and organize your shopping list with PricePine Canada.",
     "socialImage": "/pricepine-social-card.png"
@@ -45,8 +45,8 @@
     "contact": {
       "title": "Contact & support",
       "description": "Get help with PricePine, report inaccurate prices and track privacy or account requests.",
-      "version": 1,
-      "updatedAt": "2026-11-05",
+      "version": 2,
+      "updatedAt": "2026-11-24",
       "sections": [
         {
           "heading": "Help, corrections and complaints",
@@ -62,15 +62,15 @@
         },
         {
           "heading": "Contact availability",
-          "text": "The account request form is the currently available contact channel. A public support email and verified legal operator details have not yet been published. If you cannot access your account, use the password reset option. An independent contact channel remains an operator setup item."
+          "text": "Email info@ansolcorp.ca for support, corrections, accessibility issues or account access problems. PricePine is operated by Altergy Network Solutions Corp. Signed-in users can also submit and track requests through My account. Do not email passwords, payment information or identity documents."
         }
       ]
     },
     "privacy": {
       "title": "Privacy notice",
       "description": "Understand PricePine account data, browser storage, service providers and access or deletion requests.",
-      "version": 1,
-      "updatedAt": "2026-11-05",
+      "version": 2,
+      "updatedAt": "2026-11-24",
       "sections": [
         {
           "heading": "What we collect and why",
@@ -102,7 +102,7 @@
         },
         {
           "heading": "Contact and changes",
-          "text": "Use the privacy request form in My account. The public privacy email and verified legal operator identity are pending publication. The version and update date below identify this notice. Applicable privacy obligations, retention periods and cross-border arrangements require operator and legal review."
+          "text": "PricePine is operated by Altergy Network Solutions Corp. Email info@ansolcorp.ca for privacy questions, access, correction or deletion requests, or use the privacy request form in My account. We may need to verify account ownership. The version and update date below identify this notice."
         }
       ]
     },
