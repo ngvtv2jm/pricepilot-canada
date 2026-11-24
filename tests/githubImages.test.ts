@@ -20,12 +20,12 @@ test('deployment excludes product images while source images and indexed pages s
   for(const parent of ['public','dist'])for(const dir of ['catalog-cache','catalog-images']){fs.mkdirSync(path.join(root,parent,dir),{recursive:true});fs.writeFileSync(path.join(root,parent,dir,'image.webp'),'original-image');}
   fs.mkdirSync(path.join(root,'dist/products'));fs.writeFileSync(path.join(root,'dist/index.html'),'<h1>PricePine</h1>');fs.writeFileSync(path.join(root,'dist/products/one.html'),'<h1>Product</h1>');fs.writeFileSync(path.join(root,'dist/sitemap.xml'),'<urlset/>');
   const report=prepareDeployment(root);
-  assert.equal(report.files,5);assert.ok(report.zipBytes<100_000_000);
+  assert.equal(report.files,4);assert.ok(report.zipBytes<100_000_000);
   for(const dir of ['catalog-cache','catalog-images']){assert.equal(fs.existsSync(path.join(root,'dist',dir)),false);assert.equal(fs.readFileSync(path.join(root,'public',dir,'image.webp'),'utf8'),'original-image');}
   assert.ok(fs.existsSync(path.join(root,'dist/products/one.html')));
-  assert.equal(fs.readFileSync(path.join(root,'dist/products/one/index.html'),'utf8'),'<h1>Product</h1>');
+  assert.equal(fs.existsSync(path.join(root,'dist/products/one/index.html')),false);
   assert.equal(fs.readFileSync(path.join(root,'dist/products/one.html'),'utf8'),'<h1>Product</h1>');
   prepareDeployment(root);
-  assert.equal(fs.readFileSync(path.join(root,'dist/products/one/index.html'),'utf8'),'<h1>Product</h1>');
+  assert.equal(fs.existsSync(path.join(root,'dist/products/one/index.html')),false);
  }finally{fs.rmSync(root,{recursive:true,force:true});}
 });

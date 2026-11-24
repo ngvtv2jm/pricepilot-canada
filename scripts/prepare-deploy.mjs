@@ -9,19 +9,9 @@ export function prepareDeployment(root){
  // These are copies in dist only. The original public/ files stay on GitHub,
  // where the daily cache job continues to add and repair product images.
  for(const dir of ['catalog-cache','catalog-images'])fs.rmSync(path.join(dist,dir),{recursive:true,force:true});
- // Real directory indexes support clean refreshes. Full legacy documents remain
- // available on Bolt's native pretty-URL router; clean-urls.js updates the visible
- // address without a redirect loop when the host ignores _redirects.
- function cleanPages(dir){for(const entry of fs.readdirSync(dir,{withFileTypes:true})){
-  const file=path.join(dir,entry.name);
-  if(entry.isDirectory()){cleanPages(file);continue;}
-  if(!entry.name.endsWith('.html')||['index.html','404.html'].includes(entry.name))continue;
-  const html=fs.readFileSync(file,'utf8');
-  if(html.includes('<meta http-equiv="refresh"'))continue;
-  const output=file.slice(0,-5);fs.mkdirSync(output,{recursive:true});
-  fs.copyFileSync(file,path.join(output,'index.html'));
- }}
- cleanPages(dist);
+ // Bolt's native pretty-URL router serves /contact from contact.html, including
+ // refreshes. Keep one full document per page; clean-urls.js normalizes legacy
+ // addresses. Directory index copies double the catalog size and are unnecessary.
  fs.writeFileSync(path.join(dist,'_redirects'),'/products/:product.html /products/:product 301\n/categories/:category.html /categories/:category 301\n/brands/:brand.html /brands/:brand 301\n/:page.html /:page 301\n');
  let rawBytes=0,zipBytes=22,files=0;
  function inspect(dir){for(const entry of fs.readdirSync(dir,{withFileTypes:true})){

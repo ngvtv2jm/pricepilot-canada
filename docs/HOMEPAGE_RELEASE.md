@@ -5,6 +5,7 @@
 - Most-viewed and recently-viewed products are based on local browser history only. Up to 100 product IDs/counts/times are stored on the device, never sent to a view-tracking endpoint. Storage controls remove this history; the notices disclose it.
 - Legacy `.html` policy and product documents remain complete and accessible. Canonicals use clean paths. The self-hosted `clean-urls.js` rewrites the address using history.replaceState, preserving queries and hashes without navigation loops on Bolt's native pretty-URL hosting. Host-level 301 rules are included where supported.
 - The generated `bolt-release` branch contains lightweight website source. Main retains product images, catalog feeds and generated artifacts. A GitHub workflow prepares this branch on source changes. Bolt should follow `bolt-release`; edit source on main. The existing database and account configuration are not moved.
+- Each generated page ships once as a full HTML document. Bolt resolves clean paths to those files; redundant directory-index copies are excluded.
 - Runtime/build hydration downloads public catalog JSON from main. Product images continue to load from GitHub and are excluded from the deployment ZIP.
 - CI includes desktop/mobile Chromium checks, collection/category actions, browsing-history persistence, every policy URL and a product-page refresh. Screenshot artifacts are retained for seven days.
 

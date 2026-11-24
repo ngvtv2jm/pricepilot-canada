@@ -18,8 +18,11 @@ class Page(HTMLParser):
 
 def resolve(url):
  path=urllib.parse.unquote(urllib.parse.urlsplit(url).path).lstrip('/')
- file=DIST/path
- return file/'index.html' if not path or path.endswith('/') or file.is_dir() else file
+ file=DIST/path.rstrip('/')
+ if not path or file.is_dir():return file/'index.html'
+ # Match Bolt's native extensionless HTML routing.
+ if not file.is_file() and not file.suffix:return file.with_suffix('.html')
+ return file
 
 def main():
  errors=[];pages={};canonical={};links=0;github_images=0;redirects=0
