@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import {categoryIndex,categoryPage} from './category-layout.mjs';
+import {eggsDescription,renderDozenEggComparison} from './egg-comparison.mjs';
 import {renderPage,escapeHtml,httpsUrl} from './trust-pages.mjs';
 // These guides explain what to compare, never imply stock or nationwide pricing.
 const categoryNotes={
@@ -60,7 +61,7 @@ export function buildNavigation(base,products,{productGroup,brandPath,productPat
    const guide=kind==='categories'&&!i?categoryNotes[key]:null;
    const pageSuffix=i?` (page ${i+1})`:'';
    const title=guide?.title||`${g.label} Grocery Price Comparisons${pageSuffix}`;
-   const description=guide
+   const description=kind==='categories'&&key==='eggs'&&!i?eggsDescription:guide
     ? `${guide.title}. Browse ${g.items.length} listed products and open a matching package for dated retailer website prices where available.`
     : `Explore ${g.label} grocery products and exact package sizes${pageSuffix}. Open a product for dated retailer prices and conditions where available.`;
    const related=guide?.related.filter(k=>groups.get(k)?.items.length>=2)||[];
@@ -68,9 +69,10 @@ export function buildNavigation(base,products,{productGroup,brandPath,productPat
    const matches=guide?recentCategoryMatches(g.items.filter(p=>stapleMatch(key,p.name)),observedPrices):[];
    const comparisonBody=matches.length?`<section id="matching-packages" aria-label="Dated price comparisons"><h2>Compare matching packages</h2><p>Each row shows the range across at least two retailer websites with verified price reads within 48 hours of this page build. Follow the product link for all retailer prices, dates and unit prices. Local price and stock are not verified.</p><div style="overflow-x:auto" tabindex="0"><table><thead><tr><th scope="col">Product and package</th><th scope="col">Observed range (CAD)</th><th scope="col">Retailer websites</th></tr></thead><tbody>${matches.map(({p,label,low,high,count})=>`<tr><th scope="row"><a href="${productPath(p.id)}">${escapeHtml((p.brand_name&&!p.name.toLowerCase().includes(p.brand_name.toLowerCase())?p.brand_name+' ':'')+p.name)}</a> · ${escapeHtml(label)}</th><td>${cad.format(low.price_cad)}${Number(low.price_cad)===Number(high.price_cad)?'':' to '+cad.format(high.price_cad)}</td><td>${count}; low at ${escapeHtml(low.retailer)} (${day.format(new Date(low.observed_at))} ET)</td></tr>`).join('')}</tbody></table></div></section>`:'';
    const pageItems=g.items.slice(i*100,(i+1)*100);
+   const headingContent=kind==='categories'&&key==='eggs'&&!i?renderDozenEggComparison(g.items,observedPrices):'';
    const relatedCards=[...new Set([...related,...visible.map(([id])=>id).filter(id=>id!==key)])].slice(0,3).map(id=>[id,groups.get(id)?.label]).filter(([,name])=>name);
    const feature=kind==='categories'?featureFor([...pageItems.filter(p=>stapleMatch(key,p.name)),...pageItems]):null;
-   const body=kind==='categories'?categoryPage({key,g,i,count,guide,guideBody,comparisonBody,pageItems,feature,productPath,related:relatedCards}):`<h1>${escapeHtml(guide?.title||g.label)}${i?' — page '+(i+1):''}</h1><p>Browse ${escapeHtml(g.label)} products and package sizes available in the PricePine catalog. Open a product for dated retailer observations and conditions.</p>${guideBody}${comparisonBody}<ul>${g.items.slice(i*100,(i+1)*100).map(p=>`<li><a href="${productPath(p.id)}">${escapeHtml(p.name)}</a>${p.brand_name?' — '+escapeHtml(p.brand_name):''}</li>`).join('')}</ul><nav aria-label="Product pages">${Array.from({length:count},(_,n)=>`<a href="/${kind}/${key+(n?'-'+(n+1):'')}" ${i===n?'aria-current="page"':''}>Page ${n+1}</a>`).join(' · ')}</nav><p><a href="/${kind}">${label}</a> · <a href="/catalog">All products</a></p>`;
+   const body=kind==='categories'?categoryPage({key,g,i,count,guide,guideBody,comparisonBody,headingContent,pageItems,feature,productPath,related:relatedCards}):`<h1>${escapeHtml(guide?.title||g.label)}${i?' — page '+(i+1):''}</h1><p>Browse ${escapeHtml(g.label)} products and package sizes available in the PricePine catalog. Open a product for dated retailer observations and conditions.</p>${guideBody}${comparisonBody}<ul>${g.items.slice(i*100,(i+1)*100).map(p=>`<li><a href="${productPath(p.id)}">${escapeHtml(p.name)}</a>${p.brand_name?' — '+escapeHtml(p.brand_name):''}</li>`).join('')}</ul><nav aria-label="Product pages">${Array.from({length:count},(_,n)=>`<a href="/${kind}/${key+(n?'-'+(n+1):'')}" ${i===n?'aria-current="page"':''}>Page ${n+1}</a>`).join(' · ')}</nav><p><a href="/${kind}">${label}</a> · <a href="/catalog">All products</a></p>`;
    write(`${kind}/${slug}.html`,title,description,body,feature?.image);
   }}
  }
