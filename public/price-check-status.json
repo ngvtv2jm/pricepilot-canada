@@ -1,6 +1,6 @@
 {
-  "started_at": "2026-11-24T22:25:35.397235+00:00",
-  "completed_at": "2026-11-24T22:27:04.108043+00:00",
+  "started_at": "2026-11-25T21:40:55.744572+00:00",
+  "completed_at": "2026-11-25T21:42:24.501036+00:00",
   "total": 1800,
   "verified": 1575,
   "changed": 14,
@@ -1274,6 +1274,13 @@
       "check_status": "needs_review"
     },
     {
+      "name": "RITZ Original Crackers, Rich and buttery tasting, flaky",
+      "retailer": "Real Canadian Superstore",
+      "retailer_sku": "21547034_EA",
+      "observed_at": "2026-11-24T22:26:14.598003+00:00",
+      "check_status": "needs_review"
+    },
+    {
       "name": "BISCUITS, Golden Cookies Filled with Rich Hazelnut Spread, Pack of 20 Cookies",
       "retailer": "Real Canadian Superstore",
       "retailer_sku": "21571552_EA",
@@ -1288,6 +1295,13 @@
       "check_status": "needs_review"
     },
     {
+      "name": "RITZ Original Crackers, Rich and buttery tasting, flaky",
+      "retailer": "No Frills",
+      "retailer_sku": "21547034_EA",
+      "observed_at": "2026-11-24T22:26:16.028896+00:00",
+      "check_status": "needs_review"
+    },
+    {
       "name": "BISCUITS, Golden Cookies Filled with Rich Hazelnut Spread, Pack of 20 Cookies",
       "retailer": "No Frills",
       "retailer_sku": "21571552_EA",
@@ -1299,6 +1313,13 @@
       "retailer": "No Frills",
       "retailer_sku": "20300320_EA",
       "observed_at": "2026-11-08T17:56:07.186115+00:00",
+      "check_status": "needs_review"
+    },
+    {
+      "name": "RITZ Original Crackers, Rich and buttery tasting, flaky",
+      "retailer": "Loblaws",
+      "retailer_sku": "21547034_EA",
+      "observed_at": "2026-11-24T22:26:17.087707+00:00",
       "check_status": "needs_review"
     },
     {
@@ -1320,13 +1341,6 @@
       "retailer": "Real Canadian Superstore",
       "retailer_sku": "20307968001_EA",
       "observed_at": "2026-11-06T19:25:13.039030+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "Soda Orange Bottles",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21531921_EA",
-      "observed_at": "2026-11-18T20:31:03.608954+00:00",
       "check_status": "needs_review"
     },
     {
@@ -1379,13 +1393,6 @@
       "check_status": "needs_review"
     },
     {
-      "name": "Soda Orange Bottles",
-      "retailer": "No Frills",
-      "retailer_sku": "21531921_EA",
-      "observed_at": "2026-11-18T20:31:06.574512+00:00",
-      "check_status": "needs_review"
-    },
-    {
       "name": "Zero Sugar Fruit Punch Bottle",
       "retailer": "No Frills",
       "retailer_sku": "21434122_EA",
@@ -1432,13 +1439,6 @@
       "retailer": "Loblaws",
       "retailer_sku": "20307968001_EA",
       "observed_at": "2026-11-06T19:25:17.417752+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "Soda Orange Bottles",
-      "retailer": "Loblaws",
-      "retailer_sku": "21531921_EA",
-      "observed_at": "2026-11-18T20:31:07.572039+00:00",
       "check_status": "needs_review"
     },
     {
