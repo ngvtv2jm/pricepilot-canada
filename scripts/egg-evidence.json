@@ -1,0 +1,47 @@
+{
+  "evidence": {
+    "catalog_id": "discovered-700933cc7c400089523a1034",
+    "retailer_sku": "20812144001_EA",
+    "brand": "No Name",
+    "grade": "A",
+    "size": "large",
+    "count": 12,
+    "url": "https://www.fortinos.ca/en/large-grade-a-eggs/p/20812144001_EA"
+  },
+  "archive": {
+    "commit": "179e9e47ae362bec76ebe79e971880fd66229d50",
+    "path": "public/comparison-prices.json",
+    "rows": [
+      {
+        "catalog_id": "discovered-700933cc7c400089523a1034",
+        "name": "Large Size Eggs 12 Pack",
+        "brand": "No Name",
+        "package_size": "12 ea",
+        "retailer": "Loblaws",
+        "retailer_sku": "20812144001_EA",
+        "price_cad": 3.93,
+        "currency": "CAD",
+        "product_url": "https://www.loblaws.ca/en/large-size-eggs-12-pack/p/20812144001_EA",
+        "store_scope": "Website default; branch price and availability unverified",
+        "observed_at": "2026-11-22T19:39:40.616487+00:00",
+        "check_status": "verified",
+        "promotion_text": ""
+      },
+      {
+        "catalog_id": "discovered-700933cc7c400089523a1034",
+        "name": "Large Size Eggs 12 Pack",
+        "brand": "No Name",
+        "package_size": "12 ea",
+        "retailer": "No Frills",
+        "retailer_sku": "20812144001_EA",
+        "price_cad": 3.93,
+        "currency": "CAD",
+        "product_url": "https://www.nofrills.ca/en/large-size-eggs-12-pack/p/20812144001_EA",
+        "store_scope": "Website default; branch price and availability unverified",
+        "observed_at": "2026-11-22T19:39:46.730579+00:00",
+        "check_status": "verified",
+        "promotion_text": ""
+      }
+    ]
+  }
+}
