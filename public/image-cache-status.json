@@ -1,12 +1,13 @@
 {
-  "completed_at": "2026-11-25T21:43:57.060526+00:00",
-  "products": 6300,
-  "cached": 6197,
-  "missing": 103,
+  "completed_at": "2026-11-26T21:35:42.341216+00:00",
+  "products": 6550,
+  "cached": 6446,
+  "missing": 104,
   "missing_ids": [
     "discovered-4e9ff0e628847145c681b356",
     "discovered-c2a79e5387dd0b4940aa800c",
     "discovered-f284c1315da8054ea6bec518",
+    "discovered-d046b21a483492e697cf3a95",
     "0151673b-3453-4743-a37a-620282df113d",
     "060a94f3-38ad-4a81-9ea6-48a7fac48c9f",
     "069bafaa-1eb9-4bac-8f95-b8d3c7b197f3",
