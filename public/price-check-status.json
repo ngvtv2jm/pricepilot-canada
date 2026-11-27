@@ -1,10 +1,10 @@
 {
-  "started_at": "2026-11-26T21:29:59.891484+00:00",
-  "completed_at": "2026-11-26T21:31:34.346828+00:00",
+  "started_at": "2026-11-27T21:16:19.392824+00:00",
+  "completed_at": "2026-11-27T21:19:01.770252+00:00",
   "total": 1800,
-  "verified": 1570,
-  "changed": 313,
-  "unverified": 230,
+  "verified": 1549,
+  "changed": 5,
+  "unverified": 251,
   "unverified_products": [
     {
       "name": "Instant Oatmeal 3-Flavour Variety Family Size, 18 packets",
@@ -1372,20 +1372,6 @@
       "check_status": "needs_review"
     },
     {
-      "name": "Zero Sugar Fruit Punch Bottle",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21434122_EA",
-      "observed_at": "2026-11-17T20:55:29.146394+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "Zero Sugar Lemonade Bottle",
-      "retailer": "Real Canadian Superstore",
-      "retailer_sku": "21434119_EA",
-      "observed_at": "2026-11-15T18:51:40.267758+00:00",
-      "check_status": "needs_review"
-    },
-    {
       "name": "Zero Sugar Strawberry Lemonade Bottle",
       "retailer": "Real Canadian Superstore",
       "retailer_sku": "21592037_EA",
@@ -1428,27 +1414,6 @@
       "check_status": "needs_review"
     },
     {
-      "name": "Zero Sugar Fruit Punch Bottle",
-      "retailer": "No Frills",
-      "retailer_sku": "21434122_EA",
-      "observed_at": "2026-11-15T18:51:40.586783+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "Zero Sugar Lemonade Bottle",
-      "retailer": "No Frills",
-      "retailer_sku": "21434119_EA",
-      "observed_at": "2026-11-15T18:51:40.586783+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "Zero Sugar Strawberry Lemonade Bottle",
-      "retailer": "No Frills",
-      "retailer_sku": "21592037_EA",
-      "observed_at": "2026-11-08T17:56:09.391097+00:00",
-      "check_status": "needs_review"
-    },
-    {
       "name": "Smoothie Green Activ",
       "retailer": "No Frills",
       "retailer_sku": "21529938_EA",
@@ -1481,27 +1446,6 @@
       "retailer": "Loblaws",
       "retailer_sku": "20109062_EA",
       "observed_at": "2026-11-19T20:37:15.463688+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "Zero Sugar Fruit Punch Bottle",
-      "retailer": "Loblaws",
-      "retailer_sku": "21434122_EA",
-      "observed_at": "2026-11-15T18:51:43.563499+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "Zero Sugar Lemonade Bottle",
-      "retailer": "Loblaws",
-      "retailer_sku": "21434119_EA",
-      "observed_at": "2026-11-14T18:00:56.959718+00:00",
-      "check_status": "needs_review"
-    },
-    {
-      "name": "Zero Sugar Strawberry Lemonade Bottle",
-      "retailer": "Loblaws",
-      "retailer_sku": "21592037_EA",
-      "observed_at": "2026-11-07T17:46:28.832609+00:00",
       "check_status": "needs_review"
     },
     {
@@ -1610,11 +1554,214 @@
       "check_status": "needs_review"
     },
     {
+      "name": "Barbecue Flavour Kettle Cooked Potato Chips",
+      "retailer": "No Frills",
+      "retailer_sku": "21425138_EA",
+      "observed_at": "2026-11-26T21:31:30.582753+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Caramelized Onion and Balsamic Vinegar Flavour Kettle Cooked Chips",
+      "retailer": "No Frills",
+      "retailer_sku": "21425136_EA",
+      "observed_at": "2026-11-26T21:31:30.582753+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Dark Chocolate Bar",
+      "retailer": "No Frills",
+      "retailer_sku": "21689840_EA",
+      "observed_at": "2026-11-26T21:31:30.582753+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Dark Chocolate Covered Almonds",
+      "retailer": "No Frills",
+      "retailer_sku": "20311287_EA",
+      "observed_at": "2026-11-26T21:31:30.582753+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Dark Chocolate Cranberries",
+      "retailer": "No Frills",
+      "retailer_sku": "21126662_EA",
+      "observed_at": "2026-11-26T21:31:30.582753+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Dark Chocolate with Almonds Chocolate Bar",
+      "retailer": "No Frills",
+      "retailer_sku": "21689943_EA",
+      "observed_at": "2026-11-26T21:31:30.582753+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Honey Dijon Flavour Kettle Cooked Potato Chips",
+      "retailer": "No Frills",
+      "retailer_sku": "21430725_EA",
+      "observed_at": "2026-11-26T21:31:30.582753+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Jalapeno Flavour Kettle Cooked Potato Chips",
+      "retailer": "No Frills",
+      "retailer_sku": "21425141_EA",
+      "observed_at": "2026-11-26T21:31:30.582753+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Kettle Cooked Sea Salt and Malt Vinegar Flavour Chips Club Size",
+      "retailer": "No Frills",
+      "retailer_sku": "21549793_EA",
+      "observed_at": "2026-11-26T21:31:30.582753+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Loads Of All Dressed Rippled Potato Chips",
+      "retailer": "No Frills",
+      "retailer_sku": "20840911004_EA",
+      "observed_at": "2026-11-26T21:31:30.582753+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Loads Of Barbecue Rippled Potato Chips",
+      "retailer": "No Frills",
+      "retailer_sku": "20840911006_EA",
+      "observed_at": "2026-11-26T21:31:30.582753+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Loads Of Ketchup Flavour Rippled Potato Chips",
+      "retailer": "No Frills",
+      "retailer_sku": "20840911001_EA",
+      "observed_at": "2026-11-26T21:31:30.582753+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Loads of Sour Cream & Onion Rippled Potato Chips",
+      "retailer": "No Frills",
+      "retailer_sku": "20840911002_EA",
+      "observed_at": "2026-11-26T21:31:30.582753+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Milk Chocolate Bar",
+      "retailer": "No Frills",
+      "retailer_sku": "21689854_EA",
+      "observed_at": "2026-11-26T21:31:30.582753+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Milk Chocolate Covered Almonds",
+      "retailer": "No Frills",
+      "retailer_sku": "20000356_EA",
+      "observed_at": "2026-11-26T21:31:30.582753+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Milk Chocolate Covered Almonds",
+      "retailer": "No Frills",
+      "retailer_sku": "21735107_EA",
+      "observed_at": "2026-11-26T21:31:30.582753+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Milk Chocolate Covered Raisins",
+      "retailer": "No Frills",
+      "retailer_sku": "20325728_EA",
+      "observed_at": "2026-11-26T21:31:30.582753+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Milk Chocolate Fruit and Nut Bar",
+      "retailer": "No Frills",
+      "retailer_sku": "21679968_EA",
+      "observed_at": "2026-11-26T21:31:30.582753+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Milk Chocolate with Hazelnuts Bar",
+      "retailer": "No Frills",
+      "retailer_sku": "21689897_EA",
+      "observed_at": "2026-11-26T21:31:30.582753+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Original Flavour Kettle Cooked Potato Chips",
+      "retailer": "No Frills",
+      "retailer_sku": "21422931_EA",
+      "observed_at": "2026-11-26T21:31:30.582753+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Original Kettle Cooked Chips Club Size",
+      "retailer": "No Frills",
+      "retailer_sku": "21426018_EA",
+      "observed_at": "2026-11-26T21:31:30.582753+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Rippled Kettle Cooked Sour Cream & Chive Flavour Potato Chips",
+      "retailer": "No Frills",
+      "retailer_sku": "21687125_EA",
+      "observed_at": "2026-11-26T21:31:30.582753+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
       "name": "Sea Salt and Cracked Pepper Flavour Kettle Cooked Potato Chips",
       "retailer": "No Frills",
       "retailer_sku": "21422910_EA",
       "observed_at": "2026-11-15T18:52:25.038096+00:00",
-      "check_status": "needs_review"
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Sea Salt and Malt Vinegar Flavour Kettle Cooked Potato Chips",
+      "retailer": "No Frills",
+      "retailer_sku": "21549769_EA",
+      "observed_at": "2026-11-26T21:31:30.582753+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Spicy Dill Pickle Flavour Kettle Cooked Potato Chips",
+      "retailer": "No Frills",
+      "retailer_sku": "21576249_EA",
+      "observed_at": "2026-11-26T21:31:30.582753+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Spicy Ketchup Flavour Kettle Cooked Potato Chips",
+      "retailer": "No Frills",
+      "retailer_sku": "21576175_EA",
+      "observed_at": "2026-11-26T21:31:30.582753+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Suisse Milk Chocolate Bar With Honey Almond Nougat",
+      "retailer": "No Frills",
+      "retailer_sku": "20097883_EA",
+      "observed_at": "2026-11-26T21:31:30.582753+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "Truffle Flavour Kettle Cooked Potato Chips",
+      "retailer": "No Frills",
+      "retailer_sku": "21576276_EA",
+      "observed_at": "2026-11-26T21:31:30.582753+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "World of Flavours Beef Taco Flavour Rippled Potato Chips",
+      "retailer": "No Frills",
+      "retailer_sku": "21387574_EA",
+      "observed_at": "2026-11-26T21:31:30.582753+00:00",
+      "check_status": "source_unavailable"
+    },
+    {
+      "name": "World of Flavours Korma Flavour Rippled Potato Chips",
+      "retailer": "No Frills",
+      "retailer_sku": "21649831_EA",
+      "observed_at": "2026-11-26T21:31:30.582753+00:00",
+      "check_status": "source_unavailable"
     }
   ]
 }
