@@ -2,6 +2,7 @@ import './hydrate-catalog.mjs';
 import {buildProductPages} from './product-pages.mjs';
 import {buildTrustPages,trust,renderPage,escapeHtml} from './trust-pages.mjs';
 import fs from 'node:fs';
+import {socialImageFor,socialImageMarkup} from './social-cards.mjs';
 import {loadEnv} from 'vite';
 import {verificationMarkup,adsTxt} from './site-verification.mjs';
 const siteEnv={...loadEnv('production',process.cwd(),''),...process.env};
@@ -14,7 +15,7 @@ fs.writeFileSync('public/404.html',renderPage({base,path:'404.html',title:'Page 
 // Update the actual entry document so metadata is available before JavaScript runs.
 let index=fs.readFileSync('index.html','utf8');
 index=index.replace(/<title>.*?<\/title>/s,'<title>'+escapeHtml(trust.seo.title)+'</title>');
-for(const [attr,name,value] of [['name','description',trust.seo.description],['property','og:title',trust.seo.title],['property','og:description',trust.seo.description],['property','og:url',base+'/'],['property','og:image',base+trust.seo.socialImage],['name','twitter:title',trust.seo.title],['name','twitter:description',trust.seo.description],['name','twitter:image',base+trust.seo.socialImage]]){
+for(const [attr,name,value] of [['name','description',trust.seo.description],['property','og:title',trust.seo.title],['property','og:description',trust.seo.description],['property','og:url',base+'/'],['name','twitter:title',trust.seo.title],['name','twitter:description',trust.seo.description]]){
  index=index.replace(new RegExp('<meta '+attr+'="'+name+'"[^>]*>'),'<meta '+attr+'="'+name+'" content="'+escapeHtml(value)+'"/>');
 }
 index=index.replace(/<link rel="canonical"[^>]*>/,'<link rel="canonical" href="'+base+'/"/>');
@@ -23,7 +24,8 @@ index=index.replace(/<!-- site-verification:start -->[\s\S]*?<!-- site-verificat
 const verificationEnv=base===trust.seo.siteUrl
  ? {...siteEnv,ADSENSE_VERIFICATION_ACCOUNT:siteEnv.ADSENSE_VERIFICATION_ACCOUNT||trust.seo.adsenseVerificationAccount}
  : siteEnv;
-index=index.replace('</head>',verificationMarkup(verificationEnv)+'</head>');
+index=index.replace(/<meta (?:property="og:image(?::[^"]+)?"|name="twitter:image(?::[^"]+)?")[^>]*>/g,'');
+index=index.replace('</head>',socialImageMarkup(socialImageFor(base,'index.html',trust.seo.socialImage),escapeHtml)+verificationMarkup(verificationEnv)+'</head>');
 fs.writeFileSync('index.html',index);
 // The approved PricePine seller record is independent of ad script delivery.
 const sellerEnv=base===trust.seo.siteUrl&&trust.seo.adsensePublishSellerRecord

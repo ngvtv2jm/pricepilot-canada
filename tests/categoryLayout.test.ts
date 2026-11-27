@@ -15,8 +15,11 @@ test('each sitemap category route including pagination has local image fallback,
   const photo=html.match(/class="category-photo"[^>]*src="([^"]+)"/)?.[1];
   if(photo){
    assert.match(photo,/^https:\/\/raw\.githubusercontent\.com\/ngvtv2jm\/pricepilot-canada\/main\/public\/(?:catalog-cache|catalog-images)\/.+\.webp$/);
-   assert.ok(html.includes('property="og:image" content="'+photo+'"'),path);
-  } else assert.match(html,/property="og:image" content="https:\/\/pricepine\.ca\/pricepine-social-card\.png"/,path);
+
+  }
+  const expected=path==='categories'?'/pricepine-social-card.png':'/social/v1/'+path.split('/')[1].replace(/-\d+$/,'')+'.png';
+  assert.ok(html.includes('property="og:image" content="https://pricepine.ca'+expected+'"'),path);
+  assert.ok(fs.existsSync('public'+expected),path);
  }
  assert.match(read('public/categories/bread-2.html'),/href="\/categories\/bread-2" aria-current="page"/);
  assert.match(read('public/category-view.css'),/@media\(max-width:640px\).*grid-template-columns:1fr/);
