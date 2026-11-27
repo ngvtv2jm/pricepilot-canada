@@ -10,3 +10,17 @@ main:has(>.category-view){max-width:min(1120px,calc(100% - 32px));padding:clamp(
 .category-grid{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:.75rem}.category-grid>li{min-width:0}.category-tile{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:.55rem;color:var(--dark);text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:12px;padding:.72rem;min-height:68px;height:100%;line-height:1.3}.category-tile:hover{border-color:#1b7957;background:#ecf8f0}.category-tile small{display:block;margin-top:.23rem;color:#335f4f}.category-tile-icon{padding:.3rem;border-radius:8px;background:#e6f5ec;font-size:1.4rem}.product-tile{grid-template-columns:minmax(0,1fr) auto}
 .category-pages,.category-related{display:flex;justify-content:flex-start;flex-wrap:wrap;gap:.55rem;margin-top:1rem}.category-pages a,.category-related a{display:inline-flex;align-items:center;min-height:44px;padding:.3rem .7rem;border-radius:10px;background:#e9f5ee;color:#144f37}.category-pages a[aria-current=page]{background:var(--pine);color:white;text-decoration:none}.category-view a:focus-visible{outline-offset:3px}
 @media(max-width:640px){.category-hero{grid-template-columns:1fr}.category-art{max-width:360px}.category-copy h1{font-size:clamp(29px,8vw,40px)}.category-section{padding:11px}.category-grid{grid-template-columns:1fr}}
+
+.category-comparison{margin-block:1.5rem 2rem;overflow-wrap:anywhere}
+.category-comparison-product{border:1px solid #dce6df;border-radius:1rem;padding:1rem;margin-block:1rem;background:#fff;min-width:0}
+.category-comparison-product h3{margin:0}
+.category-comparison-product>p{margin:.35rem 0 .8rem}
+.category-price-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,12rem),1fr));gap:.7rem;list-style:none;margin:0;padding:0}
+.category-price{border:1px solid #dce6df;border-radius:.65rem;background:#f7faf8;padding:.7rem;min-width:0}
+.category-price dl{margin:.45rem 0}
+.category-price dl div{display:flex;flex-wrap:wrap;gap:.1rem .4rem;justify-content:space-between}
+.category-price dd{margin:0;font-weight:600}
+.category-price p{margin:.3rem 0;font-size:.9rem}
+.category-price-history{color:#644308}
+.category-price a{display:inline-flex;align-items:center;min-height:44px}
+.category-price-empty{background:#f7faf8;padding:.8rem;border-radius:.55rem}
