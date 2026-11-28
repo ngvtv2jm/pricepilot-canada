@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "source_commit": "568237416df678a0a67ec9564d7b16c6fae3b2ec",
+  "source_commit": "bcba0c77ae7d78578be27b8a97cdab6655ce7ad2",
   "catalog_and_images": "GitHub main",
-  "note": "Generated branch. Make source edits on main."
+  "note": "Generated branch. Make source edits on main. Cached public feed inputs retained for build reliability."
 }
